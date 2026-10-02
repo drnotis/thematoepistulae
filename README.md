@@ -12,6 +12,7 @@ Herausgeber: Notis Toufexis
 
 - `edition/thematoepistulae.xml`: die Edition (62 Briefe, 124 Fassungen)
 - `index.html`, `web/`: Webansicht (XSLT im Browser)
+- `wortindex.html`, `web/wortindex.js`, `web/wortlogik.js`: Wortindex
 - `css/tei.css`: Stylesheet für die direkte Ansicht der XML-Datei
 
 ## Webansicht
@@ -34,6 +35,22 @@ verwendet.
 Legende: Zahl am Zeilenende = Zeilennummer der Handschrift, `(..)` aufgelöste
 Abkürzung, orange Zusatz von Crusius, blau Zusatz von Zygomalas, durchgestrichen
 getilgt, gepunktet unterstrichen unsichere Lesung.
+
+## Wortindex
+
+`wortindex.html` listet alle Wörter beider Fassungen in normalisierter Form
+(ohne Akzente, Spiritus und Iota subscriptum, Kleinbuchstaben, Schluss-Sigma als
+Sigma) mit den belegten Schreibungen und Links auf die Textstellen. Der Index wird
+beim Öffnen direkt aus dem TEI-XML berechnet und ist daher immer aktuell; es gibt
+keine erzeugte Datei, die gepflegt werden müsste.
+
+Regeln: Abkürzungen sind aufgelöst (`expan`), Tilgungen (`del`), Randnotizen
+(`note`), unaufgelöste Abkürzungsformen (`abbr`) und das Zeichen † bleiben
+unberücksichtigt, am Zeilenende mit Bindestrich getrennte Wörter werden
+zusammengefügt. Es wird nicht lemmatisiert. Ein Beleg wie `6·H3` bedeutet
+Brief 6, Fassung high, Zeile 3; der Link springt im Text an diese Zeile und
+hebt sie hervor. Die Zeilenzählung (Anker `thema6_high-z3`) ist in
+`web/wortlogik.js` beschrieben.
 
 ## Lizenz
 

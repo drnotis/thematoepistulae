@@ -69,6 +69,23 @@
     });
   }
 
+  function showTarget() {
+    if (window.CSS && CSS.highlights) CSS.highlights.delete('zeile');
+    if (!location.hash) return;
+    var t = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    if (!t) return;
+    var m = /^(.*)-z(\d+)$/.exec(t.id);
+    if (m && window.CSS && CSS.highlights && window.Highlight) {
+      var art = t.closest('article'), next = document.getElementById(m[1] + '-z' + (+m[2] + 1));
+      var r = document.createRange();
+      r.setStartAfter(t);
+      if (next && art.contains(next)) r.setEndBefore(next); else r.setEndAfter(art.lastChild);
+      CSS.highlights.set('zeile', new Highlight(r));
+    }
+    t.scrollIntoView({ block: 'center', behavior: 'instant' });
+  }
+  window.addEventListener('hashchange', showTarget);
+
   bind('c-view', 'view', false);
   bind('c-lines', 'lines', true);
   bind('c-linenos', 'linenos', true);
@@ -83,11 +100,9 @@
       var frag = proc.transformToFragment(docs[0], document);
       root.innerHTML = '';
       root.appendChild(frag);
+      ThemaWords.addLineAnchors(root);
       buildNav(); setupSearch();
-      if (location.hash) {
-        var t = document.getElementById(location.hash.slice(1));
-        if (t) t.scrollIntoView();
-      }
+      showTarget();
     })
     .catch(function (err) {
       root.textContent = 'Die Edition konnte nicht geladen werden: ' + err.message;

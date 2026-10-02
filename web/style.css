@@ -127,3 +127,22 @@ footer { max-width: 84rem; margin: 0 auto; padding: 1rem 1rem 3rem; color: var(-
   nav.letters ol { grid-template-columns: repeat(auto-fill, minmax(2.6rem, 1fr)); }
   .versions { grid-template-columns: 1fr; }
 }
+
+/* Wortindex und Zeilenanker */
+.zl { display: inline-block; width: 0; height: 0; }
+::highlight(zeile) { background-color: rgba(246, 224, 94, 0.6); color: #1c1b1a; }
+.topbar h1 .back { font: 0.8rem system-ui, sans-serif; margin-left: 1rem; font-weight: normal; }
+main.wide { max-width: 60rem; margin: 0 auto; padding: 1rem; }
+.note-text { color: var(--muted); font-size: 0.85rem; line-height: 1.55; }
+.alpha { display: flex; flex-wrap: wrap; gap: 0.25rem; margin-top: 0.5rem; font-family: system-ui, sans-serif; }
+.alpha a { min-width: 1.6rem; text-align: center; padding: 0 0.3rem; border: 1px solid var(--rule); border-radius: 4px; background: var(--panel); text-decoration: none; }
+#list h2 { margin: 1.5rem 0 0.4rem; padding-bottom: 0.2rem; border-bottom: 1px solid var(--rule); font-size: 1.1rem; color: var(--accent); }
+.entry { padding: 0.35rem 0; border-bottom: 1px dotted var(--rule); }
+.ehead { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.2rem 0.8rem; }
+.ehead strong { font-size: 1.15rem; }
+.ehead .n { font: 0.8rem system-ui, sans-serif; color: var(--muted); }
+.ehead .forms { color: var(--muted); font-size: 0.95rem; }
+.locs { font: 0.8rem system-ui, sans-serif; line-height: 1.9; }
+.locs a { display: inline-block; padding: 0 0.35rem; border: 1px solid var(--rule); border-radius: 3px; text-decoration: none; background: var(--panel); }
+.locs a:hover { border-color: var(--accent); }
+.locs button { font: inherit; border: 0; background: none; color: var(--link); cursor: pointer; text-decoration: underline; }
