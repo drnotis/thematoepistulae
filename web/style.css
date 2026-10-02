@@ -116,8 +116,6 @@ nav.letters h2 { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0
 .c { color: var(--muted); }
 .note { font: 0.75rem system-ui, sans-serif; color: var(--muted); }
 .note::before { content: " ["; } .note::after { content: "]"; }
-a.imgref, .imgref { text-decoration: underline dotted; }
-a.imgref { cursor: zoom-in; }
 
 mark { background: #f6e05e; color: #1c1b1a; }
 

@@ -69,21 +69,6 @@
     });
   }
 
-  function linkImages() {
-    document.querySelectorAll('.imgref').forEach(function (el) {
-      var url = 'edition/' + el.dataset.img;
-      fetch(url, { method: 'HEAD' }).then(function (r) {
-        if (!r.ok) return;
-        var a = document.createElement('a');
-        a.className = 'imgref';
-        a.href = url; a.target = '_blank'; a.rel = 'noopener';
-        a.title = 'Handschriftenbild öffnen';
-        while (el.firstChild) a.appendChild(el.firstChild);
-        el.parentNode.replaceChild(a, el);
-      }).catch(function () {});
-    });
-  }
-
   bind('c-view', 'view', false);
   bind('c-lines', 'lines', true);
   bind('c-linenos', 'linenos', true);
@@ -98,7 +83,7 @@
       var frag = proc.transformToFragment(docs[0], document);
       root.innerHTML = '';
       root.appendChild(frag);
-      buildNav(); setupSearch(); linkImages();
+      buildNav(); setupSearch();
       if (location.hash) {
         var t = document.getElementById(location.hash.slice(1));
         if (t) t.scrollIntoView();

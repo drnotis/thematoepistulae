@@ -35,9 +35,6 @@ Legende: Zahl am Zeilenende = Zeilennummer der Handschrift, `(..)` aufgelöste
 Abkürzung, orange Zusatz von Crusius, blau Zusatz von Zygomalas, durchgestrichen
 getilgt, gepunktet unterstrichen unsichere Lesung.
 
-Handschriftenbilder: Verweise auf `img/*.png` werden zu Links, sobald die Dateien
-unter `edition/img/` liegen.
-
 ## Lizenz
 
 Creative Commons Attribution 4.0 International (CC BY 4.0), siehe `LICENSE`.
