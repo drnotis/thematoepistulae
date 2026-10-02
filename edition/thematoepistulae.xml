@@ -16,7 +16,7 @@
                     <name>Νότης Τουφεξής</name>
                     <email>notis.toufexis@gmail.com</email>
                 </authority>
-                <!-- <idno type="DOI">hier nach der Zenodo-Archivierung eintragen</idno> -->
+                <idno type="DOI">10.5281/zenodo.23110826</idno>
                 <availability>
                     <licence target="https://creativecommons.org/licenses/by/4.0/">
                         <p xml:lang="el">Διατίθεται με άδεια Creative Commons Attribution 4.0

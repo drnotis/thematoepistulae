@@ -62,4 +62,7 @@ Creative Commons Attribution 4.0 International (CC BY 4.0), siehe `LICENSE`.
 
 ## Zitieren
 
-Nach der Archivierung bei Zenodo hier den DOI ergänzen.
+Τουφεξής, Νότης: *Θεματοεπιστολαί: An electronic edition*. Zenodo.
+https://doi.org/10.5281/zenodo.23110826
+
+Maschinenlesbar in `CITATION.cff`; GitHub zeigt über „Cite this repository“ fertige Zitate an.
