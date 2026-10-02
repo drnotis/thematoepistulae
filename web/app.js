@@ -69,20 +69,22 @@
     });
   }
 
-  function linkImages() {
-    document.querySelectorAll('.imgref').forEach(function (el) {
-      var url = 'edition/' + el.dataset.img;
-      fetch(url, { method: 'HEAD' }).then(function (r) {
-        if (!r.ok) return;
-        var a = document.createElement('a');
-        a.className = 'imgref';
-        a.href = url; a.target = '_blank'; a.rel = 'noopener';
-        a.title = 'Handschriftenbild öffnen';
-        while (el.firstChild) a.appendChild(el.firstChild);
-        el.parentNode.replaceChild(a, el);
-      }).catch(function () {});
-    });
+  function showTarget() {
+    if (window.CSS && CSS.highlights) CSS.highlights.delete('zeile');
+    if (!location.hash) return;
+    var t = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    if (!t) return;
+    var m = /^(.*)-z(\d+)$/.exec(t.id);
+    if (m && window.CSS && CSS.highlights && window.Highlight) {
+      var art = t.closest('article'), next = document.getElementById(m[1] + '-z' + (+m[2] + 1));
+      var r = document.createRange();
+      r.setStartAfter(t);
+      if (next && art.contains(next)) r.setEndBefore(next); else r.setEndAfter(art.lastChild);
+      CSS.highlights.set('zeile', new Highlight(r));
+    }
+    t.scrollIntoView({ block: 'center', behavior: 'instant' });
   }
+  window.addEventListener('hashchange', showTarget);
 
   bind('c-view', 'view', false);
   bind('c-lines', 'lines', true);
@@ -98,11 +100,9 @@
       var frag = proc.transformToFragment(docs[0], document);
       root.innerHTML = '';
       root.appendChild(frag);
-      buildNav(); setupSearch(); linkImages();
-      if (location.hash) {
-        var t = document.getElementById(location.hash.slice(1));
-        if (t) t.scrollIntoView();
-      }
+      ThemaWords.addLineAnchors(root);
+      buildNav(); setupSearch();
+      showTarget();
     })
     .catch(function (err) {
       root.textContent = 'Die Edition konnte nicht geladen werden: ' + err.message;

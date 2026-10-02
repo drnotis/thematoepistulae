@@ -86,7 +86,7 @@
             <change when="2026-10-02">Header cleaned up for publication: language and hand
                 declarations, manuscript description, editorial declaration and licence statement
                 added; language attributes added to the "low" and "high" versions; stylesheet
-                reference updated; licence changed to CC BY 4.0; identifiers
+                reference updated; references to manuscript images removed (images not published); licence changed to CC BY 4.0; identifiers
                 of letters and versions made consistent (thema1 ... thema62, themaN_low/themaN_high).</change>
             <change when="2007-05-27">Μετατροπή σε P5</change>
             <change when="2006-07-04">Έκανα διορθώσεις και αλλαγές </change>
@@ -123,9 +123,9 @@
                             />εἴκὸς εἶναί μοι δοκεῖ εὔξασθαι τῷ θ<expan>ε</expan>ῷ, <lb n="4"/>
                             ἐπέρχεσθαί μοι ἀεὶ κ<expan>α</expan>τ<expan>ὰ</expan> τὸν
                                 ἐμ<expan>ὸν</expan> νοῦν, <lb n="5"/> ἐμφαίνει<expan>ν</expan> ἐν
-                            τοῖς γράμμασιν, ὅτ’ ἀναγκαί<ref rend="_blank" target="img/1_high_6.png">
+                            τοῖς γράμμασιν, ὅτ’ ἀναγκαί
                                 <expan cert="low">ων</expan>
-                            </ref> ἔχει·<lb n="6"/></s>
+                             ἔχει·<lb n="6"/></s>
                         <s xml:id="high_1-2">ὅτι εἴη ἄν τεκμήριον φιλί<expan>ας</expan> ἀκραιφνοῦς,
                                 οἵαν<lb n="7"/> οὐκ ἄν οἵμαι τ<expan>ὸν</expan> πάντα αἰῶνα
                             ἐξαλεῖψαι δύνασθαί ποτε: †<lb n="8"/></s>
@@ -153,14 +153,13 @@
                         <seg xml:id="high_2-1">† σοῦ μ<expan>ὲν</expan>
                             <unclear>ἕ</unclear>νεκα χαίρω τὰ μάλιστα, ἀκού<expan>ων</expan> ὁθ’
                                 ὑγϊαίνεις<lb n="1"/>καὶ εὐτυχεῖς, καὶ καλῶς ἀκούεις<note
-                                place="foot">Γραφή με <ref rend="_blank" target="img/2_high_2.png"
-                                    >μεγαλύτερα γράμματα</ref> για να καλυφθεί όλο το πλάτος της
+                                place="foot">Γραφή με μεγαλύτερα γράμματα για να καλυφθεί όλο το πλάτος της
                                 αράδας.</note>.<lb n="2"/></seg>
                         <s xml:id="high_2-2">ἐμοῦ δὲ ὅτι με φιλεῖς καὶ περὶ ἐμοῦ σπουδάζεις <lb
                                 n="3"/> πϋνθάνεσθαι πῶς ἄρα ἔχω.<lb n="4"/> καὶ διὰ τῶν αὐτόθεν
-                                πρ<ref rend="_blank" target="img/2_high_5.png">
+                                πρ
                                 <expan cert="low">ὸς</expan>
-                            </ref> ἡμᾶς δεῦρο <lb n="5"/> ἀφικνουμέν<expan>ων</expan>
+                             ἡμᾶς δεῦρο <lb n="5"/> ἀφικνουμέν<expan>ων</expan>
                                 προσαγορεύειν.<lb n="6"/> τοιγαροῦν ἵσθ’ ὅτι οὐκ ἀγνοῶ τοῦτο, <lb
                                 n="7"/> καὶ μεγίστην ἔχω σοι τὴν χάριν<lb n="8"/>ὑγϊαίνων μοι
                             διατελοίης, φίλων ἄριστε:†<lb n="9"/></s>

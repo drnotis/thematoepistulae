@@ -159,11 +159,6 @@
     <span class="note"><xsl:apply-templates/></span>
   </xsl:template>
 
-  <!-- Verweise auf Handschriftenbilder: wird per JS zum Link, wenn die Datei existiert -->
-  <xsl:template match="t:ref[starts-with(@target, 'img/')]">
-    <span class="imgref" data-img="{@target}"><xsl:apply-templates/></span>
-  </xsl:template>
-
   <xsl:template match="t:ref">
     <a href="{@target}"><xsl:apply-templates/></a>
   </xsl:template>

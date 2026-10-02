@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wortindex – Θεματοεπιστολαί</title>
+  <link rel="stylesheet" href="web/style.css">
+</head>
+<body class="indexpage">
+  <div class="topbar ui">
+    <h1>Wortindex <a class="back" href="index.html">zur Edition</a></h1>
+    <div class="controls">
+      <input type="search" id="q" placeholder="Wort (mit oder ohne Akzente)" aria-label="Wort suchen">
+      <select id="mode" aria-label="Suchmodus">
+        <option value="prefix">beginnt mit</option>
+        <option value="contains">enthält</option>
+        <option value="suffix">endet auf</option>
+      </select>
+      <label>Fassung
+        <select id="ver">
+          <option value="both">low und high</option>
+          <option value="low">nur low</option>
+          <option value="high">nur high</option>
+        </select>
+      </label>
+      <label>Sortierung
+        <select id="sort">
+          <option value="alpha">alphabetisch</option>
+          <option value="freq">nach Häufigkeit</option>
+        </select>
+      </label>
+      <label><input type="checkbox" id="hapax"> nur Einzelbelege</label>
+      <span id="info"></span>
+    </div>
+    <div class="alpha" id="alpha"></div>
+  </div>
+  <main class="wide">
+    <p class="ui note-text">
+      Alle <span id="tokens">…</span> Wörter der Fassungen low und high,
+      <span id="types">…</span> verschiedene normalisierte Wortformen.
+      Normalisiert heißt: ohne Akzente, Spiritus und Iota subscriptum, Kleinbuchstaben, Schluss-Sigma
+      als Sigma. Abkürzungen sind aufgelöst, Tilgungen, Randnotizen und das Zeichen † nicht
+      berücksichtigt; am Zeilenende getrennte Wörter sind zusammengefügt. Lateinische Zusätze von
+      Crusius fehlen. Eindeutige Elisionen stehen unter der Vollform (δι’ unter δια), die belegte
+      Schreibung steht in Klammern; nicht eindeutige Elisionen erscheinen mit Apostroph als eigener
+      Eintrag (οθ’). Sonst nicht lemmatisiert: jede Form steht für sich. Die Nachweise zeigen <b>Brief · Fassung (L = low, H = high) und Zeile</b>,
+      z. B. <code>6·H3</code>, und führen an die Stelle im Text. 
+    </p>
+    <div id="list">Index wird erstellt ...</div>
+  </main>
+  <footer class="ui">
+    <a href="index.html">Edition</a> ·
+    <a href="edition/thematoepistulae.xml">TEI-XML</a> ·
+    <a href="https://github.com/drnotis/thematoepistulae">Quellcode auf GitHub</a> · CC BY 4.0
+  </footer>
+  <script src="web/wortlogik.js"></script>
+  <script src="web/wortindex.js"></script>
+</body>
+</html>
