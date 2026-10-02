@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Θεματοεπιστολαί</title>
+  <meta name="description" content="Elektronische Edition der Θεματοεπιστολαί des Theodosios Zygomalas nach dem Codex Tybingensis Mb 30.">
+  <link rel="stylesheet" href="web/style.css">
+</head>
+<body>
+  <div class="topbar ui">
+    <h1>Θεματοεπιστολαί: An electronic edition</h1>
+    <div class="controls">
+      <label>Ansicht
+        <select id="c-view">
+          <option value="both">low und high</option>
+          <option value="low">nur low</option>
+          <option value="high">nur high</option>
+        </select>
+      </label>
+      <label><input type="checkbox" id="c-lines"> Zeilen der Handschrift</label>
+      <label><input type="checkbox" id="c-linenos"> Zeilennummern</label>
+      <label><input type="checkbox" id="c-expan"> Auflösungen</label>
+      <label><input type="checkbox" id="c-colors"> Hände farbig</label>
+      <input type="search" id="q" placeholder="Suchen (ohne Akzente)" aria-label="Suchen">
+      <span id="count"></span>
+    </div>
+  </div>
+  <div class="layout">
+    <nav class="letters ui" aria-label="Briefe">
+      <h2>Briefe</h2>
+      <ol></ol>
+    </nav>
+    <main>
+      <div class="legend ui" style="margin-bottom:1rem;color:var(--muted)">
+        <span>|n Zeilenumbruch</span>
+        <span><i class="expan" style="font-style:italic">aufgelöst</i> Auflösung</span>
+        <span style="color:var(--cr)">Zusatz Crusius</span>
+        <span style="color:var(--zyg)">Zusatz Zygomalas</span>
+        <span><del>getilgt</del></span>
+        <span style="text-decoration:underline dotted">unsicher</span>
+      </div>
+      <div id="edition">Lade Edition ...</div>
+    </main>
+  </div>
+  <footer class="ui">
+    <a href="edition/thematoepistulae.xml">TEI-XML</a> ·
+    <a href="https://github.com/drnotis/thematoepistulae">Quellcode auf GitHub</a> ·
+    CC BY 4.0
+  </footer>
+  <script src="web/app.js"></script>
+</body>
+</html>

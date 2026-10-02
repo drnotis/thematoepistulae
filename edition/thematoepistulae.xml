@@ -86,7 +86,8 @@
             <change when="2026-10-02">Header cleaned up for publication: language and hand
                 declarations, manuscript description, editorial declaration and licence statement
                 added; language attributes added to the "low" and "high" versions; stylesheet
-                reference updated; licence changed to CC BY 4.0.</change>
+                reference updated; licence changed to CC BY 4.0; identifiers
+                of letters and versions made consistent (thema1 ... thema62, themaN_low/themaN_high).</change>
             <change when="2007-05-27">Μετατροπή σε P5</change>
             <change when="2006-07-04">Έκανα διορθώσεις και αλλαγές </change>
         </revisionDesc>
@@ -98,11 +99,11 @@
             <ab>
                 <add hand="Cr" place="top"> Incepi .29. April. 79. </add>
             </ab>
-            <div1 type="thematoep" xml:id="thema1">
+            <div1 n="1" type="thematoep" xml:id="thema1">
                 <ab>
                     <add hand="Cr" place="left">1.</add>
                 </ab>
-                <div2 xml:lang="el" xml:id="thema1_low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema1_low">
                     <ab>
                         <s xml:id="low_1-1">† ἔσοντας καὶ ἀκόμη δὲν ἄρχησα<lb n="1"/> νὰ σοῦ γράφω,
                             οὐδὲ ἐπιστολ<expan>ὴν</expan> καμίαν <lb n="2"/> ἔλαβες ἀπολόγου μου,
@@ -114,7 +115,7 @@
                             <lb n="7"/> πιστεύω νὰ μὴν δύναται νὰ τὴν χαλάση:†<lb n="8"/></s>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" type="high" xml:id="thema1_high">
+                <div2 type="high" xml:lang="grc" xml:id="thema1_high">
                     <ab>
                         <s xml:id="high_1-1">Ἐπείπερ ἐγὼ μ<expan>ὲν</expan> οὐδέπω
                                 ἀρχ<expan>ὴν</expan> πεποίημαι<lb n="1"/> τοῦ ἐπιστέλλειν σοι, οὐδὲ
@@ -131,11 +132,11 @@
                     </ab>
                 </div2>
             </div1>
-            <div1 type="thematoep" xml:id="thema2">
+            <div1 n="2" type="thematoep" xml:id="thema2">
                 <ab>
                     <add place="left">2.</add>
                 </ab>
-                <div2 xml:lang="el" xml:id="thema2_low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema2_low">
                     <ab>
                         <s xml:id="low_2-1">χαίρομαι πολλὰ διὰ λόγου σου, ἀκούοντας <lb n="1"/> ὅτι
                             ἦσαι γερὸς καὶ εὐτυχὴς, καὶ ἔχεις καὶ καλ<expan>ὸν</expan> ὄνομα·<lb
@@ -147,7 +148,7 @@
                             σου πολλὰ·<lb n="8"/>ὑγιὴς ἄμποτε νὰ ἦσε, ἀγαπημένε μου:†<lb n="9"/></s>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" type="high" xml:id="thema2_high">
+                <div2 type="high" xml:lang="grc" xml:id="thema2_high">
                     <ab>
                         <seg xml:id="high_2-1">† σοῦ μ<expan>ὲν</expan>
                             <unclear>ἕ</unclear>νεκα χαίρω τὰ μάλιστα, ἀκού<expan>ων</expan> ὁθ’
@@ -166,14 +167,14 @@
                     </ab>
                 </div2>
             </div1>
-            <div1 type="thematoep" xml:id="thema3">
+            <div1 n="3" type="thematoep" xml:id="thema3">
                 <ab>
                     <add hand="Cr" place="left">3.</add>
                 </ab>
                 <ab>
                     <add hand="Cr" place="bottom">β΄.</add>
                 </ab>
-                <div2 xml:lang="el" type="low" xml:id="thema3_low">
+                <div2 type="low" xml:lang="el" xml:id="thema3_low">
                     <ab>
                         <s xml:id="low_3-1">Ἐγὼ ὅσον σε ἀγαπῶ πολλὰ, τόσον ἐπιθυμῶ<lb n="1"/> νὰ τὸ
                             ἠξεύρης, καὶ μ<expan>ὴν</expan> πιστεύεις ὅτι θέλω νὰ ἔχω<lb n="2"/>
@@ -181,7 +182,7 @@
                                 ὁμοίως:†<lb n="4"/></s>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" type="high" xml:id="thema3_high">
+                <div2 type="high" xml:lang="grc" xml:id="thema3_high">
                     <ab>
                         <s xml:id="high_3-1">† ὅσονπερ ἔγωγε τὰ μάλιστά σε φιλῶ, τοσοῦτον<lb n="1"/>
                             ἐφίεμαι εἰδέναι σε τοῦτο, μὴ νομήσης δὲ, <lb n="2"/> ὅτι βούλομαι τούτού
@@ -192,11 +193,11 @@
                 </div2>
             </div1>
             <pb n="22"/>
-            <div1 type="thematoep" xml:id="thema_4">
+            <div1 n="4" type="thematoep" xml:id="thema4">
                 <ab>
                     <add hand="Cr" place="left">4.</add>
                 </ab>
-                <div2 xml:lang="el" type="low" xml:id="thema4_low">
+                <div2 type="low" xml:lang="el" xml:id="thema4_low">
                     <ab>
                         <s xml:id="low_4-1">Ἄν ἤξευρα ὅτι ἡ φιλία ποῦ ἔχω εἰς ἐσέναν<lb n="1"/>
                             ἐχρειάζετον λόγϊα, καὶ ὄχι ἔργα διὰ νὰ γνωρισθῆ, <lb n="2"/>ἤθελα
@@ -205,7 +206,7 @@
                             <lb n="3"/> ἀπολόγου μου μεγάλην γραφήν:† <lb n="4"/></s>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" type="high" xml:id="thema4_high">
+                <div2 type="high" xml:lang="grc" xml:id="thema4_high">
                     <ab> εἰ μέν ἐγίνωσκον τὴν ἐμοῦ πρὸ<expan>ς</expan> σὲ φιλ<expan>ί</expan>αν,<lb
                             n="1"/> δεῖσθαι λόγ<expan>ων</expan>, καὶ οὐκ ἔργων εἰς τό γνωσθῆναι,
                             <lb n="2"/> νομίσαιμι ἄν σε, προσδέχεσθαι<lb n="3"/>παρ’ ἐμοῦ μῆκος
@@ -213,11 +214,11 @@
                     </ab>
                 </div2>
             </div1>
-            <div1 n="5" type="thematoep">
+            <div1 n="5" type="thematoep" xml:id="thema5">
                 <ab>
                     <add hand="Cr" place="left">5.</add>
                 </ab>
-                <div2 xml:lang="el" n="5 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema5_low">
                     <lb/>
                     <ab> Ἀπὸ τῶρα πιάνοντας τὸ κοντίλη στὸ χέρη,<lb/> ἐχέρισα νὰ σου γράψω, καὶ ἡ
                         πικρία δὲν μὲ ἄφικ<expan>εν</expan>.<lb/>μὲ ὀλίγον δὲ μὲ βοήθεια
@@ -227,7 +228,7 @@
                             function="end">†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="5 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema5_high">
                     <ab>
                         <lb/>
                         <c function="beginn">†</c>ἤδη τοῦ δόνακ<expan>ος</expan>
@@ -241,11 +242,11 @@
                     </ab>
                 </div2>
             </div1>
-            <div1 n="6" type="thematoep">
+            <div1 n="6" type="thematoep" xml:id="thema6">
                 <ab>
                     <add hand="Cr" place="left">6.</add>
                 </ab>
-                <div2 xml:lang="el" n="6 high" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema6_low">
                     <ab>
                         <lb/>ἐχθὲς τὸ ταχὺ εἶχα ἔννοιαν μεγάλην, <lb/>διὰ λόγου σου, πῶς νὰ μὲ
                         τρατάρης, <lb/> ὁποῦ δὲν ἀφήνω ἄν<expan>θρωπ</expan>ον νὰ ἔλθη αὐτοῦ, <lb/>
@@ -258,7 +259,7 @@
                         θέλει πληρώσει:<c function="end">†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="6 low" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema6_high">
                     <ab>
                         <lb/>χθὲς ἕωθ<expan>εν</expan> ἐπῆλθε μοι φροντίζ<expan>ειν</expan> περὶ σου
                         <lb/> πῶς ἄρα μοι προσφέρη, <lb/> ὅστις οὐδένα παραλείπω τ<expan>ῶν</expan>
@@ -276,11 +277,11 @@
                 </div2>
             </div1>
             <pb n="23"/>
-            <div1 n="7" type="thematoep">
+            <div1 n="7" type="thematoep" xml:id="thema7">
                 <ab>
                     <add hand="Cr" place="left">7.</add>
                 </ab>
-                <div2 xml:lang="el" n="7 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema7_low">
                     <ab>
                         <lb/> Εἰς τὴν ἐπιστολήν ποῦ ἔγραψ<expan>ες</expan> καλὰ καὶ ἦτον
                         μικρὴ,<lb/>ἐχάρηκα πολλὰ· τό λοιπ<expan>όν</expan> τὴν ὁμοί<expan>αν</expan>
@@ -289,7 +290,7 @@
                         <lb/> εἰς τὸ νὰ μοῦ δώση μεγάλην χαράν:<c function="end">†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="7 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema7_high">
                     <ab>
                         <lb/>
                         <c function="beginn">†</c> μεγίστην μοι τ<expan>ὴν</expan>
@@ -302,11 +303,11 @@
                     </ab>
                 </div2>
             </div1>
-            <div1 n="8" type="thematoep">
+            <div1 n="8" type="thematoep" xml:id="thema8">
                 <ab>
                     <add hand="Cr" place="left">8.</add>
                 </ab>
-                <div2 xml:lang="el" n="8 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema8_low">
                     <ab>
                         <lb/>Ἐγὼ δὲ πιστεύω ὅτι αἱ φιλίαι τ<expan>ῶν</expan> φίλ<expan>ων</expan>
                         <lb/> νά αὐξάνονται μὲ μεγάλαις γραφαῖς. <lb/> ἀλλὰ μὲ τὸ μεγάλομα τῆς
@@ -316,7 +317,7 @@
                             >†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="8 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema8_high">
                     <ab>
                         <lb/> οὐκ οἶμαι τὰς τῶν ἑταίρ<expan>ων</expan> φιλί<expan>ας</expan>, <lb/>
                         ἐκτείνεσθαι τῶ τῶν γραμμάτων μήκει. <lb/> ἀλλὰ τῶ τῆς φιλί<expan>ας</expan>
@@ -327,11 +328,11 @@
                     </ab>
                 </div2>
             </div1>
-            <div1 n="9" type="thematoep">
+            <div1 n="9" type="thematoep" xml:id="thema9">
                 <ab>
                     <add hand="Cr" place="left">9.</add>
                 </ab>
-                <div2 xml:lang="el" n="9 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema9_low">
                     <ab>
                         <lb/>Βλέπεις πῶς τόρα ἔνε καιρὸς, ὅτι στανίο μου <lb/> καὶ μὲ τὸ θέλημά μου
                         νὰ βιάζομαι νὰ γράφω<lb/> μικραῖς ἐπιστολαῖς· ἄν θ<unclear>έ</unclear>λω νὰ
@@ -342,7 +343,7 @@
                             γραφ<expan>ὴν</expan>:<c function="end">†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="9 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema9_high">
                     <ab>
                         <lb/> ὁρᾶς ὡς νῦν καιρός ἐστι, πειρᾶσθαί με <lb/> ἑκόντα καὶ ἄκοντα,
                             πρ<expan>ὸς</expan> σὲ λακωνικῶς γράφ<expan>ειν
@@ -354,11 +355,11 @@
                 </div2>
             </div1>
             <pb n="24"/>
-            <div1 n="10" type="thematoep">
+            <div1 n="10" type="thematoep" xml:id="thema10">
                 <ab>
                     <add hand="Cr" place="left">10.</add>
                 </ab>
-                <div2 xml:lang="el" n="10 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema10_low">
                     <ab>
                         <lb/>Πολὺς καιρὸς ἔνε ὅποῦ δ<unclear>ὲ</unclear>ν μοῦ ἔγραψες. <lb/> καὶ
                         μάλιστα ὁποῦ καθε ἡμέραν ἔρχονται<lb/> αυτόθεν πολλοὶ· διὰ τοῦτο δὲν ἔχω
@@ -372,7 +373,7 @@
                             <c function="end">†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="10 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema10_high">
                     <ab>
                         <lb/> ἤδη χρόν<expan>ος</expan> πολὺς, ἀφ’ οὕπερ ἡμῖν οὐκ ἐπέστειλας. <lb/>
                         καὶ ταῦτα πολλ<expan>ῶν</expan> ὁσημέραι αὐτόθεν πρ<expan>ὸς</expan>
@@ -389,11 +390,11 @@
                     </ab>
                 </div2>
             </div1>
-            <div1 n="11" type="thematoep">
+            <div1 n="11" type="thematoep" xml:id="thema11">
                 <ab>
                     <add hand="Cr" place="left">11.</add>
                 </ab>
-                <div2 xml:lang="el" n="11 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema11_low">
                     <ab>
                         <lb/>Ἐγὼ τόσον ἐχαίρομουν τὴν συντροφίαν σου<lb/> ὅταν ἤμεσθεν ἀντάμα
                             ὀμν<unclear>ύω</unclear> σου τὸν θ<expan>εό</expan>ν, <lb/> τὸν ὁποῖον
@@ -404,7 +405,7 @@
                                 >∴</c>μώντ<expan>ας</expan></unclear> ποταπὸν φίλον στερεύ<lb
                             rend="right"/>γομαι:</ab>
                 </div2>
-                <div2 xml:lang="grc" n="11" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema11_high">
                     <ab>
                         <lb/> τοσοῦτον ἔχαιρον ἐπὶ τῆ σῆ ἑταιρία, <lb/> ὅτε ξυνῆμεν ἀλλήλοις, ὥς τε
                         ὄμνυμί σοι θ<unclear reason="very close to margin">εον</unclear>
@@ -419,11 +420,11 @@
                 </div2>
             </div1>
             <pb n="25"/>
-            <div1 n="12">
+            <div1 n="12" type="thematoep" xml:id="thema12">
                 <ab>
                     <add hand="Cr" place="left">12.</add>
                 </ab>
-                <div2 xml:lang="el" n="12 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema12_low">
                     <ab>
                         <lb/> ὁποῖον ἀπὸ τὰ δύο νὰ παραπονεθῶ, τοῦ <lb/>ἐμαυτοῦ μου, ὅτι δὲν ἦμαι
                         ἄξιος, νὰ μὲ ἀγαπᾶς, <lb/> ὅτι ἡ τύχη μου φθονεῖ νὰ ἔχω τέτοιον φίλον,<lb/>
@@ -434,7 +435,7 @@
                         ἤξευρε εἶμαι χοντρὸς εἰς τοῦτο:<c function="end">†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="12 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema12_high">
                     <ab>
                         <lb/> πότερον ἐμαυτῶ μέμψομαι, ὅτι <lb/> οὐκ ἄξιός εἰμὶ τοῦ φιλεῖσθαι ὑπό
                         σοῦ, <lb/> καὶ γὰρ τὸ δαιμόνιόν μοι φθονεῖ, ἐπὶ τῶ τοιοῦτον<lb/> φίλον
@@ -447,11 +448,11 @@
                     </ab>
                 </div2>
             </div1>
-            <div1 n="13" type="thematoep">
+            <div1 n="13" type="thematoep" xml:id="thema13">
                 <ab>
                     <add hand="Cr" place="left">13.</add>
                 </ab>
-                <div2 xml:lang="el" n="13 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema13_low">
                     <ab>
                         <lb/> ὄρεξϊν ἔχω πολλήν νὰ ε<unclear>ὕρ</unclear>ω καιρὸν νὰ σοῦ
                         φανερώσω<lb/> τὴν γνώμην μου μὲ πολλὰ λόγϊα, καὶ δὲν ἠξεύρω <lb/> τὴν
@@ -463,7 +464,7 @@
                             >†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="13 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema13_high">
                     <ab>
                         <lb/> πολύς μοι ἐστὶν ὁ πόθ<expan>ος</expan> τοῦ καιροῦ
                             τυχ<expan>εῖν</expan> ὥστε σοι ἃ γϊνώσκω<lb/> καὶ διὰ
@@ -482,11 +483,11 @@
                 </div2>
             </div1>
             <pb n="26"/>
-            <div1 n="14" type="thematoep">
+            <div1 n="14" type="thematoep" xml:id="thema14">
                 <ab>
                     <add hand="Cr" place="left">14.</add>
                 </ab>
-                <div2 xml:lang="el" n="14 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema14_low">
                     <ab>
                         <lb/>Κάμνοντας ἄρμενα εἰς τὰς Ϛ τοῦ ἰαννουαρίου<lb/> ἀ<hi rend="underline"
                             >πὸ π</hi>όλ<expan>εως, </expan> ἀπὸ ἐκεῖ καὶ δ ἡμέρες ἐράξαμεν <lb/>
@@ -499,7 +500,7 @@
                             χρέ<expan>ος</expan> τῆς φιλί<expan>ας</expan>:<c function="end">†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="14" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema14_high">
                     <ab>
                         <lb/> πετάσαντες τὰ ἱστία Ϛ γαμιλιῶν<expan>ος</expan> ἱσταμένου<lb/> ἀπὸ
                         βυζαντίου, <choice>
@@ -514,11 +515,11 @@
                     </ab>
                 </div2>
             </div1>
-            <div1 n="15" type="thematoep">
+            <div1 n="15" type="thematoep" xml:id="thema15">
                 <ab>
                     <add hand="Cr" place="left">15.</add>
                 </ab>
-                <div2 xml:lang="el" n="15 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema15_low">
                     <ab>
                         <lb/>ἦλθε πρὸ<expan>ς</expan> ἐμένα ὁ <expan>δεῖνα</expan> ὁ φίλος μας ἐχθὲς
                         τὸ ταχὺ,<lb/> ἀπὸ τὸν ὁποῖον ἐδέχτικα γραφάς σου, γραμ<c
@@ -532,7 +533,7 @@
                         <lb/>στῶ νὰ βοηθῶ μὲ ὅλλην μου τὴν ψυχήν:<c function="end">†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="15 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema15_high">
                     <ab>
                         <lb/> χθές ἕωθεν ὁ <expan>δεῖνα</expan> πρὸς ἡμᾶς ἀφίκετο <lb rend="right"/>
                         ὁ κοιν<expan>ὸς</expan> φίλος<lb/> παρ<expan>οῦ</expan> ἐδεξάμην τὰ σὰ
@@ -547,11 +548,11 @@
                 </div2>
             </div1>
             <pb n="27"/>
-            <div1 n="16" type="thematoep">
+            <div1 n="16" type="thematoep" xml:id="thema16">
                 <ab>
                     <add hand="Cr" place="left">16.</add>
                 </ab>
-                <div2 xml:lang="el" n="16 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema16_low">
                     <ab>
                         <lb/>Ὁ <expan>δεῖνα</expan>, ὅστις σοῦ φέρνει τὴν γραφήν,<lb/>ἔνε ὁ αος ὁποῦ
                         μὲ ἐδέχτικ<expan>εν</expan> εἰς τὸ σπήτη του,<lb/>εἰς τὰς
@@ -561,7 +562,7 @@
                         πόσον<lb/> ἀγαπᾶς ἐμένα καὶ τοὺς φίλους μου:<c function="end">†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="16 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema16_high">
                     <ab>
                         <lb/>ὁ <expan>δεῖνα</expan> ὁ τ<expan>ὴν</expan> ἐπιστολήν σοι
                             κομίζ<expan>ων</expan>, <lb/> ὁ πρῶτος ἐμὲ ὑποδεξάμεν<expan>ος</expan>
@@ -574,11 +575,11 @@
                     </ab>
                 </div2>
             </div1>
-            <div1 n="17">
+            <div1 n="17" type="thematoep" xml:id="thema17">
                 <ab>
                     <add hand="Cr" place="left">17.</add>
                 </ab>
-                <div2 xml:lang="el" n="17 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema17_low">
                     <ab>
                         <lb/> πολὺς καιρὸς ἔνε περασμέν<expan>ος </expan>ἀπόντις <lb/> ἀπὸ κανέναν
                         οὔτε λόγον ἤκουσα διὰ σένα, <lb/> οὔτε <add hand="Zyg"
@@ -589,7 +590,7 @@
                         νὰ ἀποθάνες. <c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="17 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema17_high">
                     <ab>
                         <lb/> πολὺς ἤδη χρόν<expan>ος</expan> παρῆλθεν, ἀφοῦπερ <add hand="Zyg"
                             place="supralinear"> γνῶναι</add>
@@ -602,11 +603,11 @@
                     </ab>
                 </div2>
             </div1>
-            <div1 n="18">
+            <div1 n="18" type="thematoep" xml:id="thema18">
                 <ab>
                     <add hand="Cr" place="left">18.</add>
                 </ab>
-                <div2 xml:lang="el" n="18 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema18_low">
                     <ab>
                         <lb/>Ἐγὼ ἀκόμη ὡς τῶρα, οὔτε γραφήν σου ἐπήρα, <lb/> οὔτε ἀπὸ κανέναν
                         ἐγροίκησα πῶς <del>πάγ</del><add hand="Cr">ἔχ</add><expan>εις</expan>. <!-- revise encoding in this case -->
@@ -620,7 +621,7 @@
                             <c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="18 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema18_high">
                     <ab>
                         <lb/> ἐγὼ μ<expan>ὲν</expan> οὐδέπω μέχρι τοῦ νῦν, οὔδε
                             ἐπιστολ<expan>ὴν</expan>
@@ -634,11 +635,11 @@
                     </ab>
                 </div2>
             </div1>
-            <div1 n="19">
+            <div1 n="19" type="thematoep" xml:id="thema19">
                 <ab>
                     <add hand="Cr" place="left">19.</add>
                 </ab>
-                <div2 xml:lang="el" n="19 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema19_low">
                     <ab>
                         <lb/> Ἠξεύρεις καλὰ, ὅτι ἔστοντας καὶ προτίτερα <lb/> σοῦ ἔγραψα ὅτι ἔκαμε
                         χρεία, δὲν μοῦ ἀπόμεινε <lb/> καμΐα ὑπόθεσϊς, δϊὰ τὴν ὁποῖαν νὰ σοῦ <lb/>
@@ -654,7 +655,7 @@
                             <c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="19 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema19_high">
                     <ab>
                         <lb/>σὺ μὲν οἶδας καὶ πάνυ καλῶς, ὅτι ἐπεὶ πρώην <lb/> ἐπέσταλκά σοι περὶ ὧν
                         ἂν ἔδει, οὐδεμία <lb/> ἔστι μοι λοιπὴ, περὶ ἧς γράψαιμι πρ<expan>ὸς</expan>
@@ -673,11 +674,11 @@
                     </ab>
                 </div2>
             </div1>
-            <div1 n="20">
+            <div1 n="20" type="thematoep" xml:id="thema20">
                 <ab>
                     <add hand="Cr" place="left">20.</add>
                 </ab>
-                <div2 xml:lang="el" n="20" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema20_low">
                     <ab>
                         <lb/>Ἐδιάβασα τὴν γραφήν σου χαρούμ<expan>ενος</expan>
                         <lb/> καὶ παραλίγον κτιπῶντ<expan>ας</expan> τὰ χέρια μου ἀπὸ
@@ -689,7 +690,7 @@
                         <lb/> κάμε πάντα ἔτζη, καὶ ἀσῆσε νικητὴς:<c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="20" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema20_high">
                     <ab>
                         <lb/> ἀνέγνων σου τὴν ἐπιστολ<expan>ὴν</expan> πῶς δοκεῖς
                             χαίρ<expan>ων</expan>. <lb/> μονονουχὶ δὲ καὶ τῶ χεῖρε κροτῶν ἐφ’
@@ -702,11 +703,11 @@
                     <pb n="29."/>
                 </div2>
             </div1>
-            <div1 n="21">
+            <div1 n="21" type="thematoep" xml:id="thema21">
                 <ab>
                     <add hand="Cr" place="left">21.</add>
                 </ab>
-                <div2 xml:lang="el" n="21 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema21_low">
                     <ab>
                         <lb/>δὲν ἠξεύρω τὶ νὰ εἰπῶ δϊὰ λόγου σου, ἢ ὅτι<lb/> μᾶς περιφρονεῖς, ἢ
                         πιστεύοντας νὰ σοῦ <lb/> ἐπταίσαμ<expan>εν</expan> τίποτε παραπονᾶσαι, καὶ
@@ -717,7 +718,7 @@
                         οὐδόλως πταίω: <c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="21 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema21_high">
                     <ab>
                         <lb/>ἐγὼ μ<expan>ὲν</expan> τὶ ἄρα πε<expan>ρὶ</expan> σοῦ εἴποιμι ἀπορῶ.
                         πότερον <lb/> περϊορῶν ἡμᾶς ἢ μεμφόμεν<expan>ος</expan>, <lb/> ἕνεκά
@@ -731,11 +732,11 @@
                     </ab>
                 </div2>
             </div1>
-            <div1 n="22">
+            <div1 n="22" type="thematoep" xml:id="thema22">
                 <ab>
                     <add hand="Cr" place="left">22.</add>
                 </ab>
-                <div2 xml:lang="el" n="22 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema22_low">
                     <ab>
                         <lb/>Ἄδϊκον ἔχεις νὰ μὲ ψέγεις τόσα, ὡσὰν ἀκούω <lb/> καθημέραν, καὶ ἤξευρε
                         ὁμοίως ἤθελα ὀργίζομαι <lb/> ἂν με ἐπαινᾶς. ταύτην τὴν γνώμην μὲ
@@ -747,7 +748,7 @@
                             περισσ<expan>ὸν</expan> βλάπτει, καὶ τὸ μέτρος ὠφελεῖ: <c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="22 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema22_high">
                     <ab>
                         <lb/>ἀδικεῖς ψέγ<expan>ων</expan> ἐμὲ τοσοῦτον, ὡς ἔγωγε πϋνθάνομαι
                         ὁσημέραι. <lb/> καὶ ἴσθι ὅτι ἐξεναντί<expan>ας</expan>, εἰ μὴ τοσοῦτον
@@ -761,11 +762,11 @@
                     </ab>
                 </div2>
             </div1>
-            <div1 n="23">
+            <div1 n="23" type="thematoep" xml:id="thema23">
                 <ab>
                     <add hand="Cr" place="left">23.</add>
                 </ab>
-                <div2 xml:lang="el" n="23 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema23_low">
                     <ab>
                         <lb/>Ἐσὺ καὶ ἠξεύρεις πολλὰ, καὶ γράφεις πολλὰ· ὅτι εἰς τὸ στόμα σου <lb/>
                         αἱ βρύσαι τῶν μαθημάτ<expan>ων</expan> εὑρίσκον<expan>ται</expan>· καὶ
@@ -778,7 +779,7 @@
                             <c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="23 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema23_high">
                     <ab>
                         <lb/> σὺ πολυμαθής τις ὢν, πολλὰ καὶ γράφεις· οἱ γὰρ τ<expan>ῶν</expan>
                             λόγ<expan>ων</expan>
@@ -795,12 +796,12 @@
                 </div2>
             </div1>
             <pb n="30"/>
-            <div1 n="24">
+            <div1 n="24" type="thematoep" xml:id="thema24">
                 <ab>
                     <add hand="Cr" place="left">2̅4̅̅. </add>
                     <note>Crusius writes 24. with a vertical line on top of the number.</note>
                 </ab>
-                <div2 xml:lang="el" n="24 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema24_low">
                     <ab>
                         <lb/>Ἂν τινὰς βλέπη τὸ πῶς δὲν γράφω συχνὰ <lb/> πρ<expan>ὸς</expan> ἐσέναν,
                         εἰς τοῦτο μου ἤθελ<unclear>ε</unclear> σϋμπαθήση. <lb/> ἠξεύροντας ὅτι ὁ
@@ -810,7 +811,7 @@
                         ὁποῖον νὰ σὲ<lb/> εὐγάλη, ἀπὸ κατηγορίαν μεγάλην: <c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="24 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema24_high">
                     <ab>
                         <lb/>οἶμαι τινὰ καίπερ ὁρῶντα, ὅτι συνεχῶς οὐκ ἐπιστέλλω σοι, <lb/> καὶ
                         τοῦτο μοι συγγνώμην ἀπονεῖμαι. ἀκριβῶς <lb/> εἰδότα ὅτι ὑπὸ φόβου καὶ
@@ -821,11 +822,11 @@
                     </ab>
                 </div2>
             </div1>
-            <div1 n="25">
+            <div1 n="25" type="thematoep" xml:id="thema25">
                 <ab>
                     <add hand="Cr" place="left">24.</add>
                 </ab>
-                <div2 xml:lang="el" n="25 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema25_low">
                     <ab>
                         <lb/>σημεῖον μεγ<expan>άλον</expan> κρατῶ, ὅτι με ἐνθυμάσαι, καὶ μὲ <lb/>
                         ἀγαπᾶς, καὶ σὲ κόπτει δϊὰ λόγου μου, <lb/> ὅταν μου γράφεις. τὸ ὁποῖον ὅσον
@@ -835,7 +836,7 @@
                         <lb/> τὸ μέσον εἶναι τὸ νὰ γράφεις; <c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="25 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema25_high">
                     <ab>
                         <lb/>Τεκμαίρομαι τὰ μέγιστα, ὅτι δϊὰ μνήμης ἄγεις ἡμ<expan>ᾶς</expan>, <lb/>
                         καὶ φιλεῖς, καὶ λόγων ἡμ<expan>ῶν</expan> ποιεῖς, ὅταν πρ<expan>ὸς</expan>
@@ -847,11 +848,11 @@
                     </ab>
                 </div2>
             </div1>
-            <div1 n="26">
+            <div1 n="26" type="thematoep" xml:id="thema26">
                 <ab>
                     <add hand="Cr" place="left">25.</add>
                 </ab>
-                <div2 xml:lang="el" n="26 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema26_low">
                     <ab>
                         <lb/>Ἂν τινὰς ἤξευρε ὅτι μέσα εἰς τοὺς λόγους ζῶντ<expan>ας</expan> καὶ
                         <lb/> ἀναπνέοντας, διὰ νὰ εἰπῶ ἔτζη, ἀμελεῖς γράφειν, <lb/> ἤθελεν
@@ -868,7 +869,7 @@
                         ὅλην τὴν ἀλήθειαν:<c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="26 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema26_high">
                     <ab>
                         <lb/> εἴτις ἐγίνωσκ<expan>εν</expan> ὅτι ἐν λόγοις ζῆς καὶ πνέεις, <!-- See TLG printout -->
                         <lb/> ἵν’ οὕτως εἴπω, ἀμελεῖς τοῦ πρ<expan>ὸς</expan> ἡμ<expan>ᾶς</expan>
@@ -885,11 +886,11 @@
                     </ab>
                 </div2>
             </div1>
-            <div1 n="27">
+            <div1 n="27" type="thematoep" xml:id="thema27">
                 <ab>
                     <add hand="Cr" place="left">26</add>
                 </ab>
-                <div2 xml:lang="el" n="27 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema27_low">
                     <ab>
                         <lb/>ἔλαβα τὴν γραφήν σου ἀπὸ τὸν <expan>δεῖνα</expan> τὸν φίλον μας <lb/>
                         καὶ τὸν συμαθητήν μας. καὶ ἐχάρικα πολλὰ <lb/> μέρος ὅτι ἔμαθα πῶς ἀπέλαυσες
@@ -899,7 +900,7 @@
                         <lb/> ἐνθύμου καὶ σὺ ἐμένα.<c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="27 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema27_high">
                     <ab>
                         <lb/>ἐδεξάμην τὴν σ<expan>ὴν</expan> ἐπιστολ<expan>ὴν</expan> παρὰ τοῦ
                             <expan>δεῖνα</expan> τοῦ κοινοῦ φίλου <lb/> καὶ συμφοιτητοῦ. καὶ ἥσθην
@@ -912,11 +913,11 @@
                 </div2>
             </div1>
             <pb n="32"/>
-            <div1 n="28">
+            <div1 n="28" type="thematoep" xml:id="thema28">
                 <ab>
                     <add hand="Cr" place="left">27.</add>
                 </ab>
-                <div2 xml:lang="el" n="28 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema28_low">
                     <ab>
                         <lb/> Ἐδέχτικα τ<expan>ὴν</expan> γραφήν σου χαρούμεν<expan>ος</expan>
                         <lb/> ἔσοντας καὶ πολὺς καιρὸς ἔνε ὅποῦ <lb/> μὲ γραφήν σου δὲν μᾶς
@@ -933,7 +934,7 @@
                         πολυλογῶ.<lb/>γράφε ἐσὺ πλέον συχνὰ, καὶ νίκα με:<c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="28 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema28_high">
                     <ab>
                         <lb/> χαίρ<expan>ων</expan> ἐδεξάμην τὰ σὰ γράμματα.<lb/>πολλοῦ χρόνου
                             παριππευκότ<expan>ος</expan>,<lb/> ἐξότουπερ δϊὰ
@@ -953,11 +954,11 @@
                 </div2>
             </div1>
             <pb n="33"/>
-            <div1 n="29">
+            <div1 n="29" type="thematoep" xml:id="thema29">
                 <ab>
                     <add hand="Cr" place="left">28.</add>
                 </ab>
-                <div2 xml:lang="el" n="29 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema29_low">
                     <ab>
                         <lb/> ἐχθὲς βραδύ ἔλαβα δύο σου γραφὲς<lb/>ταῖς ὁποίας ἀνέγνωσα
                         μεταχαρᾶς.<lb/> ἀλλὰ διὰ τὴν ὑπόθεσϊν ποῦ ἠξεύρεις<lb/> δὲν ἐθυμήθης νὰ μοῦ
@@ -966,7 +967,7 @@
                             ἄν<expan>θρωπ</expan>ον, καὶ γληκόν μου φίλο:<c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="29 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema29_high">
                     <ab>
                         <lb/>περὶ δείλην ὀψίαν, ἐδεξάμην δύο σου ἐπιστολὰς<lb/>ἃς ἀνέγνων πῶς δοκεῖς
                         χαίρων.<lb/>περὶ δὲ ἧς οἶσθα ὑποθέσεως<lb/>ἐπιλελῆσθαί μοι δοκεῖς, δι’ ἣν
@@ -977,11 +978,11 @@
                     </ab>
                 </div2>
             </div1>
-            <div1 n="30">
+            <div1 n="30" type="thematoep" xml:id="thema30">
                 <ab>
                     <add hand="Cr" place="left">29.</add>
                 </ab>
-                <div2 xml:lang="el" n="30 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema30_low">
                     <ab>
                         <lb/>οἱ φρόνιμοι ἄν<expan>θρωπ</expan>οι ἕνα μέρ<expan>ος</expan>καλὸ
                         κρατοῦν τοῦτο<lb/>καὶ βέβαια ἔνε φρονίμου, <hi rend="underline">νὰ ἐπιτύχη
@@ -1003,7 +1004,7 @@
                             γληγορότερον:<c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="30 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema30_high">
                     <ab>
                         <lb/> ἓν μέρ<expan>ος</expan> εὐδαιμονί<expan>ας</expan> οἱ σώφρονες
                         κρίνουσι, <lb/>(τωόντι<note>hyphen below the word</note> δὲ καὶ ἐστὶ) τὸ
@@ -1025,11 +1026,11 @@
                     </ab>
                 </div2>
             </div1>
-            <div1 n="31">
+            <div1 n="31" type="thematoep" xml:id="thema31">
                 <ab>
                     <add hand="Cr" place="left">30.</add>
                 </ab>
-                <div2 xml:lang="el" n="31 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema31_low">
                     <ab>
                         <lb/>Πολλὰ μὲ ἐπαρηγόρησες μὲ τὴν γραφήν σου,<lb/>ὁποῦ ὡραμάϊ ἀπόκαμα εἴς
                         τὰς δυστυχί<expan>ας</expan>,<lb/> ἀλλὰ τὶ νὰ κάμω, ποία τέχνη
@@ -1041,7 +1042,7 @@
                             ἔργον:<c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="31 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema31_high">
                     <ab>
                         <lb/>Ἐπαρεμυθήσω με ταμάλιστα τοῖς σοῖς γράμμασιν, <lb/> ὅστις ἤδη ἀπείρηκα
                         ταῖς δυστυχίαις.<lb/>τὶ δὲ ἄρα ποιῆσαι ἔχω, μὴ γενέσθαι ἃ<lb/>συνέβη; τοῖς
@@ -1053,11 +1054,11 @@
                         συναγωνίζεσθαι, <lb rend="right"/>λόγω καὶ ἔργῳ.</ab>
                 </div2>
             </div1>
-            <div1 n="32">
+            <div1 n="32" type="thematoep" xml:id="thema32">
                 <ab>
                     <add hand="Cr" place="left">31</add>
                 </ab>
-                <div2 xml:lang="el" n="32 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema32_low">
                     <ab>
                         <lb/>Πιστεύω ὅτι ἀπὸ τὸ φ<expan>ὴν</expan> ἔγινες τέτοιος, ὅτι καὶ φίλους
                         καὶ <lb/>ἐδικοὺς ξεχάνεις. τὸ ὁποῖον καὶ ἀδικΐας καὶ χοντροσύνης<lb/>ἔνε
@@ -1068,7 +1069,7 @@
                             ἀπὸ<lb rend="right"/>τώρα καὶ ἀμπρ<expan>ὸς</expan>:<c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="32 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema32_high">
                     <ab>
                         <lb/>οἶμαι σε ὑπὸ τρυφ<expan>ῆς</expan>, τοῖον γενέσθαι, ὥστε καὶ
                             φίλ<expan>ων</expan>, καὶ <lb/>τῶν γένει προσηκόντ<expan>ων</expan>
@@ -1084,11 +1085,11 @@
                 </div2>
             </div1>
             <pb n="35"/>
-            <div1 n="33">
+            <div1 n="33" type="thematoep" xml:id="thema33">
                 <ab>
                     <add hand="Cr" place="left">32.</add>
                 </ab>
-                <div2 xml:lang="el" n="33 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema33_low">
                     <ab>
                         <lb/> Ὁμολογούμενον ἔνε ἀπὸ ὅλους, ὅτι τοῦ καλοῦ
                         ἀν<expan>θρώπ</expan>ου,<lb/> ἔργον ἔνε, νὰ λέγει πάντοτε καλὸν διὰ ὅλους,
@@ -1104,7 +1105,7 @@
                         ψόγον ὡς ἐλπίζω:<c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="33 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema33_high">
                     <ab>
                         <lb/> οἶμαι πάντ<expan>ας</expan> ὁμολογ<expan>εῖν</expan>, ὡς χρηστοῦ τοὺς
                         τρόπους ἔστιν ἀνδρ<expan>ὸς</expan>
@@ -1124,11 +1125,11 @@
                     </ab>
                 </div2>
             </div1>
-            <div1 n="34">
+            <div1 n="34" type="thematoep" xml:id="thema34">
                 <ab>
                     <add hand="Cr" place="left">33.</add>
                 </ab>
-                <div2 xml:lang="el" n="34 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema34_low">
                     <ab>
                         <lb/>ἐχθὲς τὸ ταχὺ ἐδέχτικα τὴν ἐπιστολήν σου,<lb/>τὴν ὁποῖαν ὅταν ἐδϊάβασα,
                         ἔβαλα εἰς<lb/>τὸν νοῦ μου, ὅτι σοῦ χρεωστῶ μεγάλην χάριν.<lb/>ἔσοντας καὶ τὸ
@@ -1139,7 +1140,7 @@
                         ἔργον, καὶ μὲ κάθε τρόπον ποῦ δύνασαι:<c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="34 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema34_high">
                     <ab>
                         <lb/> χθὲς ἕωθεν τὰ σα ἐδεξάμην γράμματα,<lb/>οἷσπερ δὴ ἐντυχὼν, ὠήθην ὅτι
                             <expan>μέγαλ</expan><expan>ην</expan> σοι<lb/>τὴν χάριν ὀφείλω. ἐπεὶ
@@ -1152,11 +1153,11 @@
                     </ab>
                 </div2>
             </div1>
-            <div1 n="35">
+            <div1 n="35" type="thematoep" xml:id="thema35">
                 <ab>
                     <add hand="Cr" place="left">34.</add>
                 </ab>
-                <div2 xml:lang="el" n="35 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema35_low">
                     <ab>
                         <lb/> Πιστεύω ὅτι θαρεῖς καὶ σὲ ἐξέχασα,<lb/>τὸ ὁποῖον ὁ θ<expan>εὸ</expan>ς
                         νὰ βλέπει, ἔσοντας καὶ <lb/>ἄρχησα πολλὰ νὰ σὲ χαιρετήσω, μὲ
@@ -1172,7 +1173,7 @@
                             συχνὰ:<c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="35 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema35_high">
                     <ab>
                         <lb/> οἶμαι σε ὑποπτεύ<expan>ειν</expan>, ὅτι σοῦ τὸ παράπαν
                             ἐπελαθόμ<expan>ην</expan>
@@ -1194,11 +1195,11 @@
                 </div2>
             </div1>
             <pb n="37"/>
-            <div1 n="36">
+            <div1 n="36" type="thematoep" xml:id="thema36">
                 <ab>
                     <add hand="Cr" place="left">35.</add>
                 </ab>
-                <div2 xml:lang="el" n="36 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema36_low">
                     <ab>
                         <lb/>ἐγὼ ἔχ<hi rend="underline">οντας τὴν</hi> ἔννοιάν σου πάντοτε,
                         καὶ<lb/>ἐρωτῶ κάθε ἕναν δϊὰ λόγου σου, καὶ<lb/> ἂν ἀκούω καὶ τινὰν νὰ λέγη
@@ -1209,7 +1210,7 @@
                             φιλί<expan>ας</expan>:<c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="36 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema36_high">
                     <ab>
                         <lb/> ἔγωγε ἀείποτε τῇ περὶ σοῦ μνήμη συνὼν, <lb/>πάντων πϋνθάνομαι περὶ
                         σοῦ, χαίρω τὲ καὶ<lb/>ὡς οὐδεὶς ἀνὴρ τὰ π<expan>ερὶ</expan> σου
@@ -1224,11 +1225,11 @@
                     </ab>
                 </div2>
             </div1>
-            <div1 n="37">
+            <div1 n="37" type="thematoep" xml:id="thema37">
                 <ab>
                     <add hand="Cr" place="left">36.</add>
                 </ab>
-                <div2 xml:lang="el" n="37 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema37_low">
                     <ab>
                         <lb/>Πολὺς καιρὸς ἔνε ἀφόντις μὲ πολλὴν δοκϊμ<expan>ὴν</expan>
                         <lb/>ἔμαθες πόσον μὲ κόπτει δϊὰ λόγου σου.<lb/>ἔσοντας καὶ ὅταν σε ἐνθυμηθῶ,
@@ -1238,7 +1239,7 @@
                         σχολάσει<lb/>γράφοντας πρὸς ἐσέναν:<c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="37 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema37_high">
                     <ab>
                         <lb/>πολὺς ἤδη χρόν<expan>ος</expan>, ἐξότουπερ δϊὰ πολλῆς<lb/>τῆς
                             πείρ<expan>ας</expan>, ἀκρϊβῶς ἔγνως, ὅσην πε<expan>ρὶ</expan>
@@ -1251,11 +1252,11 @@
                     </ab>
                 </div2>
             </div1>
-            <div1 n="38">
+            <div1 n="38" type="thematoep" xml:id="thema38">
                 <ab>
                     <add hand="Cr" place="left">37.</add>
                 </ab>
-                <div2 xml:lang="el" n="38 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema38_low">
                     <ab>
                         <lb/> Ἐγρίκησα ἀπὸ πολλοὺς πῶς μὲ ἀγαπᾶς, <lb/> καὶ ὁλοένα μὲ ἐνθυμᾶσαι, τὸ
                         ὁποῖον σὺ ἀτός σου<lb/>τὸ κάμνεις ψεῦδ<expan>ος</expan>, καὶ εἶσε ἀφορμὴ εἰς
@@ -1265,7 +1266,7 @@
                         καὶ δὲν μᾶς ἔγραψες:<c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="38 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema38_high">
                     <ab>
                         <lb/> παρὰ πολλ<expan>ῶν</expan> ἐπυθόμην ὡς με φιλεῖς. καὶ διὰ παντὸς ἐπὶ
                         νοῦν<lb/>ἔρχεταί σοι τὰ ἐμὰ. ὅπερ αὐτ<expan>ὸς</expan> ἔργω ψευδῶς
@@ -1277,11 +1278,11 @@
                 </div2>
             </div1>
             <pb n="38"/>
-            <div1 n="39">
+            <div1 n="39" type="thematoep" xml:id="thema39">
                 <ab>
                     <add hand="Cr" place="left">38.</add>
                 </ab>
-                <div2 xml:lang="el" n="39 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema39_low">
                     <ab>
                         <lb/>δϊὰ τὸν <expan>δεῖνα</expan> τὸν φίλον μας ἔμαθα πῶς ἔνε αὐτοῦ.<lb/>τὸν
                         ὁποῖον ἂν μιλήσης μετ’ αὐτὸν, χαιρέτησε τον<lb/>ἀπὸ μέρους μου, καὶ εἰπέ
@@ -1291,7 +1292,7 @@
                             ἐχθρ<expan>ὸς</expan>:<c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="39 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema39_high">
                     <ab>
                         <lb/>περὶ τοῦ φίλου ἡμ<expan>ῶν</expan>
                         <expan>δεῖνα</expan> ἐπυθόμην ὅτι αὐτοῦ ἐστι.<lb/>ὅπερ ἐὰν ἐντύχης,
@@ -1301,11 +1302,11 @@
                     </ab>
                 </div2>
             </div1>
-            <div1 n="40">
+            <div1 n="40" type="thematoep" xml:id="thema40">
                 <ab>
                     <add hand="Cr" place="left">39.</add>
                 </ab>
-                <div2 xml:lang="el" n="40 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema40_low">
                     <ab>
                         <lb/>μὲ ὀλιγολογίαν μου φαίνεται δϊὰ τῶρα,<lb/>πρέπει νὰ μάθης δϊὰ
                             λόγ<unclear>ον</unclear> μου,<lb/>ἔστοντας καὶ καιρὸν δὲν ἔχω, νὰ
@@ -1314,7 +1315,7 @@
                             :<c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="40 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema40_high">
                     <ab>
                         <lb/> διὰ βραχέ<expan>ων</expan> δοκεῖ μοι τανῦν<lb/>μαθεῖν σε περὶ ἐμοῦ
                         χρῆναι,<lb/>καιροῦ μὴ ὄντ<expan>ος</expan>, περὶ πολλ<expan>ῶν</expan>
@@ -1324,11 +1325,11 @@
                     </ab>
                 </div2>
             </div1>
-            <div1 n="41">
+            <div1 n="41" type="thematoep" xml:id="thema41">
                 <ab>
                     <add hand="Cr" place="left">40.</add>
                 </ab>
-                <div2 xml:lang="el" n="41 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema41_low">
                     <ab>
                         <lb/> Δὲν κάμνει τὸ χωρίον καλοὺς, καὶ ἡ χώρα κακοὺς.<lb/>ἀλλὰ αἱ
                         συντροφίαι, μὲ καλοὺς καὶ μὲ κακοὺς.<lb/>τὸ λοιπ<expan>ὸν</expan> ἂν θέλης
@@ -1339,7 +1340,7 @@
                             τ<expan>ὴν</expan> κακΐαν :<c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="41 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema41_high">
                     <ab>
                         <lb/>οὔτ’ <hi rend="underline">ἀγαθοὺς κώμη</hi> ποιεῖ, οὔτε κακοὺς
                         πόλις,<lb/>ἀλλ’ αἱ τῶν κακ<expan>ῶν</expan> κἀγαθῶν ὁμιλίαι.<lb/>εἰ βούλει
@@ -1352,11 +1353,11 @@
                     </ab>
                 </div2>
             </div1>
-            <div1 n="42">
+            <div1 n="42" type="thematoep" xml:id="thema42">
                 <ab>
                     <add hand="Cr" place="left">41.</add>
                 </ab>
-                <div2 xml:lang="el" n="42 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema42_low">
                     <ab>
                         <pb n="39"/>
                         <lb/> Πρᾶγμα κανένα δὲν πιστεύω νὰ δυνηθῆ<lb/>τόσον, ὅτι νὰ μὲ κάμη, νά σὲ
@@ -1373,7 +1374,7 @@
                         φιλίαν μας:<c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="42 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema42_high">
                     <ab>
                         <lb/>οὐδὲν τῶν ἁπάντων μοι δοκῶ τοσαύτην ἄν ποτε σχ<expan>εῖν</expan>
                             τ<expan>ὴν</expan> δύναμϊν,<lb/>ὥστε μοι τὰ πε<expan>ρὶ</expan> σοῦ<add
@@ -1393,11 +1394,11 @@
                     </ab>
                 </div2>
             </div1>
-            <div1 n="43">
+            <div1 n="43" type="thematoep" xml:id="thema43">
                 <ab>
                     <add hand="Cr" place="left">42.</add>
                 </ab>
-                <div2 xml:lang="el" n="43 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema43_low">
                     <ab>
                         <lb/>πιστεύω νὰ σοῦ δίδω βάρ<expan>ος</expan>, δίδοντάς σου<lb/>νὰ γρικήσης,
                         εἰς κάθε ἐπιστολήν ποῦ σοῦ πέμπω,<lb/>πόσον σὲ ἀγαπῶ. μάλιστα ποῦ ἡ φιλία ἡ
@@ -1414,7 +1415,7 @@
                             σχολάσει:<c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="43 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema43_high">
                     <ab>
                         <lb/>οἶμαι σοι ἐνοχλ<expan>εῖν</expan> πειρώμεν<expan>ος</expan> διὰ
                             πάντ<expan>ων</expan>, τ<expan>ῶν</expan>
@@ -1433,11 +1434,11 @@
                     </ab>
                 </div2>
             </div1>
-            <div1 n="44">
+            <div1 n="44" type="thematoep" xml:id="thema44">
                 <ab>
                     <add hand="Cr" place="left">43.</add>
                 </ab>
-                <div2 xml:lang="el" n="44 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema44_low">
                     <ab>
                         <lb/> Ὅτι ὑγιαίνεις χαίρομαι πολλὰ διὰ πολλαῖς ἀφορμαῖς<lb/>καὶ μάλιστα ὅτι
                         σπουδάζεις ὡσὰν πρέπει νὰ σπουδάζει<lb/>τινὰς ὁποῦ ἔνε γερ<expan>ὸς</expan>,
@@ -1452,7 +1453,7 @@
                         σου μεγ<expan>άλην</expan> εὐτυχίαν:<c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="44 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema44_high">
                     <ab>
                         <lb/> ὅθ’ ὑγιαίνεις ὑπερβαλόντ<expan>ως</expan> χαίρω, πολλ<expan>ῶν</expan>
                         ἔνεκα.<lb/>καὶ μάλιστα ὅτι τῆ σπουδῆ προσέχεις ὥσπερ εἰκός<lb/>ἐστιν ἄνδρα
@@ -1470,11 +1471,11 @@
                 </div2>
             </div1>
             <pb n="41"/>
-            <div1 n="45">
+            <div1 n="45" type="thematoep" xml:id="thema45">
                 <ab>
                     <add hand="Cr" place="left">44.</add>
                 </ab>
-                <div2 xml:lang="el" n="45 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema45_low">
                     <ab>
                         <lb/> Ἄν<expan>θρωπο</expan>ν φρόνιμον πολλά ὡσὰν σὲ ἠξεύρω,<lb/>δὲν ἠξεύρω
                         πῶς δὲν ἤθελε σὲ κατηγορήσει<lb/>πᾶσα ἕνας, ὡς ἀμελῆ, πῶς δὲν
@@ -1488,7 +1489,7 @@
                         νὰ<lb/>σιωπῶ, δϊατὶ δὲν ἠξεύρω<lb/>τὶ νὰ εἰπῶ δϊὰ λόγου σου:<c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="45 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema45_high">
                     <ab>
                         <lb/> ἐκαταγνοίην σου ἀμέλειαν, ἀνδρὸ<expan>ς</expan> τ<expan>ῶν</expan>
                         πάνυ ἐπὶ συνέσει<lb/>διαβεβοημένου, (οἵ<expan>ον</expan> σε κατέμαθον
@@ -1505,11 +1506,11 @@
                 </div2>
             </div1>
             <pb n="42"/>
-            <div1 n="46">
+            <div1 n="46" type="thematoep" xml:id="thema46">
                 <ab>
                     <add hand="Cr" place="left">45.</add>
                 </ab>
-                <div2 xml:lang="el" n="46 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema46_low">
                     <ab>
                         <lb/> Ἐγὼ ἐννοιάζομαι καὶ διὰ λόγου σου, καὶ διὰ τοῦτον,<lb/>δϊὰ λόγου σου
                         διὰ νὰ μὴν ἀδικῆς, διὰ τοῦτον<lb/>νὰ μ<expan>ὴν</expan>
@@ -1520,7 +1521,7 @@
                             του,<lb/>τ<expan>ὸν</expan> ὁποῖον ζητοῦν εἰς κρίσιν, δϊὰ πράγματα<lb
                             rend="right"/>ποῦ δὲν ἔσφαλεν. </ab>
                 </div2>
-                <div2 xml:lang="grc" n="46 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema46_high">
                     <ab>
                         <lb/> ἐγὼ καὶ σοῦ κήδομαι, καὶ τοῦδε<lb/>σοῦ μὲν, ὡς μὴ ἀδικοίης. τοῦδε δὲ
                         ὡς μὴ<unclear>ν</unclear>
@@ -1535,11 +1536,11 @@
                     </ab>
                 </div2>
             </div1>
-            <div1 n="47">
+            <div1 n="47" type="thematoep" xml:id="thema47">
                 <ab>
                     <add hand="Cr" place="left"> 46. </add>
                 </ab>
-                <div2 xml:lang="el" n="46 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema47_low">
                     <ab>
                         <lb/> Τέτοια εἶνε ἡ τροφὴ τῶν σύρ<expan>ων</expan>, ὅτι<lb/>κάμνει τοὺς
                         ἀνθρώπους καὶ ἀλισμονοῦσι,<lb/>καὶ συγγενεῖς καὶ φίλους, ὡς λέγουσι, καὶ
@@ -1553,7 +1554,7 @@
                         αὐτῶν,<lb/>σώνει μας καὶ τοῦτο:<c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="46 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema47_high">
                     <ab>
                         <lb/> τοιαύτη ἐστὶν ἡ τῶν σύρων τρυφὴ, ὅτι<lb/>συγγεν<expan>ῶν</expan> τε
                         καὶ φίλ<expan>ων</expan> ἀμνήμονας τοὺς ἀ<expan>νθρώπ</expan>ους
@@ -1570,11 +1571,11 @@
                 </div2>
             </div1>
             <pb n="43"/>
-            <div1 n="48">
+            <div1 n="48" type="thematoep" xml:id="thema48">
                 <ab>
                     <add hand="Cr" place="left">47.</add>
                 </ab>
-                <div2 xml:lang="el" n="48 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema48_low">
                     <ab>
                         <lb/> Πολλοὺς γράφοντάς σου, σοῦ ἐφιλίωσα.<lb/>ποῦ νὰ μὲ ἀγαπᾶ
                             <expan>καὶ</expan> περισσότερον ὄχι, ὡσὰν<lb/>ἐτοῦτον ὁποῦ σοῦ φέρνει
@@ -1586,7 +1587,7 @@
                         καλὸν, οὔτε<lb rend="right"/>εἰσὲ ἀστεῖον:<c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="48 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema48_high">
                     <ab>
                         <lb/> πολλοὺς μ<expan>ὲν</expan> ἐπιστέλλ<expan>ων</expan> συνέστησά
                         σοι<lb/>φιλοῦσι δὲ μᾶλλον, οὐκ ἄλλοις ἐνέτυχον,<lb/>ἢ τῶ τὴν ἐπιστολήν σοι
@@ -1599,11 +1600,11 @@
                     </ab>
                 </div2>
             </div1>
-            <div1 n="49">
+            <div1 n="49" type="thematoep" xml:id="thema49">
                 <ab>
                     <add place="left" type="low">48.</add>
                 </ab>
-                <div2 xml:lang="el" n="49 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema49_low">
                     <ab>
                         <lb/>Δὲν ἐμπόρεσα ἀφοῦ ἔγραψες νὰ μιλήσω μὲ<lb/>τὸν πετρ<expan>ὸν</expan>,
                         διὰ τὴν δουλείαν σου.διατὶ ἀπὸ τρεῖς<lb/>μῆνες καὶ ἐδῶ, λείπει εἰς τὸ
@@ -1618,7 +1619,7 @@
                             χάριν:<c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="49 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema49_high">
                     <ab>
                         <lb/> ἐξοῦ μοι ἐπέσταλκας, οὐκ ἠδυνήθην ἐντυχ<expan>εῖν</expan> τῶ
                             <expan>δεῖνα</expan>.<lb/>περὶ τῶν σ<expan>ῶν</expan>, ἐπεὶ
@@ -1633,11 +1634,11 @@
                     </ab>
                 </div2>
             </div1>
-            <div1 n="50">
+            <div1 n="50" type="thematoep" xml:id="thema50">
                 <ab>
                     <add hand="Cr" place="left">49.</add>
                 </ab>
-                <div2 xml:lang="el" n="50 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema50_low">
                     <ab>
                         <lb/> ὅποι<expan>ος</expan> ἀρρωστιμένος παρακούει τῶν ἰατρ<expan>ῶν</expan>
                         καὶ δὲν δέχε<expan>ται</expan>
@@ -1651,7 +1652,7 @@
                         κάμεις<lb/>καλοσύνη, ἄλλαξε τὴν γνώμην σου:<c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="50 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema50_high">
                     <ab>
                         <lb/>ὃς <hi rend="underline">νοσῶ μὲν κεῖν</hi><expan>ται</expan>, μήτε δὲ
                         ἰατροῖς πείθεται,<lb/>μήτε φάρμακα δέχε<expan>ται</expan>, οὐδὲ ποτε
@@ -1667,11 +1668,11 @@
                 </div2>
             </div1>
             <pb n="44"/>
-            <div1 n="51">
+            <div1 n="51" type="thematoep" xml:id="thema51">
                 <ab>
                     <add hand="Cr" place="left"> 50. </add>
                 </ab>
-                <div2 xml:lang="el" n="51 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema51_low">
                     <ab>
                         <lb/> Ἀκούω ὅτι βαρύεσαι τὸν κόπον, καὶ διατοῦτο<lb/>ἀποφάσισες νὰ ἀφήσης
                         τὴν σπουδήν, καὶ νὰ<lb/>ἀμελήσης τοὺς λόγους, καὶ τὰς μούσ<expan>ας</expan>.
@@ -1689,7 +1690,7 @@
                             καλὰ:<c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="51 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema51_high">
                     <ab>
                         <lb/> ἀκήκοα τῷ ἄχθεσθαί σε τὸν πόνον, τούτου ἕνεκα<lb/>ἔδοξέ σοι ἀμελεῖν
                         σπουδῆς, καὶ πρ<expan>ὸς</expan> τοὺς λόγους<lb/>δυσκόλως ἔχειν. καὶ
@@ -1707,11 +1708,11 @@
                     </ab>
                 </div2>
             </div1>
-            <div1 n="52">
+            <div1 n="52" type="thematoep" xml:id="thema52">
                 <ab>
                     <add hand="Cr" place="left">51.</add>
                 </ab>
-                <div2 xml:lang="el" n="52 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema52_low">
                     <ab>
                         <lb/> Δὲν ἔνε μεγ<expan>αλύτερη</expan> ἀδικΐα ὡς ἂν ἔσοντας νὰ ἔνε
                         τινας<lb/>ἄτυχος, νὰ θέλει νὰ φαίνεται καλὸς. διατὶ γελοῦν<expan>ται</expan>
@@ -1726,7 +1727,7 @@
                             μ<expan>ὴν</expan> τὸν κάμης:<c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="52 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema52_high">
                     <ab>
                         <lb/>ἐσχ<hi rend="underline">άτη ἀδικΐα</hi> τὸ δοκεῖν βούλεσθαι μὴ ὄντα
                             χρηστ<expan>ὸν</expan>
@@ -1744,11 +1745,11 @@
                 </div2>
             </div1>
             <pb n="45"/>
-            <div1 n="53">
+            <div1 n="53" type="thematoep" xml:id="thema53">
                 <ab>
                     <add hand="Cr" place="left">52.</add>
                 </ab>
-                <div2 xml:lang="el" n="53 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema53_low">
                     <ab>
                         <lb/> Ἐρώτησαν ἕναν φρόνιμον ἄν<expan>θρωπ</expan>ον εἰς ἕναν
                             καιρ<expan>ὸν</expan>, πῶς<lb/>ἤθελαν κάμει οἱ ἄν<expan>θρωπ</expan>οι
@@ -1765,7 +1766,7 @@
                         <lb/>τὴν ἐλευθερίαν, ὁποῦ ἐπιθυμοῦμεν:<c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="53 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema53_high">
                     <ab>
                         <lb/> πρ<expan>ὸς</expan> τὸν ἐρώμενον ποτὲ, τίσιν ἂν
                             χρώμενοι<lb/>ἡσ<expan>ί</expan>χως τὲ καὶ ἀλυπως τὸν βίον διάγοιεν
@@ -1785,11 +1786,11 @@
                     </ab>
                 </div2>
             </div1>
-            <div1 n="54">
+            <div1 n="54" type="thematoep" xml:id="thema54">
                 <ab>
                     <add hand="Cr" place="left">53.</add>
                 </ab>
-                <div2 xml:lang="el" n="54 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema54_low">
                     <ab>
                         <lb/>Ἂν ἠξεύρης ὅτι καὶ ἀγαπῶ καὶ τιμῶ σε, καὶ<lb/>ὅτι ἡ φιλία μου δὲν ἦνε
                             πλα<add hand="Cr" place="supralinear">σ</add>μένη, ἀμὴ ἔνε
@@ -1800,7 +1801,7 @@
                         τὴν γνώμην του:<c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="54 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema54_high">
                     <ab>
                         <unclear>...</unclear>
                         <lb/> εἰ μέν σε φιλοῦντα οἶσθα, καὶ τιμῶντα, καὶ <lb/>τὴν
@@ -1814,11 +1815,11 @@
                 </div2>
             </div1>
             <pb n="46"/>
-            <div1 n="55">
+            <div1 n="55" type="thematoep" xml:id="thema55">
                 <ab>
                     <add hand="Cr" place="left">54.</add>
                 </ab>
-                <div2 xml:lang="el" n="55 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema55_low">
                     <ab>
                         <lb/>Δὲν ἐμπορῶ νὰ κάμω νὰ μὴν κλαίω<lb/>βλέποντας τὴν τόσην ἀμέλειαν τοῦ
                             γένους<c>-</c>
@@ -1833,7 +1834,7 @@
                             μὴν<lb/>ἀμελήσωμεν:<c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="55 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema55_high">
                     <ab>
                         <lb/> ἀδακρυτὶ διάγειν οὐ δύναμαι,<lb/>τὴν τοσαύτην ὁρῶν τοῦ γένους τοῦ
                         ἑλληνικοῦ,<lb/>(ἣν πρ<expan>ὸς</expan> τὸ ἀγαθὸν ἔχον διατελεῖς)
@@ -1844,11 +1845,11 @@
                         ἡμᾶς γνῶναι, καὶ μήτ’<lb/>ἀμελεῖν ὡστ’ ἰσχυρῶς τούτου ἀντέχεσθαι. </ab>
                 </div2>
             </div1>
-            <div1 n="56">
+            <div1 n="56" type="thematoep" xml:id="thema56">
                 <ab>
                     <add hand="Cr" place="left">55.</add>
                 </ab>
-                <div2 xml:lang="el" n="56 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema56_low">
                     <ab>
                         <lb/> ἕνα γνώρισμα ἔνε τ<expan>ῆς</expan> ζωῆς νὰ μὴν<lb/>σιωπᾶ τινὰς, ἐσὺ
                             σιωπῶντ<expan>ας</expan> πάντοτε<lb/>ἦσε τέτιος, ὡς ἂν νὰ μὴν ἔζης. τὸ
@@ -1862,7 +1863,7 @@
                         <lb rend="right"/>τὴν χαλᾶ:<c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="56 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema56_high">
                     <ab>
                         <lb/> τὸ <add hand="Cr" place="supralinear">μὴ</add> σιγᾶν, τοῦ ζῆν
                         τεκμήρϊον. σὺ δὲ<lb/>ἡσυχίαν ἄγων διηνεκῆ, οὐδέν τι μοι δοκεῖς<lb/>τῶν
@@ -1877,11 +1878,11 @@
                 </div2>
             </div1>
             <pb n="47"/>
-            <div1 n="57">
+            <div1 n="57" type="thematoep" xml:id="thema57">
                 <ab>
                     <add hand="Cr" place="left">56.</add>
                 </ab>
-                <div2 xml:lang="el" n="57 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema57_low">
                     <ab>
                         <lb/> πῶς περνοῦν ἐδῶ τὰ πράγματα<lb/>εἰς τόσην ἀποκοτίαν δὲν ἦλθα, ὅτι
                         νὰ<lb/>σοῦ τὰ φανερώσω μὲ γραφὴν.<lb/>καλὰ καὶ εἰς ὅποιον
@@ -1902,7 +1903,7 @@
                         καιρικὰ, ἦλθε εἰς<lb/>θανάσιμα συνήθια:<c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="57 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema57_high">
                     <ab>
                         <lb/> τίνα τρόπον τὰ ἐνταυθοῖ ἔχει, οὐκ εἰς<lb/>τοσοῦτον τόλμης ἱκνοῦμαι,
                         ὥστε σοι<lb/>δι’ ἐπιστολῆς δηλῶσαι. καίπερ<lb/>ὅπου καὶ γῆς ὤν τυγχάνεις (ὡς
@@ -1924,11 +1925,11 @@
                 </div2>
             </div1>
             <pb n="48"/>
-            <div1 n="58">
+            <div1 n="58" type="thematoep" xml:id="thema58">
                 <ab>
                     <add hand="Cr" place="left">57.</add>
                 </ab>
-                <div2 xml:lang="el" n="58 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema58_low">
                     <ab>
                         <lb/> Ἐχθὲς τὴν αὐγὴν ἤθελα νὰ σοῦ γράψω.<lb/>ἀμὲ ἡ κρίαδα καὶ τὸ χίονι ὁποῦ
                         ἐσκέπασε<lb/>τὰ βουνὰ καὶ τοὺς κάμπους, ἐμπόδισε καὶ ἐμέναν,<lb/>ὁμοίως καὶ
@@ -1940,7 +1941,7 @@
                             σε:<c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="58 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema58_high">
                     <ab>
                         <lb/> χθὲς ἠβουλόμην ἅμα ἕω πρ<expan>ὸς</expan> σὲ γράψαι.<lb/>ὁ δὲ χειμών,
                         καὶ ἡ τοσαύτη χιὼν ἡ τὰ ὅρη καὶ<lb/>τὰ πεδία καλύψασα, διεκώλυσε
@@ -1956,11 +1957,11 @@
                         σε. </ab>
                 </div2>
             </div1>
-            <div1 n="59">
+            <div1 n="59" type="thematoep" xml:id="thema59">
                 <ab>
                     <add hand="Cr" place="left">58.</add>
                 </ab>
-                <div2 xml:lang="el" n="59 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema59_low">
                     <ab>
                         <lb/> τὸν ἰω<expan>άννην</expan> εἰ μέν τόν ἐγνωρίζεις, ἠξεύρω<lb/>καλὰ, ὅτι
                         καὶ ἀγαπᾶς καὶ τιμᾶς τὸν καὶ ἐπαινεῖς.<lb/>διατὶ ἔνε ἄν<expan>θρωπ</expan>ος
@@ -1971,7 +1972,7 @@
                         θέλεις<lb/>τὸν ἀγαπήσει καὶ ἄλλους διὰ λόγου του,ἀφοῦ<lb rend="right"
                         />γνωρίσης τὴν καλοσύνην του. </ab>
                 </div2>
-                <div2 xml:lang="grc" n="59 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema59_high">
                     <ab>
                         <lb/> εἰ μὲν γϊνώσκεις τὸν ἰω<expan>άννην</expan>, εὖ οἶδ’ ὅτι,<lb/>φϊλεῖς
                         αὐτὸν καὶ τιμᾶς καὶ ἐπαινεῖς.<lb/>ἀγαθὸς γὰρ οὑτοσὶ καὶ φίλ<expan>ος</expan>
@@ -1983,11 +1984,11 @@
                 </div2>
             </div1>
             <pb n="49"/>
-            <div1 n="60">
+            <div1 n="60" type="thematoep" xml:id="thema60">
                 <ab>
                     <add hand="Cr" place="left">59.</add>
                 </ab>
-                <div2 xml:lang="el" n="60 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema60_low">
                     <ab>
                         <lb/> ποῖον ἀπὸ τὰ δύο, ἐγὼ εἶμε παραπονίαρης,<lb/>ἢ ἐσὺ καταφρονεῖς ἐμᾶς
                         τοὺς φίλους σου,<lb/>ὁ ὁποῖ<expan>ος</expan> ἀπὸ δύο χρόνους καὶ ἐδῶ ποτὲ
@@ -1998,7 +1999,7 @@
                         ὁποῦ φεροῦμαι,<lb/>ἂν γράψης, ἢ ἂν δὲν γράψης:<c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="60 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema60_high">
                     <ab>
                         <lb/> πότερον, ἐγὼ φιλαίτιος, ἠ σὺ,<lb/>ὀλιγωρῶν τῶν σ<expan>ῶν</expan>
                         φίλων. δεύτερ<expan>ος</expan> γὰρ<lb/>ἐνϊαυτ<expan>ὸς</expan> οὑτοσί, ἀφ’
@@ -2013,11 +2014,11 @@
                     </ab>
                 </div2>
             </div1>
-            <div1 n="61">
+            <div1 n="61" type="thematoep" xml:id="thema61">
                 <ab>
                     <add hand="Cr" place="left">60.</add>
                 </ab>
-                <div2 xml:lang="el" n="61 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema61_low">
                     <ab>
                         <lb/> τίποτε ἀν<expan>θρώπ</expan>ων πρᾶγμα, ἔτζι βαρὺ δ<expan>ὲν</expan>
                         εἶνε, τὸ ὁποῖ<unclear>ον</unclear>
@@ -2032,7 +2033,7 @@
                             ὅλα:<c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="61 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema61_high">
                     <ab>
                         <lb/> οὐδὲν τῶν ἐν ἀν<expan>θρώπ</expan>οις οὕτω δύσφορον, ὅπερ
                             ἄν<expan>θρωπ</expan>ος<lb/>οὐχ ὑποφέρει, καὶ ἐξ ἀνάγκης εἰπεῖν.<lb/>σὲ
@@ -2046,11 +2047,11 @@
                 </div2>
             </div1>
             <pb n="50"/>
-            <div1 n="62">
+            <div1 n="62" type="thematoep" xml:id="thema62">
                 <ab>
                     <add hand="Cr" place="left">61.</add>
                 </ab>
-                <div2 xml:lang="el" n="62 low" type="low">
+                <div2 type="low" xml:lang="el" xml:id="thema62_low">
                     <ab>
                         <lb/> Ἐτοῦτος ὁποῦ σοῦ φέρνει τ<expan>ὴν</expan>
                         γραφ<expan>ὴν</expan>,<lb/>ἕνας εἶνε ἀπὸ τοὺς μαθητάδες μου<lb/>καὶ τῆς
@@ -2071,7 +2072,7 @@
                             μαθημάτων:<c>†</c>
                     </ab>
                 </div2>
-                <div2 xml:lang="grc" n="62 high" type="high">
+                <div2 type="high" xml:lang="grc" xml:id="thema62_high">
                     <ab>
                         <lb/> ὁ τὴν ἐπιστολήν σοι κομίζ<expan>ων</expan> οὑτοσὶ,<lb/>ὣν παρ’ ἐμοὶ
                         φοιτησάντων εἷς ἐστι,<lb/>καὶ τῆς ἑλλάδ<expan>ος</expan> φωνῆς, ὡς εἴ τις

@@ -11,19 +11,32 @@ Herausgeber: Notis Toufexis
 ## Inhalt
 
 - `edition/thematoepistulae.xml`: die Edition (62 Briefe, 124 Fassungen)
-- `css/tei.css`: Stylesheet; die XML-Datei im Browser öffnen genügt,
-  um die Edition lesbar darzustellen (low und high nebeneinander)
+- `index.html`, `web/`: Webansicht (XSLT im Browser)
+- `css/tei.css`: Stylesheet für die direkte Ansicht der XML-Datei
 
-## Ansicht
+## Webansicht
 
-Lokal: `edition/thematoepistulae.xml` im Browser öffnen. Das Stylesheet wird
-über die Verarbeitungsanweisung `xml-stylesheet` im Dateikopf eingebunden.
-Bei Firefox und Chrome funktioniert das für lokale Dateien; für GitHub Pages
-muss die Datei von dort ausgeliefert werden.
+`index.html` lädt die TEI-Datei im Browser, wandelt sie per XSLT (`web/edition.xsl`)
+in HTML um und bietet Navigation, Ansicht low/high/beides, Zeilen der Handschrift,
+Zeilennummern, Ein- und Ausblenden der Auflösungen, Farbe der Hände und eine
+akzentunabhängige Suche. Es wird kein Server-Code und kein Build-Schritt benötigt.
 
-Legende: `|n` Zeilenumbruch der Handschrift, `(..)` aufgelöste Abkürzung,
-orange Zusatz von Crusius, blau Zusatz von Zygomalas, durchgestrichen getilgt,
-gepunktet unterstrichen unsichere Lesung.
+Lokal ansehen (die Datei muss über HTTP ausgeliefert werden, `file://` genügt nicht):
+
+    python3 -m http.server 8000
+
+Dann `http://localhost:8000/` öffnen. Auf GitHub Pages (Branch `main`, Ordner `/`)
+läuft die Seite unverändert.
+
+Die XML-Datei lässt sich auch direkt im Browser öffnen; dann wird `css/tei.css`
+verwendet.
+
+Legende: Zahl am Zeilenende = Zeilennummer der Handschrift, `(..)` aufgelöste
+Abkürzung, orange Zusatz von Crusius, blau Zusatz von Zygomalas, durchgestrichen
+getilgt, gepunktet unterstrichen unsichere Lesung.
+
+Handschriftenbilder: Verweise auf `img/*.png` werden zu Links, sobald die Dateien
+unter `edition/img/` liegen.
 
 ## Lizenz
 
