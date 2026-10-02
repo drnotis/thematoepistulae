@@ -1,0 +1,131 @@
+:root {
+  --text: #1c1b1a;
+  --muted: #6b6760;
+  --paper: #fdfcf9;
+  --panel: #f3f0e9;
+  --rule: #d9d4c7;
+  --low: #f4f7ee;
+  --high: #f8f3e4;
+  --cr: #b45309;
+  --zyg: #1d4ed8;
+  --del: #b91c1c;
+  --accent: #5b3a29;
+  --link: #7a3e1d;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #ebe7df; --muted: #a39e93; --paper: #1a1917; --panel: #24221f;
+    --rule: #3a3731; --low: #1f241b; --high: #28241a; --cr: #f0a04b;
+    --zyg: #7ea6ff; --del: #f08a8a; --accent: #d8b89c; --link: #e2b48f;
+  }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 5.5rem; }
+body {
+  margin: 0; background: var(--paper); color: var(--text);
+  font: 1.15rem/1.7 "Gentium Plus", "Gentium Book Plus", "Cardo", "Palatino Linotype", "Noto Serif", "Times New Roman", serif;
+}
+a { color: var(--link); }
+.ui { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 0.85rem; }
+
+/* Kopf und Steuerung */
+.topbar {
+  position: sticky; top: 0; z-index: 10; background: var(--paper);
+  border-bottom: 1px solid var(--rule); padding: 0.6rem 1rem;
+}
+.topbar h1 { margin: 0 0 0.4rem; font-size: 1.15rem; color: var(--accent); }
+.controls { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; align-items: center; color: var(--muted); }
+.controls label { display: inline-flex; gap: 0.35rem; align-items: center; cursor: pointer; }
+.controls select, .controls input[type=search] {
+  font: inherit; padding: 0.2rem 0.4rem; border: 1px solid var(--rule);
+  background: var(--panel); color: var(--text); border-radius: 4px;
+}
+.controls input[type=search] { min-width: 12rem; }
+#count { color: var(--muted); }
+
+/* Layout */
+.layout { display: grid; grid-template-columns: 11rem minmax(0, 1fr); gap: 1.5rem; max-width: 84rem; margin: 0 auto; padding: 1rem; }
+nav.letters { position: sticky; top: 5.5rem; align-self: start; max-height: calc(100vh - 6.5rem); overflow: auto; }
+nav.letters ol { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.25rem; }
+nav.letters a {
+  display: block; text-align: center; padding: 0.15rem 0; border: 1px solid var(--rule);
+  border-radius: 4px; text-decoration: none; background: var(--panel);
+}
+nav.letters a:hover { border-color: var(--accent); }
+nav.letters li.hidden { opacity: 0.25; }
+nav.letters h2 { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 0 0 0.4rem; }
+
+/* Inhalt */
+.about { background: var(--panel); border: 1px solid var(--rule); border-radius: 6px; padding: 0.5rem 1.25rem 1rem; margin-bottom: 2rem; font-family: system-ui, sans-serif; font-size: 0.9rem; line-height: 1.55; }
+.about h2 { font-size: 1.1rem; color: var(--accent); }
+.about h3 { font-size: 0.95rem; margin-bottom: 0.2rem; }
+.about dl { display: grid; grid-template-columns: 8rem 1fr; gap: 0.2rem 1rem; margin: 0; }
+.about dt { color: var(--muted); }
+.about dd { margin: 0; }
+.legend { margin-top: 1rem; }
+.legend span { white-space: nowrap; margin-right: 1rem; }
+
+.title { color: var(--accent); font-size: 1.6rem; margin: 0 0 1rem; }
+.front { color: var(--cr); margin-bottom: 0.5rem; }
+
+.letter { margin: 0 0 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--rule); }
+.letter.hidden { display: none; }
+.letter-head { display: flex; align-items: baseline; gap: 1rem; flex-wrap: wrap; margin-bottom: 0.5rem; }
+.letter-head h2 { font-size: 1.2rem; margin: 0; }
+.letter-head h2 a { color: var(--accent); text-decoration: none; }
+.marg { color: var(--cr); }
+
+.versions { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+.version { padding: 0.75rem 1rem 1rem; border-radius: 6px; border: 1px solid var(--rule); }
+.version.low { background: var(--low); }
+.version.high { background: var(--high); }
+.vlabel { margin: 0 0 0.4rem; font: bold 0.7rem system-ui, sans-serif; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.ab { margin: 0; }
+
+.view-low .version.high, .view-high .version.low { display: none; }
+.view-low .versions, .view-high .versions { grid-template-columns: minmax(0, 46rem); }
+
+/* Zeilenumbrueche */
+.lb::before { content: attr(data-n); font: 0.65rem system-ui, sans-serif; color: var(--muted); vertical-align: super; margin-right: 0.15em; }
+.lb[data-n=""]::before { content: ""; }
+.no-linenos .lb::before { content: ""; }
+/* Zeilenmodus: lb steht am Zeilenende, die Nummer folgt der Zeile, danach Umbruch */
+.lines .lb::after { content: "\A"; white-space: pre; }
+.lines .lb::before { margin: 0 0 0 0.3em; }
+
+/* Seitenumbrueche */
+.pb::before { content: "pag. " attr(data-n); font: 0.75rem system-ui, sans-serif; background: var(--accent); color: var(--paper); padding: 0 0.5em; border-radius: 3px; margin: 0 0.3rem; }
+.pb-block { margin: 1.5rem 0 0.5rem; }
+
+/* Auszeichnung */
+.expan { color: var(--muted); font-style: italic; }
+.expan::before { content: "("; } .expan::after { content: ")"; }
+.expan.uncertain { text-decoration: underline dotted; }
+.choice .abbr { display: none; }
+.hide-expan .expan { display: none; }
+.hide-expan .choice .abbr { display: inline; }
+.hide-expan .choice .expan { display: none; }
+.no-brackets .expan::before, .no-brackets .expan::after { content: ""; }
+.unclear { text-decoration: underline dotted; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.del { text-decoration: line-through; color: var(--del); }
+.del.Cr { color: var(--cr); } .del.Zyg { color: var(--zyg); }
+.add { color: var(--cr); } .add.Zyg { color: var(--zyg); }
+.plain .add, .plain .del { color: inherit; }
+.hi.underline { text-decoration: underline; }
+.space { display: inline-block; width: 1.5em; }
+.c { color: var(--muted); }
+.note { font: 0.75rem system-ui, sans-serif; color: var(--muted); }
+.note::before { content: " ["; } .note::after { content: "]"; }
+a.imgref, .imgref { text-decoration: underline dotted; }
+a.imgref { cursor: zoom-in; }
+
+mark { background: #f6e05e; color: #1c1b1a; }
+
+footer { max-width: 84rem; margin: 0 auto; padding: 1rem 1rem 3rem; color: var(--muted); }
+
+@media (max-width: 62rem) {
+  .layout { grid-template-columns: minmax(0, 1fr); }
+  nav.letters { position: static; max-height: none; }
+  nav.letters ol { grid-template-columns: repeat(auto-fill, minmax(2.6rem, 1fr)); }
+  .versions { grid-template-columns: 1fr; }
+}

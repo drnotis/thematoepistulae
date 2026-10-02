@@ -1,0 +1,2102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="../css/tei.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="el">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Θεματοεπιστολαί: An electronic edition</title>
+                <author>Θεοδόσιος Ζυγομαλάς</author>
+                <editor>
+                    <persName>Νότης Τουφεξής</persName>
+                </editor>
+            </titleStmt>
+            <publicationStmt>
+                <authority>
+                    <name>Νότης Τουφεξής</name>
+                    <email>notis.toufexis@gmail.com</email>
+                </authority>
+                <!-- <idno type="DOI">hier nach der Zenodo-Archivierung eintragen</idno> -->
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/">
+                        <p xml:lang="el">Διατίθεται με άδεια Creative Commons Attribution 4.0
+                            International (CC BY 4.0).</p>
+                        <p xml:lang="en">Available under a Creative Commons Attribution 4.0
+                            International License (CC BY 4.0).</p>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <settlement>Tübingen</settlement>
+                        <repository>Universitätsbibliothek Tübingen</repository>
+                        <idno>Mb 30</idno>
+                        <altIdentifier>
+                            <idno>Codex Tybingensis Mb30</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+                </msDesc>
+                <p>Diplomatic transcription based on the manuscript witness (Codex Tybingensis
+                    Mb30). See <ref
+                        target="http://www.toufexis.info/wp-content/uploads/2008/04/ZygomalasThematoepistolae.pdf"
+                        >Zygomalas, Thematoepistolae</ref> for more details.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>The text is a diplomatic transcription. Line breaks of the manuscript are
+                    encoded with <gi>lb</gi>; page numbers (as written by M. Crusius) with
+                        <gi>pb</gi>. Abbreviations are resolved with <gi>expan</gi> (the
+                    expanded letters are enclosed in the element) or, where an abbreviation
+                    stands for a whole word, with <gi>choice</gi>, <gi>abbr</gi> and
+                        <gi>expan</gi>. Uncertain readings are marked with <gi>unclear</gi>,
+                    deletions with <gi>del</gi> and additions with <gi>add</gi>. Gaps left by
+                    the scribe are encoded with <gi>space</gi>.</p>
+            </editorialDecl>
+            <tagsDecl xmlns:xi="http://www.w3.org/2001/XInclude">
+                <namespace name="http://www.tei-c.org/ns/1.0">
+                    <tagUsage gi="pb">Used to encode page numbers as written in the text by M.
+                        Crusius on the top right of each page.</tagUsage>
+                    <tagUsage gi="div1">Contains each single occurence of a Θεματοεπιστολή, each
+                        being separated into a "low" and a "high" subpart encoded as
+                        div2.</tagUsage>
+                    <tagUsage gi="div2">Contains a "low" or "high" version of each
+                        Θεματοεπιστολή.</tagUsage>
+                    <tagUsage gi="add">Contains additions made by Crusius or Zygomalas (the hand
+                        identified in the attribute "hand"). Each occurence of the element is
+                        included in the part of the text it is considered to belong. Position of
+                        the additions has been marked with the attribute "place"; the values
+                        proposed by the TEI Guidelines have been chosen.</tagUsage>
+                    <tagUsage gi="lb">Marks the line breaks of the manuscript.</tagUsage>
+                </namespace>
+            </tagsDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="el">Early modern Greek ("low" version)</language>
+                <language ident="grc">Learned Greek ("high" version)</language>
+            </langUsage>
+            <handNotes>
+                <handNote scribe="Martin Crusius" xml:id="Cr"/>
+                <handNote scribe="Θεοδόσιος Ζυγομαλάς" xml:id="Zyg"/>
+            </handNotes>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2026-10-02">Header cleaned up for publication: language and hand
+                declarations, manuscript description, editorial declaration and licence statement
+                added; language attributes added to the "low" and "high" versions; stylesheet
+                reference updated; licence changed to CC BY 4.0; identifiers
+                of letters and versions made consistent (thema1 ... thema62, themaN_low/themaN_high).</change>
+            <change when="2007-05-27">Μετατροπή σε P5</change>
+            <change when="2006-07-04">Έκανα διορθώσεις και αλλαγές </change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <pb n="21"/>
+            <head>Θεματοεπιστολαί.</head>
+            <ab>
+                <add hand="Cr" place="top"> Incepi .29. April. 79. </add>
+            </ab>
+            <div1 n="1" type="thematoep" xml:id="thema1">
+                <ab>
+                    <add hand="Cr" place="left">1.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema1_low">
+                    <ab>
+                        <s xml:id="low_1-1">† ἔσοντας καὶ ἀκόμη δὲν ἄρχησα<lb n="1"/> νὰ σοῦ γράφω,
+                            οὐδὲ ἐπιστολ<expan>ὴν</expan> καμίαν <lb n="2"/> ἔλαβες ἀπολόγου μου,
+                            ἐδᾶ ἀῤχίζοντας <lb n="3"/>φαίνεταί μου νὰ ἔνε πρέπον νὰ παρακαλέσω τὸν
+                                Θ<expan>εό</expan>ν: <lb n="4"/> νἂ μου ἔρχεται εἰς τὸν νοῦν πάντα,
+                                <lb n="5"/> ὅταν κανη χρεία νὰ σοῦ γράφω.<lb n="6"/></s>
+                        <s xml:id="low_1-2">ὅτι ἔνε σημεῖον φιλί<expan>ας</expan>,
+                                τ<expan>ὴν</expan> ὁποῖαν ὁ καιρ<expan>ὸς</expan>
+                            <lb n="7"/> πιστεύω νὰ μὴν δύναται νὰ τὴν χαλάση:†<lb n="8"/></s>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema1_high">
+                    <ab>
+                        <s xml:id="high_1-1">Ἐπείπερ ἐγὼ μ<expan>ὲν</expan> οὐδέπω
+                                ἀρχ<expan>ὴν</expan> πεποίημαι<lb n="1"/> τοῦ ἐπιστέλλειν σοι, οὐδὲ
+                                μηδεμίαν<lb n="2"/> ἐδέξω παρ’ ἐμοῦ, ἔτι τὰ νῦν ἀρχομένῳ<lb n="3"
+                            />εἴκὸς εἶναί μοι δοκεῖ εὔξασθαι τῷ θ<expan>ε</expan>ῷ, <lb n="4"/>
+                            ἐπέρχεσθαί μοι ἀεὶ κ<expan>α</expan>τ<expan>ὰ</expan> τὸν
+                                ἐμ<expan>ὸν</expan> νοῦν, <lb n="5"/> ἐμφαίνει<expan>ν</expan> ἐν
+                            τοῖς γράμμασιν, ὅτ’ ἀναγκαί<ref rend="_blank" target="img/1_high_6.png">
+                                <expan cert="low">ων</expan>
+                            </ref> ἔχει·<lb n="6"/></s>
+                        <s xml:id="high_1-2">ὅτι εἴη ἄν τεκμήριον φιλί<expan>ας</expan> ἀκραιφνοῦς,
+                                οἵαν<lb n="7"/> οὐκ ἄν οἵμαι τ<expan>ὸν</expan> πάντα αἰῶνα
+                            ἐξαλεῖψαι δύνασθαί ποτε: †<lb n="8"/></s>
+                    </ab>
+                </div2>
+            </div1>
+            <div1 n="2" type="thematoep" xml:id="thema2">
+                <ab>
+                    <add place="left">2.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema2_low">
+                    <ab>
+                        <s xml:id="low_2-1">χαίρομαι πολλὰ διὰ λόγου σου, ἀκούοντας <lb n="1"/> ὅτι
+                            ἦσαι γερὸς καὶ εὐτυχὴς, καὶ ἔχεις καὶ καλ<expan>ὸν</expan> ὄνομα·<lb
+                                n="2"/> καὶ διὰ λόγου μου ὅτι ἀγαπᾶς με, καὶ<lb n="3"/> κόπτει σε νὰ
+                            ἐρωτᾶς διὰ λόγου μου πῶς τα πάγω.<lb n="4"/> καὶ νὰ
+                                λέγ<unclear>ῃ</unclear> ἐκεινῶν ποῦ ἔρχονται<lb n="5"/> ἐδῶ, νὰ μὲ
+                            χαιρετοῦν ἀπὸ λόγου σου.<lb n="6"/></s>
+                        <s xml:id="low_2-2">καὶ ἤξευρε πῶς καλὰ τὸ μαθένω,<lb n="7"/>καὶ εὐχαριστῶ
+                            σου πολλὰ·<lb n="8"/>ὑγιὴς ἄμποτε νὰ ἦσε, ἀγαπημένε μου:†<lb n="9"/></s>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema2_high">
+                    <ab>
+                        <seg xml:id="high_2-1">† σοῦ μ<expan>ὲν</expan>
+                            <unclear>ἕ</unclear>νεκα χαίρω τὰ μάλιστα, ἀκού<expan>ων</expan> ὁθ’
+                                ὑγϊαίνεις<lb n="1"/>καὶ εὐτυχεῖς, καὶ καλῶς ἀκούεις<note
+                                place="foot">Γραφή με <ref rend="_blank" target="img/2_high_2.png"
+                                    >μεγαλύτερα γράμματα</ref> για να καλυφθεί όλο το πλάτος της
+                                αράδας.</note>.<lb n="2"/></seg>
+                        <s xml:id="high_2-2">ἐμοῦ δὲ ὅτι με φιλεῖς καὶ περὶ ἐμοῦ σπουδάζεις <lb
+                                n="3"/> πϋνθάνεσθαι πῶς ἄρα ἔχω.<lb n="4"/> καὶ διὰ τῶν αὐτόθεν
+                                πρ<ref rend="_blank" target="img/2_high_5.png">
+                                <expan cert="low">ὸς</expan>
+                            </ref> ἡμᾶς δεῦρο <lb n="5"/> ἀφικνουμέν<expan>ων</expan>
+                                προσαγορεύειν.<lb n="6"/> τοιγαροῦν ἵσθ’ ὅτι οὐκ ἀγνοῶ τοῦτο, <lb
+                                n="7"/> καὶ μεγίστην ἔχω σοι τὴν χάριν<lb n="8"/>ὑγϊαίνων μοι
+                            διατελοίης, φίλων ἄριστε:†<lb n="9"/></s>
+                    </ab>
+                </div2>
+            </div1>
+            <div1 n="3" type="thematoep" xml:id="thema3">
+                <ab>
+                    <add hand="Cr" place="left">3.</add>
+                </ab>
+                <ab>
+                    <add hand="Cr" place="bottom">β΄.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema3_low">
+                    <ab>
+                        <s xml:id="low_3-1">Ἐγὼ ὅσον σε ἀγαπῶ πολλὰ, τόσον ἐπιθυμῶ<lb n="1"/> νὰ τὸ
+                            ἠξεύρης, καὶ μ<expan>ὴν</expan> πιστεύεις ὅτι θέλω νὰ ἔχω<lb n="2"/>
+                            τίποτε ἀπὸ λόγου σου, ἀλλὰ διὰ νὰ μὲ ἀγαπᾶς <lb n="3"/> καὶ σὺ
+                                ὁμοίως:†<lb n="4"/></s>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema3_high">
+                    <ab>
+                        <s xml:id="high_3-1">† ὅσονπερ ἔγωγε τὰ μάλιστά σε φιλῶ, τοσοῦτον<lb n="1"/>
+                            ἐφίεμαι εἰδέναι σε τοῦτο, μὴ νομήσης δὲ, <lb n="2"/> ὅτι βούλομαι τούτού
+                            ἕνεκα μισθ<expan>ὸν</expan> παρὰ σοῦ, <lb n="3"/> ἀλλὰ τῷ ἀντιφιλεῖν ἐμὲ
+                                ἴσως:†<lb n="4"/>
+                        </s>
+                    </ab>
+                </div2>
+            </div1>
+            <pb n="22"/>
+            <div1 n="4" type="thematoep" xml:id="thema4">
+                <ab>
+                    <add hand="Cr" place="left">4.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema4_low">
+                    <ab>
+                        <s xml:id="low_4-1">Ἄν ἤξευρα ὅτι ἡ φιλία ποῦ ἔχω εἰς ἐσέναν<lb n="1"/>
+                            ἐχρειάζετον λόγϊα, καὶ ὄχι ἔργα διὰ νὰ γνωρισθῆ, <lb n="2"/>ἤθελα
+                            πιστεύσω, ὅτι νὰ ἀπαντέχεις <add hand="Cr" place="left"
+                                    >κλασικ<expan>ὸν</expan> ἄν.</add>
+                            <lb n="3"/> ἀπολόγου μου μεγάλην γραφήν:† <lb n="4"/></s>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema4_high">
+                    <ab> εἰ μέν ἐγίνωσκον τὴν ἐμοῦ πρὸ<expan>ς</expan> σὲ φιλ<expan>ί</expan>αν,<lb
+                            n="1"/> δεῖσθαι λόγ<expan>ων</expan>, καὶ οὐκ ἔργων εἰς τό γνωσθῆναι,
+                            <lb n="2"/> νομίσαιμι ἄν σε, προσδέχεσθαι<lb n="3"/>παρ’ ἐμοῦ μῆκος
+                            ἐπιστολ<expan>ῆς</expan>:†<lb n="4"/>
+                    </ab>
+                </div2>
+            </div1>
+            <div1 n="5" type="thematoep" xml:id="thema5">
+                <ab>
+                    <add hand="Cr" place="left">5.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema5_low">
+                    <lb/>
+                    <ab> Ἀπὸ τῶρα πιάνοντας τὸ κοντίλη στὸ χέρη,<lb/> ἐχέρισα νὰ σου γράψω, καὶ ἡ
+                        πικρία δὲν μὲ ἄφικ<expan>εν</expan>.<lb/>μὲ ὀλίγον δὲ μὲ βοήθεια
+                            θ<expan>εοῦ</expan>, ἐπίτυχα ἐκεῖν<unclear>ο</unclear>, <lb/> διὰ τὸ
+                        ὁποῖον ἐλυπούμην. Καὶ <lb/> μὲ χαρὰν<unclear>,</unclear> καὶ ὄρεξιν
+                            πολλ<expan>ὴν</expan> ἐβάλθηκα νὰ σοῦ <lb rend="right"/> γράψω:<c
+                            function="end">†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema5_high">
+                    <ab>
+                        <lb/>
+                        <c function="beginn">†</c>ἤδη τοῦ δόνακ<expan>ος</expan>
+                            ἁψάμεν<expan>ος</expan>, <lb/> ἠρξάμην πρὸ<expan>ς</expan> σὲ
+                            γράφ<expan>ειν</expan>, λύπη δέ τις μάλιστα<lb rend="right"/> ἐμποδὼν
+                        μοι κατέστη.<lb/> ἀλλὰ μετ’ ὀλίγον σὺν θ<expan>εῶ</expan>, <lb/>
+                        <c function="unknown">∴</c> διαπράξας ἐκεῖνο, ὅπερ δυσχερῶς
+                            ἔφ<unclear>ερεν</unclear>,<lb/> μετὰ πλείστης τῆς ἡδονῆς τε καὶ προ-
+                            <lb/>θυμί<expan>ας</expan>, πρὸς σὲ γράφ<expan>ειν</expan> ενεχείρησα:<c
+                            function="end">†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <div1 n="6" type="thematoep" xml:id="thema6">
+                <ab>
+                    <add hand="Cr" place="left">6.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema6_low">
+                    <ab>
+                        <lb/>ἐχθὲς τὸ ταχὺ εἶχα ἔννοιαν μεγάλην, <lb/>διὰ λόγου σου, πῶς νὰ μὲ
+                        τρατάρης, <lb/> ὁποῦ δὲν ἀφήνω ἄν<expan>θρωπ</expan>ον νὰ ἔλθη αὐτοῦ, <lb/>
+                        νὰ μ<expan>ὴν</expan> τοῦ δώσω γραφ<expan>ὴν</expan> νὰ σοῦ φέρει.<lb/> καὶ
+                        πρὶν τὸ γεῦμα, εὑρισκόμενος εἰς τὸν φόρον,<lb/>
+                        <unclear>ἀστὸ</unclear> ἠξεύρη ὁ θ<expan>εὸ</expan>ς πόσα ἐχάρηκα τὸ
+                            <expan>πρῶτ</expan>ον<lb/> ποῦ ἤρρα <!-- sic --> τὸν μήσον, κὰι
+                            εἶχ<expan>εν</expan> ὄρεξιν νὰ μοῦ συντήχη.<lb/> φέρνοντας μου καὶ
+                        γραφαῖς ἐδικαῖς σου.<lb/> ἤξευρε βέβαια ὅτι ὁ θ<expan>εὸ</expan>ς σοῦ τὰ
+                        θέλει πληρώσει:<c function="end">†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema6_high">
+                    <ab>
+                        <lb/>χθὲς ἕωθ<expan>εν</expan> ἐπῆλθε μοι φροντίζ<expan>ειν</expan> περὶ σου
+                        <lb/> πῶς ἄρα μοι προσφέρη, <lb/> ὅστις οὐδένα παραλείπω τ<expan>ῶν</expan>
+                        αὐτόσε ἀφικνούμεν<expan>ων</expan>,<lb/> ἄνευ τοῦ ἐπιθεῖναι γράμμα
+                            πρὸ<expan>ς</expan> σὲ.<lb/> πρὸ ἀρίστου δὲ ἐν ἀγορᾶ διατρίβων, <lb/>
+                        ἴστω ζεύς πόσην μοι τὴν ἡδον<expan>ὴν</expan> προεξένησεν,<lb/> ὅτε τὸ <choice>
+                            <abbr>α</abbr>
+                            <expan>πρῶτο</expan>
+                        </choice>ν ἐθεασάμην τὸν διακομιστὴν, ἐφϊέμενον<lb rend="right"/>
+                            ἐντυ<expan>χεῖν</expan> ἐμοὶ, <lb/> κομίζοντά μοι γράμματα
+                            π<expan>αρὰ</expan> σοῦ.<lb/> εὖ ἴσθι οὖν, ὅτι ἀμείψονταί σε
+                            τούτ<expan>ων</expan> ἁπάντ<expan>ων</expan>
+                        <lb rend="right"/> ἕνεκα οἱ θεοὶ:<c function="end">†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <pb n="23"/>
+            <div1 n="7" type="thematoep" xml:id="thema7">
+                <ab>
+                    <add hand="Cr" place="left">7.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema7_low">
+                    <ab>
+                        <lb/> Εἰς τὴν ἐπιστολήν ποῦ ἔγραψ<expan>ες</expan> καλὰ καὶ ἦτον
+                        μικρὴ,<lb/>ἐχάρηκα πολλὰ· τό λοιπ<expan>όν</expan> τὴν ὁμοί<expan>αν</expan>
+                        σοῦ πέμπω.<lb/> θαρρόντ<expan>ας</expan> νὰ ἔχης τὴν αὐτήν γνώμην εἰς
+                        τοῦτο<lb/> ὡσὰν ἐμένα, ὁποῦ μικρὰ ἐπιστολή<unclear>ν</unclear> ἀκάνη μου,
+                        <lb/> εἰς τὸ νὰ μοῦ δώση μεγάλην χαράν:<c function="end">†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema7_high">
+                    <ab>
+                        <lb/>
+                        <c function="beginn">†</c> μεγίστην μοι τ<expan>ὴν</expan>
+                            ἡδον<expan>ὴν</expan> προεξένισ<expan>εν</expan> ἡ παρὰ σοῦ <lb/>
+                        ἐπιστολὴ, καίπερ ο<unclear>ὖ</unclear>σα μικρὰ· κἀγὼ τοίνυν<lb/> τὴν ἴσην
+                        σοι ἀντεπιστέλλω.<lb/> ὑπολαμβάν<expan>ων</expan> σε τὴν αὐτὴν ἔχειν δόξαν
+                            πε<expan>ρὶ</expan> τούτου.<lb/> ὥσπερ ἐγὼ. ἀρκεῖ γὰρ
+                            μικρ<expan>ὸν</expan> γράμμα<lb/> μεγίστην ἡδονὴν μνηστεῦσαι μοι.<c
+                            function="end">†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <div1 n="8" type="thematoep" xml:id="thema8">
+                <ab>
+                    <add hand="Cr" place="left">8.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema8_low">
+                    <ab>
+                        <lb/>Ἐγὼ δὲ πιστεύω ὅτι αἱ φιλίαι τ<expan>ῶν</expan> φίλ<expan>ων</expan>
+                        <lb/> νά αὐξάνονται μὲ μεγάλαις γραφαῖς. <lb/> ἀλλὰ μὲ τὸ μεγάλομα τῆς
+                        ἀγάπης.<lb/> Τὴν ὁποίαν <add hand="Zyg" place="supralinear">οὐκ </add>
+                        ἐμάκρυνα μὲ τόπου μάκρ<expan>ος</expan>, <lb/> οὕτε μὲ τόπου· καὶ ἀδύνατον
+                        ἀλυσμονίσαι. <lb/> καὶ οὐδὲ ἡ μικρὴ γραφὴ νὰ τὴν μικρίνη:<c function="end"
+                            >†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema8_high">
+                    <ab>
+                        <lb/> οὐκ οἶμαι τὰς τῶν ἑταίρ<expan>ων</expan> φιλί<expan>ας</expan>, <lb/>
+                        ἐκτείνεσθαι τῶ τῶν γραμμάτων μήκει. <lb/> ἀλλὰ τῶ τῆς φιλί<expan>ας</expan>
+                        μεγέθει. <lb/> ἥνπερ οὔτε χρόνου μῆκ<expan>ος</expan>, <lb/> οὔτε διάστημα
+                        τόπου, οἵ<expan>ον</expan>
+                        <unclear>τ’ </unclear>ἐστιν ἐξαλεῖψαι.<lb/> ἀλλὰ οὐδὲ τὸ
+                            μικρ<expan>ὸν</expan> γράμμα σμικρῦναι:<c function="end">†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <div1 n="9" type="thematoep" xml:id="thema9">
+                <ab>
+                    <add hand="Cr" place="left">9.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema9_low">
+                    <ab>
+                        <lb/>Βλέπεις πῶς τόρα ἔνε καιρὸς, ὅτι στανίο μου <lb/> καὶ μὲ τὸ θέλημά μου
+                        νὰ βιάζομαι νὰ γράφω<lb/> μικραῖς ἐπιστολαῖς· ἄν θ<unclear>έ</unclear>λω νὰ
+                        ταῖς ἐπέρνης<lb/> μετὰ χαρᾶς, καὶ νὰ μὴν παρακαλ<unclear>ῆς</unclear>
+                        <lb/> τὸν θ<expan>εὸ</expan>ν, ὅτινα<unclear
+                            reason="could be an acute accent">ι</unclear> μήν εὑρεθῆ
+                            ἄν<expan>θρωπ</expan>ος, <lb/> τοῦ ὁποίου νὰ δώσω νὰ σοῦ φέρει
+                            γραφ<expan>ὴν</expan>:<c function="end">†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema9_high">
+                    <ab>
+                        <lb/> ὁρᾶς ὡς νῦν καιρός ἐστι, πειρᾶσθαί με <lb/> ἑκόντα καὶ ἄκοντα,
+                            πρ<expan>ὸς</expan> σὲ λακωνικῶς γράφ<expan>ειν
+                            <!--check abbreviation-->
+                        </expan>. <lb/>εἰ βούλομαί σε ταύτας δέχεσθαι ἡδέως<lb/> καὶ μὴ εὔχεσθαι τῶ
+                            θ<expan>ε</expan>ῶ <lb/> μηδενὸς εὐπορῆσαι, ὅπερ δώσω<lb/> γράμμα
+                            πρ<expan>ὸς</expan> σὲ κομίσαι:<c function="end">†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <pb n="24"/>
+            <div1 n="10" type="thematoep" xml:id="thema10">
+                <ab>
+                    <add hand="Cr" place="left">10.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema10_low">
+                    <ab>
+                        <lb/>Πολὺς καιρὸς ἔνε ὅποῦ δ<unclear>ὲ</unclear>ν μοῦ ἔγραψες. <lb/> καὶ
+                        μάλιστα ὁποῦ καθε ἡμέραν ἔρχονται<lb/> αυτόθεν πολλοὶ· διὰ τοῦτο δὲν ἔχω
+                        <lb/>καλὴν ἐλπίδα ὅτι νὰ μὲ ἀγαπᾶς.<lb/>
+                        <c function="unknown">∴</c> διότι ἂν καλὰ ἐνθυμοῦμαι τρεῖς, ἢ<lb/> τέσσαρες
+                        μῆνες ἔνε τώρα, ἀφόντης <lb/>δέν με ἐχαιρέτησες μὲ γραφήν σου, <lb/> καὶ
+                        μάλιστα ἔχοντας ἄδειαν. εἶπαν μου<lb/> πολλοὶ, ὅτι παραπονᾶσαι εἰς <del
+                            hand="Zyg">τα</del> ἐμέναν <lb/> καὶ λυπᾶσαι, καὶ φωνάζεις τὸ ἀλίμονον,
+                        <lb/> ὅτι σε ἀλισμόνησα, ὡσὰν νὰ <lb/> ἤθελες γράψειν
+                            ἀναρίθμητ<expan>ες</expan> φοραῖς,<lb/> καὶ οὐδεμίαν ἐδέχθης ἀπόκρισιν:
+                            <c function="end">†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema10_high">
+                    <ab>
+                        <lb/> ἤδη χρόν<expan>ος</expan> πολὺς, ἀφ’ οὕπερ ἡμῖν οὐκ ἐπέστειλας. <lb/>
+                        καὶ ταῦτα πολλ<expan>ῶν</expan> ὁσημέραι αὐτόθεν πρ<expan>ὸς</expan>
+                            ἡμ<expan>ᾶς</expan> ἀφικνουμέν<expan>ων</expan>. <lb/> τούτου χάριν οὐκ
+                        ἐλπίζω καὶ σὲ πρ<expan>ὸς</expan> ἐμὲ εὐνοϊκῶς<lb/>διακεῖσθαι.<space
+                            quantity="7"/> καὶ γὰρ εἰ ἀκριβῶς μέμνημαι<lb/> τρίτον ἤδη μήν ἐστιν
+                        ἐξοῦπερ διαγραμάτ<expan>ων</expan>
+                        <lb/> ἤκιστα προσηγόρευσας ἡμ<unclear>ᾶ</unclear>ς, <lb/> καὶ ταῦτα ἄγων
+                        χολήν.<lb/> πολλοὶ δ’ ἐντυχόντες μοι εἶπ<expan>ον</expan>, ὅτι τὰ<lb/>
+                        μάλιστά μοι διατελεῖς μεμφόμενος, <lb/> καὶ βαρέ<expan>ως</expan>
+                            φέρ<unclear>εις</unclear>, καὶ τὸ ἰοὺ ἰοὺ βοᾶς.<lb/> ὡς ἐγὼ τὸ τῆς λήθης
+                        ὕδωρ πεπωκώς εἰμϊ, <lb/> ὡσεὶ εἰ μυριάκϊς ἐπεσταλκώς, <lb/> οὐδεμΐαν δὲ παρ’
+                        ημῶν δεξάμεν<unclear>ος</unclear>:<c function="end">†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <div1 n="11" type="thematoep" xml:id="thema11">
+                <ab>
+                    <add hand="Cr" place="left">11.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema11_low">
+                    <ab>
+                        <lb/>Ἐγὼ τόσον ἐχαίρομουν τὴν συντροφίαν σου<lb/> ὅταν ἤμεσθεν ἀντάμα
+                            ὀμν<unclear>ύω</unclear> σου τὸν θ<expan>εό</expan>ν, <lb/> τὸν ὁποῖον
+                        τιμᾶ ἡ φιλοσοφία· ὅτι τῆς γλυκί<expan>ας</expan>
+                            σου<lb/>ψυχ<expan>ῆς</expan> τὴν εἰκόνα βαστῶ εἰς τὴν μέσην τῆς
+                            καρδί<expan>ας</expan> μου,<lb/> καὶ ὅταν ἐδιάβασα τὴν γραφήν ἔχυσα
+                        δάκρυα<lb/> πολλὰ ἐπάνω της, <unclear>θυ<c function="unknown"
+                                >∴</c>μώντ<expan>ας</expan></unclear> ποταπὸν φίλον στερεύ<lb
+                            rend="right"/>γομαι:</ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema11_high">
+                    <ab>
+                        <lb/> τοσοῦτον ἔχαιρον ἐπὶ τῆ σῆ ἑταιρία, <lb/> ὅτε ξυνῆμεν ἀλλήλοις, ὥς τε
+                        ὄμνυμί σοι θ<unclear reason="very close to margin">εον</unclear>
+                        <lb/> ὃν πρεσβεύει ἡ φιλοσοφία· ὅτι τὴν σ<expan>ὴν</expan>
+                        <lb/> γλυκιτάτην εἰκόνα, φέρω ἐν τῶ μέσω<lb rend="right"/> τῆς
+                            καρδί<expan>ας</expan> μου.<lb/>
+                        <!-- line break here may be because the high text has been written after the low text and Zyg is trying to keep the lines aligned to each other. INVESTIGATE -->
+                        ὅτε δὲ ἐνέτυχον τοῖς <lb/> γράμμασι, πλῆθ<expan>ος</expan>
+                            δακρύ<expan>ων</expan> κατέσπειρα<lb/> μεμνημένος οἵοι ἄρα φίλου
+                            στεροίμην.<c function="end">†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <pb n="25"/>
+            <div1 n="12" type="thematoep" xml:id="thema12">
+                <ab>
+                    <add hand="Cr" place="left">12.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema12_low">
+                    <ab>
+                        <lb/> ὁποῖον ἀπὸ τὰ δύο νὰ παραπονεθῶ, τοῦ <lb/>ἐμαυτοῦ μου, ὅτι δὲν ἦμαι
+                        ἄξιος, νὰ μὲ ἀγαπᾶς, <lb/> ὅτι ἡ τύχη μου φθονεῖ νὰ ἔχω τέτοιον φίλον,<lb/>
+                        ὡσἂν ἐσένα, ἤ νὰ παρ<add hand="Zyg" place="supralinear">×</add>απονεθῶ
+                        ἐσένα, <lb/> ὅτι μετὸ θέλημά σου δὲν θέλεις <add hand="Zyg"
+                            place="supralinear">νὰ βάλλης</add> τὸν νοῦν σου<lb/> εἰς ἐμένα οὐδὲ νὰ
+                        σὲ κόπτει οὐδόλως δι’ ἐμὲ.<lb/> ἐγὼ ἂν ὁ καιρὸς δέν με διδάξη ὁλότελα, <lb/>
+                        ἤξευρε εἶμαι χοντρὸς εἰς τοῦτο:<c function="end">†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema12_high">
+                    <ab>
+                        <lb/> πότερον ἐμαυτῶ μέμψομαι, ὅτι <lb/> οὐκ ἄξιός εἰμὶ τοῦ φιλεῖσθαι ὑπό
+                        σοῦ, <lb/> καὶ γὰρ τὸ δαιμόνιόν μοι φθονεῖ, ἐπὶ τῶ τοιοῦτον<lb/> φίλον
+                        ἔχειν, <lb/> ἢ σοὶ, ὅστις ἑκὼν οὐκ ἐθέλ<expan>εις</expan>
+                        <lb rend="right"/> ἐμοῦ κήδεσθαι. οὐδὲ περὶ τ<expan>ῶν</expan>
+                            ἐμ<expan>ῶν</expan>
+                        <lb/> φροντίδα ἔχειν τοπαράπαν.<lb/> ἔγωγε, εἴπερ χρόνος μὴ τοῦτο διδάξει
+                        με, <lb/> ἴσθι <add hand="Zyg" place="supralinear">ὅτι</add> περὶ τούτου
+                        πλείστην ἀμάθειαν ὀφλισκάνω:<c function="end">†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <div1 n="13" type="thematoep" xml:id="thema13">
+                <ab>
+                    <add hand="Cr" place="left">13.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema13_low">
+                    <ab>
+                        <lb/> ὄρεξϊν ἔχω πολλήν νὰ ε<unclear>ὕρ</unclear>ω καιρὸν νὰ σοῦ
+                        φανερώσω<lb/> τὴν γνώμην μου μὲ πολλὰ λόγϊα, καὶ δὲν ἠξεύρω <lb/> τὴν
+                        αἰτίαν, ἤ δια τὶ ἀγαπῶ ὅτι νὰ μϊλῶ<lb/> μὲ σένα πολλὰ, διὰ μέσου τῆς γραφῆς,
+                        <lb/> ἢ ὅτι τὸ πρᾶγμα αὐτὸ χρειάζεται πολλὰ λόγϊα·<lb/> ἂν δὲν ἤμουν
+                            μαργομέν<expan>ος</expan> τώρα στὰ χέρια, <lb/> τὸ ὁποῖον μὲ ἐμποδίζει,
+                        δὲν ἤθελεν ἦστεν<lb/> ἡ γραφή μου τόσα μικρὴ ὡς <del hand="Zyg"
+                        >πρ</del>βλέπεις.<lb/> το λοιπὸν διὰ τώρα, σώνει σου τόσον:<c function="end"
+                            >†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema13_high">
+                    <ab>
+                        <lb/> πολύς μοι ἐστὶν ὁ πόθ<expan>ος</expan> τοῦ καιροῦ
+                            τυχ<expan>εῖν</expan> ὥστε σοι ἃ γϊνώσκω<lb/> καὶ διὰ
+                            πολλ<expan>ῶν</expan> δηλῶσ<unclear>αι</unclear> λόγ<expan>ων</expan>,
+                        οὐκ ἀκριβῶς δὲ τὸ αἴτιον<lb/> σύνοιδα· ἆρ’ οὖν ὅθ’ ἥδομαι δι’
+                        ἐπιστολῆς.<lb/> ἐντυγχάνειν σοι, ἢ ὅτι αὐτὸ τὸ πρᾶγμα<lb/> δεῖται
+                            πολλ<expan>ῶν</expan> λόγ<expan>ων</expan>.<lb/> εἰ μὴ τοίνυν ἐνάρκων
+                        τὰς χεῖρ<expan>ας</expan> ὑπὸ τ<expan>οῦ</expan> ψύχ<expan>ους</expan>,
+                        <lb/> ὅπερ ἐμποδών μοι καθέστηκ<expan>εν</expan>, οὐκ ἂν οὕτω<lb/>
+                            μικρ<expan>ὸν</expan> εἴη τὸ γραμμα ὡς ὁρᾶς.<lb/> τοίνυν ἅλις ἔστω
+                            σ<unclear>οι</unclear> τό γε νῦν ἔχον:<c function="end">†</c>
+                        <lb/> ἔρρωσο. ἀπὸ βυζαντίου, ποσειδεῶν<expan>ος</expan>, τετάρτη ἐπὶ δέκα
+                            μεσοῦντ<expan>ος</expan>
+                        <!-- This line goes over both columns and belongs to the hight text. The symbol is used for referencing. INVESTIGATE -->
+                    </ab>
+                </div2>
+            </div1>
+            <pb n="26"/>
+            <div1 n="14" type="thematoep" xml:id="thema14">
+                <ab>
+                    <add hand="Cr" place="left">14.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema14_low">
+                    <ab>
+                        <lb/>Κάμνοντας ἄρμενα εἰς τὰς Ϛ τοῦ ἰαννουαρίου<lb/> ἀ<hi rend="underline"
+                            >πὸ π</hi>όλ<expan>εως, </expan> ἀπὸ ἐκεῖ καὶ δ ἡμέρες ἐράξαμεν <lb/>
+                        εἰς τὰ χανία, χαραν τῆς κρήτης, <lb/> ἔχοντας καλ<expan>ὸν</expan>
+                            καιρ<expan>ὸν</expan>. εἰς τ<expan>ὴν</expan> ὁποῖαν χώραν <lb/> πιστεύω
+                        νὰ ἀργήσω καμπόσον, θέλοντας<lb/> νὰ συνάξω στάμενα ποῦ μοῦ χρεωστοῦν
+                        ἐκεῖ.<lb/> μετα ταῦτα θέλω σοῦ γράψει, ἀπὸ ἐδῶ καὶ ὀμπρὸς <lb/>
+                        <unclear>τὸ</unclear> τὶ ἔχω νὰ κάμω. <space quantity="5"/> ὑγίαινε <lb/>
+                        Καὶ ἀγάπα ἐκεινοὺς, ποῦ σὲ ἀγαποῦν, <lb/> μὴ ἀμελοντ<expan>ας</expan> τὸ
+                            χρέ<expan>ος</expan> τῆς φιλί<expan>ας</expan>:<c function="end">†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema14_high">
+                    <ab>
+                        <lb/> πετάσαντες τὰ ἱστία Ϛ γαμιλιῶν<expan>ος</expan> ἱσταμένου<lb/> ἀπὸ
+                        βυζαντίου, <choice>
+                            <abbr>δην</abbr>
+                            <expan>τετάρτην</expan>
+                        </choice> εἰς κυδωνίαν προσέσχομ<expan>εν</expan>,<lb/> κρήτης πόλιν. <space
+                            quantity="5"/> οὐρίω γε χρησάμενοι<lb/> πν<expan>εύματ</expan>ι. ἔνθ’
+                        ὀλίγον οἶμαι διατρίψαι, <lb/> ὑπὲρ τοῦ τὰ ἐνταῦθα μοι ὀφειλόμενα χρήματα<lb
+                            rend="right"/> εἰσπράξασθαι.<lb/> περὶ δὲ τοῦ τί ποιήσειν μέλλω, <lb/>
+                        τοαποτοῦδε μηνύσωσοι:-<lb/>φίλει φιλοῦντ<expan>ας</expan>, μὴ ἀμελῶν<lb/>
+                        τοῦ φιλικοῦ καθήκοντος:<c function="end">†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <div1 n="15" type="thematoep" xml:id="thema15">
+                <ab>
+                    <add hand="Cr" place="left">15.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema15_low">
+                    <ab>
+                        <lb/>ἦλθε πρὸ<expan>ς</expan> ἐμένα ὁ <expan>δεῖνα</expan> ὁ φίλος μας ἐχθὲς
+                        τὸ ταχὺ,<lb/> ἀπὸ τὸν ὁποῖον ἐδέχτικα γραφάς σου, γραμ<c
+                            function="wordHyphenation">-</c>
+                        <lb/> μέν<expan>ας</expan> εἰς τὰς κε τοῦ δεκεμβ<expan>ρίου</expan>. τὸν
+                        ὁποῖον, <lb/> πῶς θαρεῖς καὶ ἀγαπῶ, ἀκούοντάς τον <lb/>νὰ λέγει πολλὰ καλὰ
+                        δϊὰ ἐσέναν. τὸν<lb/> ὁποῖον ὡς γράφεις παραδίδεις μοῦ τον <lb/> ἄν χρειασθῆ
+                        τὶ. καὶ ἤξευρε ὅτι καὶ ἂν δὲν ἤθελε<lb/>μοῦ γράψεις δι’ αὐτὸν τίποτες, ἐγὼ
+                        καὶ αὐτ<expan>ὸν</expan>, καὶ κάθε ἄλλον ποῦ νὰ σὲ ἀγαπᾶ, χρε<c
+                            function="wordHyphenation">-</c>
+                        <lb/>στῶ νὰ βοηθῶ μὲ ὅλλην μου τὴν ψυχήν:<c function="end">†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema15_high">
+                    <ab>
+                        <lb/> χθές ἕωθεν ὁ <expan>δεῖνα</expan> πρὸς ἡμᾶς ἀφίκετο <lb rend="right"/>
+                        ὁ κοιν<expan>ὸς</expan> φίλος<lb/> παρ<expan>οῦ</expan> ἐδεξάμην τὰ σὰ
+                        γράμματα, <lb/>γεγραμμένα ποσειδεῶν<expan>ος</expan> Ϛη φθίνοντος,
+                        ὅνπερ<lb/> φιλῶ πῶς δοκεῖς. καὶ ταῦτα ἀκού<expan>ων</expan>
+                        <lb/>πολλὰ ἀγαθὰ περὶ σοῦ διηγουμένου,<lb/> ὡς δέ μοι δοκεῖς γράφειν,
+                        συνίστης μοι αὐτ<expan>ὸν</expan>
+                        <lb/>συναγωνίσασθαι εἴ του δέη. ἴσθ’ ὅτι δὲ,<lb/> εἰ καὶ μηδὲν περὶ τούτου
+                        μοι ἀπέστειλας, ἔγωγε <lb/> τούτω, καὶ τῶν ἄλλων ἑκάστω φίλ<expan>ων</expan>
+                        σοι ὄντων, <lb/> ὀφείλω ὅλη ψυχῆ βοηθεῖν:<c function="end">†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <pb n="27"/>
+            <div1 n="16" type="thematoep" xml:id="thema16">
+                <ab>
+                    <add hand="Cr" place="left">16.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema16_low">
+                    <ab>
+                        <lb/>Ὁ <expan>δεῖνα</expan>, ὅστις σοῦ φέρνει τὴν γραφήν,<lb/>ἔνε ὁ αος ὁποῦ
+                        μὲ ἐδέχτικ<expan>εν</expan> εἰς τὸ σπήτη του,<lb/>εἰς τὰς
+                            ἀθήν<expan>ας</expan>, καὶ ἔρχεται εἰς τὴν πόλϊν νὰ<lb/> μαζόξη τὰ
+                        σταμένα, ὁποῦ μὲ χρεωστοῦν<lb/>τινές, τοὺς ὁποίους θαρῶ νὰ ἠξεύρεις.<lb/>
+                        τοῦ ὁποίου, αὐτοῦ ποῦ ἦσε βοήθησε<lb/> διὰ χάριν μου, δϊὰ νὰ γροικήσει
+                        πόσον<lb/> ἀγαπᾶς ἐμένα καὶ τοὺς φίλους μου:<c function="end">†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema16_high">
+                    <ab>
+                        <lb/>ὁ <expan>δεῖνα</expan> ὁ τ<expan>ὴν</expan> ἐπιστολήν σοι
+                            κομίζ<expan>ων</expan>, <lb/> ὁ πρῶτος ἐμὲ ὑποδεξάμεν<expan>ος</expan>
+                        ἐν οἴκω αὐτοῦ<lb/> ἔστιν ἀθήνησι, πέπλευκε δὲ τὴν εἰς <lb rend="right"/>
+                        βυζάντιον<lb/> τὸ ἐκεῖ ὀφειλόμενόν μοι ἀργύριον εἰσπράξασθαι,<lb/> παρὰ
+                            τιν<expan>ῶν</expan>. οὕς καὶ αὐτὸς οὐκ ἀγνοεῖς οἶμαι.<lb/>οὗ δὴ, αὐτοῦ
+                        παρὼν, συμπράξης, ἀντιβολῶ. <lb/> ἐμοὶ χαριζόμενος. ὥστε αὐτὸν, πόσον<lb/>
+                        εἰμὶ παρὰ σοὶ ἄξϊος ἐγώγε καὶ οἱ ἐπιτήδειοι<lb rend="right"/>γνῶναι.<c
+                            function="end">†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <div1 n="17" type="thematoep" xml:id="thema17">
+                <ab>
+                    <add hand="Cr" place="left">17.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema17_low">
+                    <ab>
+                        <lb/> πολὺς καιρὸς ἔνε περασμέν<expan>ος </expan>ἀπόντις <lb/> ἀπὸ κανέναν
+                        οὔτε λόγον ἤκουσα διὰ σένα, <lb/> οὔτε <add hand="Zyg"
+                            >γραφ</add><expan>ὴν</expan> σου ἐπῆρα. τὸ λοιπὸν ἂν ἦσε <lb/>
+                            ἀποφασισμέν<expan>ος</expan> νὰ σιωπᾶς, ἀπὸ τώρα <lb/> καὶ ὀμπρὸς, ἂν
+                        διὰ λόγου μου δὲν σὲ κόπτει, <lb/> πρέπει νὰ βάλεις εἰς τὸν νοῦν σου κἂν δὰ
+                        σένα, <lb/> Διότι εἰς ἐμέναν δὲν θέλει ἦστεν διαφορὰ, <lb/> ἀπὸ τὸ νὰ ζῆς, ἢ
+                        νὰ ἀποθάνες. <c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema17_high">
+                    <ab>
+                        <lb/> πολὺς ἤδη χρόν<expan>ος</expan> παρῆλθεν, ἀφοῦπερ <add hand="Zyg"
+                            place="supralinear"> γνῶναι</add>
+                        <lb/> οὐδὲ λόγον παρ’ οὐδεν<expan>ὸς</expan> ἐπυθόμην περὶ σοῦ <lb/> οὐδὲ σὰ
+                        ἐδεξάμην γράμματα. τοιγαροῦν <lb/> εἰ ἔγνωκας σιωπᾶν,
+                            τουλοιπ<expan>οῦ</expan>, εἰ καὶ <lb/> περὶ ἐμοῦ οὐδένα λόγον ποιῆ,
+                        <lb/> δεῖ σέ γε σαυτοῦ φροντίσαι <del>ὅoτι</del>
+                        <lb/> ὅτι οὐδὲν ἡμῖν δϊοίσει τοῦ ζῆν σ<expan>ὲν</expan> ἢ τοῦ
+                            θαν<expan>εῖν</expan>. <c>†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <div1 n="18" type="thematoep" xml:id="thema18">
+                <ab>
+                    <add hand="Cr" place="left">18.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema18_low">
+                    <ab>
+                        <lb/>Ἐγὼ ἀκόμη ὡς τῶρα, οὔτε γραφήν σου ἐπήρα, <lb/> οὔτε ἀπὸ κανέναν
+                        ἐγροίκησα πῶς <del>πάγ</del><add hand="Cr">ἔχ</add><expan>εις</expan>. <!-- revise encoding in this case -->
+                        <lb/> μόνον εἶπαν μου ὅτι καὶ ἀρρωστίαν εὑρίσκεις ἀφορμ<expan>ὴν</expan>,
+                        <lb/> καὶ πᾶσα ἄλλο πρᾶγμα περισσότερον διὰ νὰ μ<expan>ὴν</expan> μοῦ
+                        γράφεις. <lb/> καὶ ἐγὼ εἶπα, ὅτι ἀπὸ ἐτοῦτο
+                        ἐσημά<del>δ</del><add>τ</add>ευσα, ὅτι ἀποφάσισες <lb rend="right"/> νὰ
+                        ἔλθης νὰ μᾶς εὕρης. <lb/>
+                        <pb n="28"/> καὶ ἂν ἀπὸ τούτου ἀποτύχω, καὶ ἂν ἐκεῖνοι <lb/> λέγουν
+                        ἀλήθειαν, δὲν ἠξεύρω τὶ νὰ εἰπῶ <lb/> διὰ λόγου σου, μόνον ὅτι μᾶς ἀδικεῖς:
+                            <c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema18_high">
+                    <ab>
+                        <lb/> ἐγὼ μ<expan>ὲν</expan> οὐδέπω μέχρι τοῦ νῦν, οὔδε
+                            ἐπιστολ<expan>ὴν</expan>
+                        <lb/> ἐδεξάμην παρὰ σοῦ. <lb/> οὔτε παρά τιν<expan>ος</expan> ἐπυθόμην, πῶς
+                        ἔχεις. <lb/> εἶπον μοι μόνον ὅτι καὶ νό<del type="overstrike">μ</del><add
+                            place="infralinear">σ</add>ον αἰτιᾶ, καὶ πάντα μᾶλλον, <lb/> τοῦ μὴ
+                        ἐπιστέλλειν μοι. <lb/> ἐγὼ δὲ ἐκ τούτων εἶπον ἐμὲ τεκμέρεσθαι <lb/> ὅτι
+                        ἔγνωκας ἐλθ<expan>εῖν</expan> παρὰ ἡμᾶς. <lb/> εἰ δ’ ἐγὼ μὲν τούτου ἀποτύχω,
+                        καὶ εἰ ἐκεῖνοι <lb/> ἀληθῶς λέγουσιν, οὐκ οἶδα τὶ λέξαιμι <lb/> περὶ σοῦ,
+                        πλὴν ὅτι ἀδικεῖν ἡμᾶς: <c>†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <div1 n="19" type="thematoep" xml:id="thema19">
+                <ab>
+                    <add hand="Cr" place="left">19.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema19_low">
+                    <ab>
+                        <lb/> Ἠξεύρεις καλὰ, ὅτι ἔστοντας καὶ προτίτερα <lb/> σοῦ ἔγραψα ὅτι ἔκαμε
+                        χρεία, δὲν μοῦ ἀπόμεινε <lb/> καμΐα ὑπόθεσϊς, δϊὰ τὴν ὁποῖαν νὰ σοῦ <lb/>
+                        γράψω δϊὰ τώρα. τὸ λοιπ<expan>ὸν</expan> θέλοντας <expan>ὁ δεῖνα</expan>
+                        <lb/> ὁ ἐδικός μας φίλ<expan>ος</expan> νὰ μισεύση, δὲν μοῦ ἐφάνη<lb
+                            rend="right"/>πρέπ<expan>ον</expan>
+                        <lb/> νὰ ἔλθη σὲ σέναν χωρὶς γραφήν μου.<lb/> ἐδᾶ λοιπὸν τί νὰ σοῦ γράψω; εἰ
+                        μὴ ὅτι <lb/> εἶμαι γερ<expan>ὸς</expan> καὶ σὲ ἀγαπῶ, καὶ τὸ
+                            γληγορό<expan>τερον</expan>
+                        <lb/> θέλω ἔλθει νὰ σὲ εὕρω. ἀσεῖσε γερὸς: <lb/> καὶ ἄν μὲ ἀγαπᾶς, γύρευσε
+                        νὰ μὲ νικήσης<lb/> εἰς τὴν φιλίαν ἂν δυνηθῆς. διατὶ, <lb/> τότε ἐθέλω εἰπεῖ
+                        ἐγὼ, ὅτι ἡ νίκη δὲν ἔνε <lb/> ἄλλου τιν<expan>ὸς</expan> παρὸ ἐδική μου:
+                            <c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema19_high">
+                    <ab>
+                        <lb/>σὺ μὲν οἶδας καὶ πάνυ καλῶς, ὅτι ἐπεὶ πρώην <lb/> ἐπέσταλκά σοι περὶ ὧν
+                        ἂν ἔδει, οὐδεμία <lb/> ἔστι μοι λοιπὴ, περὶ ἧς γράψαιμι πρ<expan>ὸς</expan>
+                        σὲ, <lb/> τό γε νῦν ἔχον. τοίνυν μέλλοντ<expan>ος</expan>
+                        <expan>ὁ δεῖνα</expan>
+                        <lb/> τοῦ κοινοῦ φίλου νῦν ἀπιέναι, οὐ πρέπον <add hand="Cr"
+                            place="supralinear">οὐκ εἰκὸς</add> ἔδοξέ μοι <lb/> ἐλθεῖν
+                            πρ<expan>ὸς</expan> σὲ, ἄνευ τοῦ <del hand="Cr">πρ<expan>ὸς</expan>
+                                ἐμ<unclear>ὲ</unclear> σου</del>
+                        <add cert="low" hand="Cr" place="supralinear">ἐμοῦ</add>γράμματος <lb/> ἀλλὰ
+                        τὶ γράψω σοι; πλὴν ὅθ’ ὑγιαίνω <lb/> καὶ σὲ φιλῶ. καὶ πρὸς σὲ τὴν ταχίστην
+                        <lb/> ἐλεύσομαι, ἐντυχεῖν σοι. ἔρρωσο. <lb/> εἰ δὲ καθ’ ἡδονὴν δρᾶν τι
+                        βούλοιο, <lb/> πειρῶ εἰ δύνασαι, ὑπερβαλ<expan>εῖν</expan> ἐμὲ τῇ φιλία.
+                        <lb/> τηνικαῦτα γὰρ, οὐδενὸς ἄλλοι τοιάνδε <lb/> νίκην, ἢ ἐμήν,
+                        ὁμολογήσαιμι: <c>†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <div1 n="20" type="thematoep" xml:id="thema20">
+                <ab>
+                    <add hand="Cr" place="left">20.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema20_low">
+                    <ab>
+                        <lb/>Ἐδιάβασα τὴν γραφήν σου χαρούμ<expan>ενος</expan>
+                        <lb/> καὶ παραλίγον κτιπῶντ<expan>ας</expan> τὰ χέρια μου ἀπὸ
+                            τ<expan>ὴν</expan> χαρὰν <lb/> καλὰ καὶ ἂν βλέπω ὅτι ἐκεῖνα ὅπου
+                        ἐθάρρουν <lb/> δϊὰ λόγου σου, κρατῶν<unclear>τ</unclear><expan>ας</expan> σε
+                        ἔξω τοῦ χρέους τῆς <lb rend="right"/> φιλί<expan>ας</expan>
+                        <lb/>
+                        <unclear>ε</unclear>ὐρέθηκα γελασμέν<expan>ος</expan>
+                        <lb/> κάμε πάντα ἔτζη, καὶ ἀσῆσε νικητὴς:<c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema20_high">
+                    <ab>
+                        <lb/> ἀνέγνων σου τὴν ἐπιστολ<expan>ὴν</expan> πῶς δοκεῖς
+                            χαίρ<expan>ων</expan>. <lb/> μονονουχὶ δὲ καὶ τῶ χεῖρε κροτῶν ἐφ’
+                            ἡδον<expan>ῆς</expan>
+                        <lb/> εἰ καὶ ὁρῶ ὅτι ἐφ’ οἷς περὶ σοῦ ἐνόμϊζον, ὡς τοῦ<lb/> φιλικοῦ
+                            καθήκοντ<expan>ος</expan> μὴ φροντίζοντ<expan>ος</expan>,<lb/>
+                        διέψευσμαι. τοιγαροῦν οὕτως ἀεὶ ποίει<lb/> καὶ ὁμοίως ἐπίστελλε καὶ νίκα:
+                            <c>†</c>
+                    </ab>
+                    <pb n="29."/>
+                </div2>
+            </div1>
+            <div1 n="21" type="thematoep" xml:id="thema21">
+                <ab>
+                    <add hand="Cr" place="left">21.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema21_low">
+                    <ab>
+                        <lb/>δὲν ἠξεύρω τὶ νὰ εἰπῶ δϊὰ λόγου σου, ἢ ὅτι<lb/> μᾶς περιφρονεῖς, ἢ
+                        πιστεύοντας νὰ σοῦ <lb/> ἐπταίσαμ<expan>εν</expan> τίποτε παραπονᾶσαι, καὶ
+                        κατηγορεῖς μας <lb/> καὶ διὰ τοῦτο δὲν μᾶς ἔγραψες. τὸ λοιπὸν <lb/> ἂν ἔνε
+                        τὸ <expan rend="α">πρῶτ</expan>ον ὅτι περιφρονεῖς μας, ἄδικον ἔχεις. <lb/>
+                        ἄν ἔνε τὸ <expan rend="β">δεύτερ</expan>ον, ὅτι παραπονᾶσαι, ἤξευρε ὅτι
+                            δ<expan>ὲν</expan> λυποῦμαι <lb/> ἠξεύροντας τὸν ἐμαυτόν μου, ὅτι
+                        οὐδόλως πταίω: <c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema21_high">
+                    <ab>
+                        <lb/>ἐγὼ μ<expan>ὲν</expan> τὶ ἄρα πε<expan>ρὶ</expan> σοῦ εἴποιμι ἀπορῶ.
+                        πότερον <lb/> περϊορῶν ἡμᾶς ἢ μεμφόμεν<expan>ος</expan>, <lb/> ἕνεκά
+                            τιν<expan>ος</expan>, τὸ παράπαν οὐκ ἐπιστέ<unclear>λλ</unclear>εις
+                        <lb/> ἡμῖν. εἰ ἐμὲν τοίνυν τὸ <expan rend="α">πρῶτ</expan>ον ἐστίν, <lb/>
+                        διλονότϊ τὸ ἡμῶν ὀλιγορ<expan>ως</expan> ἔχειν σε <add cert="low" hand="Cr"
+                            place="supralinear">ἀδικεῖς</add>
+                        <lb/> εἰ δὲ τὸ <expan rend="β">δεύτερ</expan>ον, δηλαδὴ τὸ μέμφεσθαι ἡμῖν,
+                        <lb/> ἴσθι ὅτι οὐδόλ<unclear>ως</unclear> ἄχθομαι. ἐμαυτῶ συνειδῶς
+                        ἀναμάρτητον: <c>†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <div1 n="22" type="thematoep" xml:id="thema22">
+                <ab>
+                    <add hand="Cr" place="left">22.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema22_low">
+                    <ab>
+                        <lb/>Ἄδϊκον ἔχεις νὰ μὲ ψέγεις τόσα, ὡσὰν ἀκούω <lb/> καθημέραν, καὶ ἤξευρε
+                        ὁμοίως ἤθελα ὀργίζομαι <lb/> ἂν με ἐπαινᾶς. ταύτην τὴν γνώμην μὲ
+                            φαίνε<expan>ται</expan> νὰ ἔχει ὁ <del hand="Cr">ἡμέτερος</del>
+                            π<expan>ατὴ</expan>ρ τῶν ποιητ<expan>ῶν</expan> ὁ ὅμηρ<expan>ος</expan>.
+                        <lb/> ὁ ὁποῖ<expan>ος</expan> λέγει· εἰς ἕναν τόπον τῶν
+                            ποιημάτ<expan>ων</expan> του, <lb/> μὴ με ἐπαινᾶς πολλὰ, μήτε μὲ
+                        ψέγε·<lb/> ἠξεύροντας καλὰ ὅτι εἰς πᾶσα πρᾶγμα <lb/> τὸ
+                            περισσ<expan>ὸν</expan> βλάπτει, καὶ τὸ μέτρος ὠφελεῖ: <c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema22_high">
+                    <ab>
+                        <lb/>ἀδικεῖς ψέγ<expan>ων</expan> ἐμὲ τοσοῦτον, ὡς ἔγωγε πϋνθάνομαι
+                        ὁσημέραι. <lb/> καὶ ἴσθι ὅτι ἐξεναντί<expan>ας</expan>, εἰ μὴ τοσοῦτον
+                        ἐπήνεις βαρέ<expan>ως</expan> ἔφερον. <lb/> ταύτην δοκεῖ μοι τὴν γνώμην
+                        ἔχειν ὅμηρον, τὸν τ<expan>ῶν</expan>
+                        <lb/> ποιητῶν πατέρα. ὅστις εἴρηκε π<unclear>ου</unclear>
+                        <lb/> τῶν αὐτοῦ ποιημάτων<lb/> μήτ’ ἄρμε μάλ’ αἴνε<unclear>ε</unclear>, μήτέ
+                        τοι νείκει <lb/> εἰδὼς, οἶμαι ὅτι ἐν παντὶ πράγματι, <lb/> το
+                            μ<expan>εν</expan> περιττ<expan>ὸν</expan> λυμαίνεται, τὸ δὲ μέτριον
+                        ὠφελεῖ: <c>†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <div1 n="23" type="thematoep" xml:id="thema23">
+                <ab>
+                    <add hand="Cr" place="left">23.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema23_low">
+                    <ab>
+                        <lb/>Ἐσὺ καὶ ἠξεύρεις πολλὰ, καὶ γράφεις πολλὰ· ὅτι εἰς τὸ στόμα σου <lb/>
+                        αἱ βρύσαι τῶν μαθημάτ<expan>ων</expan> εὑρίσκον<expan>ται</expan>· καὶ
+                            γληγορό<expan>τερον</expan> ἤθελ<expan>ε</expan> λείψειν
+                            νερ<expan>ὸν</expan> ἀπὸ τὸ πηγάδη καὶ ἀπὸ ταῖς βρύσαις,
+                            π<expan>α</expan>ρὸ ἀπὸ ἐσέναν <lb/> ὕλη τῶν λόγ<expan>ων</expan>· ἐγὼ
+                        παρακαλῶ σε ἂν δὲν γράφω σϋχνὰ <lb/> νὰ μ<expan>ὴν</expan> θαυμάζεσαι, ὅτι
+                            πτωχ<expan>ὸς</expan> πολλὰ ἦμε ἀπὸ λόγϊα. <lb/> καὶ ἂν καθημέραν δὲν
+                        ποτίζομαι ἀπὸ τὰ βιβλία, δὲν ἀπομένη <lb/> ἄλλο σὲ μέναν παρὸ ἡ σιωπὴ:
+                            <c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema23_high">
+                    <ab>
+                        <lb/> σὺ πολυμαθής τις ὢν, πολλὰ καὶ γράφεις· οἱ γὰρ τ<expan>ῶν</expan>
+                            λόγ<expan>ων</expan>
+                        <lb/>
+                        <hi rend="underline">πηγαὶ</hi> ἐν τῶ σῶ οἰκοῦσι στόματι. μᾶλλον δὲ τὰ
+                        φρέατα καὶ<lb/> τὰς πηγὰς ἐπιλείπ<expan>ειν</expan>, ἢ σὲ ἀπορεῖν ὕλης
+                            τ<expan>ῶν</expan> λόγ<expan>ων</expan>
+                        <lb/> ἐγὼ δὲ εἰ καὶ μὴ πρ<expan>ὸς</expan> σὲ συνεχῶς ἐπιστέλλοιμϊ, ὅπως μη
+                        θαυμάζεις <lb/> ἀντιβολῶ. ἀπορία γὰρ ἐμοὶ μεγίστη τ<expan>ῶν</expan>
+                            λόγ<expan>ων</expan> καθέστηκε <lb/> εἰ δὲ μὴ ὁσημέραι ἀρδοίμην ἐκ τῆς
+                            τ<expan>ῶν</expan> βιβλί<expan>ων</expan> πηγῆς, <lb/> οὐδὲν ἄλλοι μοι
+                        λείπεται πλ<expan>ὴν</expan> τὸ σιωπᾶν: <c>†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <pb n="30"/>
+            <div1 n="24" type="thematoep" xml:id="thema24">
+                <ab>
+                    <add hand="Cr" place="left">2̅4̅̅. </add>
+                    <note>Crusius writes 24. with a vertical line on top of the number.</note>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema24_low">
+                    <ab>
+                        <lb/>Ἂν τινὰς βλέπη τὸ πῶς δὲν γράφω συχνὰ <lb/> πρ<expan>ὸς</expan> ἐσέναν,
+                        εἰς τοῦτο μου ἤθελ<unclear>ε</unclear> σϋμπαθήση. <lb/> ἠξεύροντας ὅτι ὁ
+                            φόβ<expan>ος</expan> μὲ πείθει καὶ ἡ χον-<lb/>τροσύνη. ἀλλὰ ἐσὺ νὰ
+                        σιωπᾶς τόσον καιρ<expan>ὸν</expan>
+                        <lb/> μὲ τὸ θέλημά σου, δὲν ἠξεύρω τὶ πρᾶγμα <lb/> θέλεις εὕρει νὰ εἰπῆς, τὸ
+                        ὁποῖον νὰ σὲ<lb/> εὐγάλη, ἀπὸ κατηγορίαν μεγάλην: <c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema24_high">
+                    <ab>
+                        <lb/>οἶμαι τινὰ καίπερ ὁρῶντα, ὅτι συνεχῶς οὐκ ἐπιστέλλω σοι, <lb/> καὶ
+                        τοῦτο μοι συγγνώμην ἀπονεῖμαι. ἀκριβῶς <lb/> εἰδότα ὅτι ὑπὸ φόβου καὶ
+                            ἀμαθί<expan>ας</expan> διδάσκομαι. <lb/> σὺ δὲ τοσοῦτον χρόνον
+                            σιγ<expan>ῶν</expan>, καὶ ταῦτα <lb/> ἑκὼν. οὐκ οἶδ’ ὅτι ἂν ἔχοις
+                        εἰπεῖν, <lb/> ὅπερ σε τῆς μεγ<expan>άλης</expan> ἐξαιρήσεται <lb/>
+                            μέμψεως:<c>†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <div1 n="25" type="thematoep" xml:id="thema25">
+                <ab>
+                    <add hand="Cr" place="left">24.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema25_low">
+                    <ab>
+                        <lb/>σημεῖον μεγ<expan>άλον</expan> κρατῶ, ὅτι με ἐνθυμάσαι, καὶ μὲ <lb/>
+                        ἀγαπᾶς, καὶ σὲ κόπτει δϊὰ λόγου μου, <lb/> ὅταν μου γράφεις. τὸ ὁποῖον ὅσον
+                        συχνὰ <lb/> τὸ κάμνης, τόσον περισσοτέραν χάριν<lb/> μοῦ δίδεις. ὅτϊ κάμνεις
+                        με νὰ γρικῶ, <lb/> ὅτι δὲν λείπω ἀπὸ τὸν νοῦ σου. ἀλλὰ<lb/> εἶμαι πάντοτε
+                        μετὰ σέναν ἀντάμα. <lb/> διὰ μέσου τῆς ἐνθυμήσεως. τῆς ὁποί<expan>ας</expan>
+                        <lb/> τὸ μέσον εἶναι τὸ νὰ γράφεις; <c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema25_high">
+                    <ab>
+                        <lb/>Τεκμαίρομαι τὰ μέγιστα, ὅτι δϊὰ μνήμης ἄγεις ἡμ<expan>ᾶς</expan>, <lb/>
+                        καὶ φιλεῖς, καὶ λόγων ἡμ<expan>ῶν</expan> ποιεῖς, ὅταν πρ<expan>ὸς</expan>
+                            ἡμ<expan>ᾶς</expan>
+                        <lb/>γράμματα δίδως. ὅπερ ὅσον ἂν ποιῆς συνεχῶς <lb/> τοσοῦτον μᾶλλον, ἡμῖν
+                        χαρίζει. καθίστης <lb/> γάρ μοι γινώσκειν, ὅτι οὐκ ἄπειμί σου <lb/> τῆς
+                            διανοί<expan>ας</expan>, ἀεὶ δὲ σύνειμί σοι. <lb/> δϊὰ τῆς μνήμης, ἥσπερ
+                        <lb/> τὸ γράφειν μέγιστον διατελεῖ τεκμήριον:<c>†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <div1 n="26" type="thematoep" xml:id="thema26">
+                <ab>
+                    <add hand="Cr" place="left">25.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema26_low">
+                    <ab>
+                        <lb/>Ἂν τινὰς ἤξευρε ὅτι μέσα εἰς τοὺς λόγους ζῶντ<expan>ας</expan> καὶ
+                        <lb/> ἀναπνέοντας, διὰ νὰ εἰπῶ ἔτζη, ἀμελεῖς γράφειν, <lb/> ἤθελεν
+                        ἀποφασίσειν ἐναντίον σου, ὅτι μας ἀλισμόνισες. <lb/> ὁ ὁποῖος καὶ τὸ νὰ
+                        λέγεις καὶ τὸ νὰ γράφεις εὔκολα τὰ ἔχεις. <lb/> καὶ ὄχι ἐσὺ μόνον, ἀλλὰ καὶ
+                            ὅποι<expan>ος</expan> ἄλλος, ἔχοντας<lb/> ταῦτα, καὶ ἀπόκι σϊωπᾶ,
+                        φανερὸν εἶνε, <pb n="31"/> ὅτι δὲν τὸ κάμνει διὰ λείψιμον λόγων, <lb/> ἀλλὰ
+                        δι’ ἀλησμονίαν, ἢ ὑπεριφάνειαν. <lb/> ἐγὼ τὸ λοιπὸν ποῦ ἠξεύρεις καὶ
+                        πάντοτε<lb/> εἰς ὅτι καὶ ἂν θέλης σοῦ πείθομαι. ὡς <lb/> καὶ τὴν σϊωπὴν
+                        χρεωστῶ νὰ σοῦ τὴν πλη-<lb/>ρώσω, μὲ τὸ νὰ σὲ χαιρετήσω. χαιρε<lb/>τῶ σε το
+                        λοιπὸν, καὶ ἂν μὲ ἀγαπᾶς, καὶ ὄχι. <lb/> καὶ ἂν θέλης γράφε, καὶ ἂν σοῦ εἶνε
+                        γλυκὺ <lb/> μὴν γράφεις, οὔτε χαιρέτα μ<expan>ας</expan> ἂν θέλης. <lb/> καὶ
+                        μὲ ὅλα τοῦτα, πάλιν φίλ<expan>ος</expan> σου ἦμε, <lb/> καὶ ἤξευρε πῶς λέγω
+                        ὅλην τὴν ἀλήθειαν:<c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema26_high">
+                    <ab>
+                        <lb/> εἴτις ἐγίνωσκ<expan>εν</expan> ὅτι ἐν λόγοις ζῆς καὶ πνέεις, <!-- See TLG printout -->
+                        <lb/> ἵν’ οὕτως εἴπω, ἀμελεῖς τοῦ πρ<expan>ὸς</expan> ἡμ<expan>ᾶς</expan>
+                        γράφειν, <lb/> καταψηφίσαιτο ἂν σου τὴν πρ<expan>ὸς</expan> ἡμᾶς λήθην.
+                        <lb/> ὅστις καὶ τὸν λόγον, καὶ τὸ γράφειν πρόχειρον ἔχει<unclear>ς</unclear>
+                        <lb/> οὐ μόνον δὲ σὺ, ἀλλὰ καὶ ὃς ἂν ἔχη ταῦτα <lb/> εἶτα σιγᾶ, δῆλος ἐστὶν,
+                        <lb/>ὅτι οὐ ταῦτα ποιεῖ δι’ ἔνδειαν λόγων, <lb/> ἀλλ’ ἢ διὰ λήθην ἢ
+                        ὑπεροψίαν. <lb/> ἔγωγε τοίνυν ὃν οἶδας ἀεὶ πειθόμενον σοι, <lb/> καὶ τὴν
+                            σιωπ<expan>ὴν</expan> ὀφείλω σοι ἀμείψασθαι <lb/> προσρήσει. τοιγαροῦν
+                        χαῖρε. <lb/> καὶ εἴ με φιλεῖς, καὶ οὐ. <lb/> καὶ προσέτι εἰ βούλει
+                            γράφ<expan>ε</expan>, καὶ εἰ ἔστι σοι <lb/> ἡδὺ, οὕτε γράφε, οὔτε
+                        προσαγόρευε. <lb/> καὶ ἐν πᾶσι τούτοις, φίλ<expan>ος</expan> εἰμί σοι, <lb/>
+                        καὶ ἴσθ’ ὅτι πάντα ἀληθῶς λέγω:<c>†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <div1 n="27" type="thematoep" xml:id="thema27">
+                <ab>
+                    <add hand="Cr" place="left">26</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema27_low">
+                    <ab>
+                        <lb/>ἔλαβα τὴν γραφήν σου ἀπὸ τὸν <expan>δεῖνα</expan> τὸν φίλον μας <lb/>
+                        καὶ τὸν συμαθητήν μας. καὶ ἐχάρικα πολλὰ <lb/> μέρος ὅτι ἔμαθα πῶς ἀπέλαυσες
+                        τήν <lb/> ἀληθιν<expan>ὴν</expan> παίδευσιν τῶν γραμμάτων εἰς
+                            τ<expan>ὴν</expan> πάδουβαν, καὶ ὅτι κάμνεις καὶ καρπὸν,<lb/> ἄξιον τοῦ
+                        γένους τῶν γραικ<expan>ῶν</expan>. <lb/> ὑγίαινε. καὶ ὡσὰν σὲ ἐνθυμοῦμε ἐγὼ,
+                        <lb/> ἐνθύμου καὶ σὺ ἐμένα.<c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema27_high">
+                    <ab>
+                        <lb/>ἐδεξάμην τὴν σ<expan>ὴν</expan> ἐπιστολ<expan>ὴν</expan> παρὰ τοῦ
+                            <expan>δεῖνα</expan> τοῦ κοινοῦ φίλου <lb/> καὶ συμφοιτητοῦ. καὶ ἥσθην
+                        τὰ μέγιστα. <lb/> τομὲν ὅτι ἀπέλαβες ἐν παταβίω <lb/> τῆς ἀληθοῦς παιδεύσεως
+                            τ<expan>ῆς</expan> σοφί<expan>ας</expan>, <lb/> τὸ δὲ, ὅτι καὶ καρπὸν
+                        ποιεῖς <lb/> ὡς πυνθάνομαι, ἄξια τῆς <lb/> ἑλλάδος καὶ τ<expan>οῦ</expan>
+                        ἡμετέρου γένους πράττ<expan>ων</expan>. <lb/> ἔρρωσο. καὶ ὑμῶν ἐναλλάξ
+                        μέμνησο: <c>†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <pb n="32"/>
+            <div1 n="28" type="thematoep" xml:id="thema28">
+                <ab>
+                    <add hand="Cr" place="left">27.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema28_low">
+                    <ab>
+                        <lb/> Ἐδέχτικα τ<expan>ὴν</expan> γραφήν σου χαρούμεν<expan>ος</expan>
+                        <lb/> ἔσοντας καὶ πολὺς καιρὸς ἔνε ὅποῦ <lb/> μὲ γραφήν σου δὲν μᾶς
+                        ἐχαιρέτισες.<lb/>τὸ λοιπὸν διαβάζοντάς την, ἐπαίνεσα <lb/> τὴν ἀρετὴν ὁπου
+                        ἔχεις, εἰς τὰ λόγια, <lb/> καὶ τὴν χάριν τὴν ἀθηναίϊκην.<lb/> ἠξεύροντας καὶ
+                        τοῦτο καλὰ, ὅτι εἰς <expan>τὴν</expan>
+                        <lb/>ὀμορφίαν τῶν ἐπιστολ<expan>ῶν</expan> ἐνίκησές με.<lb/>γράφε
+                            λοιπ<expan>ὸν</expan> ἔτζι πάντα, καὶ νίκα με.<lb/> ἤξευρε δὲ, ὅτι ὅταν
+                        μου γράφεις χαίρομαι,<lb/> καὶ εἰς τὸ αὐτὸ πάλιν, λυποῦμαι, <lb/>
+                            ζητῶντ<expan>ας</expan> μου νὰ σοῦ ἀπολογηθῶ, <lb/>πρὸς ἐκεῖνα ποῦ
+                        γράφεις. <lb/>Διότι τὶ ἤθελα ἠξεύρω ἐγὼ νὰ εἰπῶ<lb/>πρ<expan>ὸς</expan> μίαν
+                            γραφ<expan>ὴν</expan> τεχνικ<expan>ὴν</expan>, καὶ εἰς τὴν ὁποίαν<lb/>ἡ
+                        γλῶσσα μου, δὲν ἔνε συνειθισμένη.<lb/>τὸ λοιπὸν διὰ νὰ μὴν
+                        πολυλογῶ.<lb/>γράφε ἐσὺ πλέον συχνὰ, καὶ νίκα με:<c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema28_high">
+                    <ab>
+                        <lb/> χαίρ<expan>ων</expan> ἐδεξάμην τὰ σὰ γράμματα.<lb/>πολλοῦ χρόνου
+                            παριππευκότ<expan>ος</expan>,<lb/> ἐξότουπερ δϊὰ
+                            γραμμάτ<expan>ων</expan> ἡμῶν οὐκ <unclear>ἠ</unclear>σπάσω.<lb/>
+                        ἀναγνοὺς τοίνυν ταῦτα, ἐθαύμασὰ σου<lb/>τὴν ἐπὶ τοῖς λόγοις ἡδύτητα,
+                        καὶ<lb/>χάριτα τὴν ἀττικὴν.<lb/>εἰδὼς μέντοι τοῦτο ἀκριβῶς,<lb/> ἐπὶ τῶ τῶν
+                            ἐπιστολ<expan>ῶν</expan> κάλλει νενίκημαι ὑπὸ σοῦ.<lb/> οὕτως ἀεὶ τοίνυν
+                        γράφε καὶ νίκα.<lb/>ἴσθι δ’ ὅτι πρ<expan>ὸς</expan> ἡμᾶς ἐπιστέλλοντός
+                        σου<lb/>χαίρω κατ’ αὐτὸ καὶ ἀνϊῶμαι.<lb/>ἀποκριθῆναι ἀπαιτουμένου, <lb/>
+                        πρὸς ἃ γράφεις.<lb/>τὶ γὰρ εἰδείην ἂν εἰπεῖν, πρ<expan>ὸς</expan>
+                            ἐπιστολ<expan>ὴν</expan>
+                        <lb/>οὕτως ἀττικίζουσαν, καὶ πρ<expan>ὸς</expan> ἣν <lb/> ἡ γλῶττα μου οὐκ
+                        ἐθάς ἐστι φθέγγε<unclear>σθαι</unclear>
+                        <lb/> τοιγαροῦν ἵνα μὴ μακρηγορῶ,<lb/> συνεχέστερον αὐτ<unclear>ὸς</unclear>
+                        γράφε, καὶ νίκα ἐμέ:<c>†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <pb n="33"/>
+            <div1 n="29" type="thematoep" xml:id="thema29">
+                <ab>
+                    <add hand="Cr" place="left">28.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema29_low">
+                    <ab>
+                        <lb/> ἐχθὲς βραδύ ἔλαβα δύο σου γραφὲς<lb/>ταῖς ὁποίας ἀνέγνωσα
+                        μεταχαρᾶς.<lb/> ἀλλὰ διὰ τὴν ὑπόθεσϊν ποῦ ἠξεύρεις<lb/> δὲν ἐθυμήθης νὰ μοῦ
+                        γράψης.<lb/>νὰ ζῆς μὲ τὸ <expan rend="α">πρῶτ</expan>ον δός μου
+                        εἴδησϊν.<lb/> χαιρέτα ἀπὸ λόγου μου τὸν <expan>δεῖνα</expan> τὸν<lb/>καλὸν
+                            ἄν<expan>θρωπ</expan>ον, καὶ γληκόν μου φίλο:<c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema29_high">
+                    <ab>
+                        <lb/>περὶ δείλην ὀψίαν, ἐδεξάμην δύο σου ἐπιστολὰς<lb/>ἃς ἀνέγνων πῶς δοκεῖς
+                        χαίρων.<lb/>περὶ δὲ ἧς οἶσθα ὑποθέσεως<lb/>ἐπιλελῆσθαί μοι δοκεῖς, δι’ ἣν
+                        οὐκ ἐπῆλθε σοι<lb rend="right"/>γράψαι<lb/>ἀλλὰ πρ<expan>ὸς</expan>
+                            θ<expan>εο</expan>ῦ περὶ τούτου τ<expan>ὴν</expan> ταχίστην μοι
+                        μήνυσον:<lb/>ὡς ἀπ’ ἐμοῦ τὸν <expan>δεῖνα</expan> τὸν ἀγαθὸν<lb/>καὶ γλυκύν
+                        μοι φίλον προσαγόρευσον:<c>†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <div1 n="30" type="thematoep" xml:id="thema30">
+                <ab>
+                    <add hand="Cr" place="left">29.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema30_low">
+                    <ab>
+                        <lb/>οἱ φρόνιμοι ἄν<expan>θρωπ</expan>οι ἕνα μέρ<expan>ος</expan>καλὸ
+                        κρατοῦν τοῦτο<lb/>καὶ βέβαια ἔνε φρονίμου, <hi rend="underline">νὰ ἐπιτύχη
+                            τινὰς</hi>
+                        <lb/>διδάσκαλον καλὸν πρ<expan>ὸς</expan> τὴν μάθησϊν τ<expan>ῶν</expan>
+                            γραμμάτ<expan>ων</expan>, <lb/> καὶ ἄσκησιν τῆς ἀρετῆς καὶ τῶν
+                        ἠθῶν.<lb/>διὰ τὰ ὁποῖα τιμᾶ<expan>ται</expan>τινὰς εἰς τοὺς
+                            ἀν<expan>θρώπ</expan>ους, <lb/>καὶ ἔχει καὶ καλὸν ὄνομα
+                            ἐκεῖν<expan>ος</expan> ὅστις μανθάνει, <lb/> καὶ εἰς τὴν τιμήν του εἶνε
+                        ὡς γέροντας.<lb/>τὸ λοιπ<expan>ὸν</expan> ὡς μου γράφεις καὶ εἶπαν καὶ οἱ
+                        γραμματοφόροι, <lb/>ἐπίτυχες διδάσκαλον μὲ τὸν ὁποῖον καὶ εἰς τὰ ἤθη<lb/>καὶ
+                        εἰς τὴν γνῶσιν, δὲν εὑρίσκε<expan>ται</expan> ἄλλ<expan>ος</expan> νὰ
+                        τερϊάση.<lb/>καλορίζικον λοιπ<expan>ὸν</expan> σὲ ἔκρινα, καὶ
+                        μεταχαρᾶς<lb/>ἤθελα ἔλθη καὶ ἐγὼ, ἂν δὲν μοῦ ἔλιπεν ἂν
+                        πρ<expan>ὸς</expan>,<lb/>χωρὶς γὰρ αὐτὰ, ὡς λέγει <hi rend="underline"
+                            >δημοσθένης</hi>, δὲν γίνεται<lb rend="right"/>ὅσον κάμνη χρεία.<pb
+                            n="34"/>καὶ ἂν ὁ καιρὸς καὶ ἡ τύχη μου βοηθήση,<lb/>νὰ ἔχω μόνον ὅσα ἔνε
+                        ἀκανετὰ,<lb/>διὰ τὴν τροφήν μου, θέλεις με ἰδεῖ<lb/>νὰ ἔλθω τὸ
+                            γληγορότερον:<c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema30_high">
+                    <ab>
+                        <lb/> ἓν μέρ<expan>ος</expan> εὐδαιμονί<expan>ας</expan> οἱ σώφρονες
+                        κρίνουσι, <lb/>(τωόντι<note>hyphen below the word</note> δὲ καὶ ἐστὶ) τὸ
+                        τυχεῖν τινὰ διδασκάλου<lb/>ἐπιτηδείου, εἰς τ<expan>ὴν</expan> τῶν
+                            μαθημάτ<expan>ων</expan> ἄσκησιν, <lb/> τῆς ἀρετῆς τε καὶ τ<expan>ῶν
+                            </expan>χρηστ<expan>ῶν</expan> ἠθῶν.<lb/>δι’ ἃ τὶς ἐν
+                            ἀν<expan>θρώπ</expan>οις καλῶς ἀκούει,<lb/>καὶ
+                            δεδοξασμέν<expan>ος</expan> ἀναδείκνυται.<lb/>καὶ μᾶλλον εἰ σώφρων εἴη
+                        ὡς γηραιὸς.<lb/>ὥσπερ τοίνυν γράφεις, καὶ εἶπον μοι καὶ οἱ<lb rend="right"
+                        />γραμματοκομισταὶ.<lb/>ἔτυχες διδασκάλου.<lb/>ὧ ἄλλος ἐν συνέσει καὶ
+                        χρηστοῖς ἤθεσιν οὐκ ὁμοιοῖ.<lb/>εὐδαιμόνισά σε τοίνυν τοιούτω
+                            χρώμεν<expan>ος</expan>, καὶ <lb/>ἀφικοίμην ἄν καὐτὸς, εἰ μὴ
+                            χρημάτ<expan>ων</expan> ἀποροίην.<lb/>ὣν ἄν<expan>ευ</expan>, ὥς φησι
+                        δημοσθένης, οὐδέν ἐστι<lb/>γενέσθαι τῶν δεόντων.<lb/>εἰ δὲ μοι ὁ
+                            καιρ<expan>ὸς</expan> καὶ τὸ διαμόνϊον συμπράξαι<lb/>ὥστε
+                            τ<expan>ῶν</expan> περὶ τῆς τροφ<expan>ῆς</expan>
+                            ἀναγκαί<expan>ων</expan> ἀπορῆσαι,<lb/>ὄψει με πρὸς ὑμᾶς τὴν
+                            ταχίστην<lb/>ἀφιγμένον:<c>†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <div1 n="31" type="thematoep" xml:id="thema31">
+                <ab>
+                    <add hand="Cr" place="left">30.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema31_low">
+                    <ab>
+                        <lb/>Πολλὰ μὲ ἐπαρηγόρησες μὲ τὴν γραφήν σου,<lb/>ὁποῦ ὡραμάϊ ἀπόκαμα εἴς
+                        τὰς δυστυχί<expan>ας</expan>,<lb/> ἀλλὰ τὶ νὰ κάμω, ποία τέχνη
+                            ἤθελ<expan>εν</expan> εὑρεθῆ<lb/> νὰ μὴν ἐγένησα τὰ ἔγϊναν. ὅμως ἀπὸ
+                        τὰ<lb/>λόγϊα τὰ ἐδικά σου, βλέποντας πῶς<lb/> φιλάνθρωπα μὲ νουθετεῖς, νὰ
+                        ὑπομένω<lb/>εἰς κάθε τρόπον, πρέπει νὰ πείθομαι.<lb/>ὅτι <hi
+                            rend="underline">δὲν ἔνε</hi> δυνατὸν νὰ γένη αλέως,<lb/>παρὰ καθὼς
+                        ἐσϋνέβησαν. ξεύρω σε γὰρ<lb/>ὅτι ἦσε καλὸς νὰ βοηθῆς καὶ μὲ λόγον καὶ
+                            ἔργον:<c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema31_high">
+                    <ab>
+                        <lb/>Ἐπαρεμυθήσω με ταμάλιστα τοῖς σοῖς γράμμασιν, <lb/> ὅστις ἤδη ἀπείρηκα
+                        ταῖς δυστυχίαις.<lb/>τὶ δὲ ἄρα ποιῆσαι ἔχω, μὴ γενέσθαι ἃ<lb/>συνέβη; τοῖς
+                        οὖν σαυτοῦ φιλαν<expan>θρώπ</expan>οις<lb/>λόγοις θεωρ<expan>ῶν</expan>, πῶς
+                        νουθετεῖς ἀνέ-<lb/>χεσθαι παντὶ τρόπω, τούτου χάριν<lb/>χρὴ πείθεσθαί σοι,
+                        καλῶς συμβουλεύειν<lb/>οὐ γὰρ οἵ<expan>ον</expan> τέ ἐστιν ἄλλως γενέσθαι,
+                        ἢ<lb/>ὡς ταῦτα συνέβη. γϊνώσκω οὖν σε<lb/>
+                        <unclear>θ</unclear>ησαυρ<expan>ὸν</expan> ἀγαθ<expan>ὸν</expan> εἰς τὸ
+                        συναγωνίζεσθαι, <lb rend="right"/>λόγω καὶ ἔργῳ.</ab>
+                </div2>
+            </div1>
+            <div1 n="32" type="thematoep" xml:id="thema32">
+                <ab>
+                    <add hand="Cr" place="left">31</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema32_low">
+                    <ab>
+                        <lb/>Πιστεύω ὅτι ἀπὸ τὸ φ<expan>ὴν</expan> ἔγινες τέτοιος, ὅτι καὶ φίλους
+                        καὶ <lb/>ἐδικοὺς ξεχάνεις. τὸ ὁποῖον καὶ ἀδικΐας καὶ χοντροσύνης<lb/>ἔνε
+                        σημάδη. διότι κοντᾶ τέσσαρες ἢ Ϛ μῆνες<lb/>δὲν μᾶς ἔγραψες. ἂν τὸ
+                            λοιπ<expan>ὸν</expan> τὸ καμνης μετὸ<lb/>θέλημά σου, ἀδικεῖς πολλὰ. εἰ
+                        δὲ στανίω σου,<lb/>(καλὰ καὶ καμίαν ἀφορμ<expan>ὴν</expan> πιστεύω νὰ
+                            μ<expan>ὴν</expan> ἔχης)<lb/>Κάμε νὰ γνωρίσω<expan>μεν</expan> μὲ ἔργον
+                            ἀπὸ<lb rend="right"/>τώρα καὶ ἀμπρ<expan>ὸς</expan>:<c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema32_high">
+                    <ab>
+                        <lb/>οἶμαι σε ὑπὸ τρυφ<expan>ῆς</expan>, τοῖον γενέσθαι, ὥστε καὶ
+                            φίλ<expan>ων</expan>, καὶ <lb/>τῶν γένει προσηκόντ<expan>ων</expan>
+                        ἐπιλελῆσθαι. ὅπου<lb/>ἐστὶ σημεῖον ἀδικί<expan>ας</expan> καὶ
+                            σκαιότητ<expan>ος</expan>. ἐπεὶ<lb/> δος ἢ εος μῆν ἐστιν οὑτοσὶ,
+                        ἐξότουπερ οὐκ ἐγ<unclear>ραψας</unclear>
+                        <lb/>ἐμὲν τοίνυν ἑκουσί<expan>ως</expan> τοῦτο ποιεῖς τὰ μάλιστα
+                        ἀδικεῖς<lb/>εἰ δὲ ἀκουσί<expan>ως</expan>, (καίπερ ἐμοῦ
+                            νομίζοντ<expan>ος</expan> μη<unclear>δὲν</unclear>
+                        <lb/>συζεῖν σε πρόφασιν εἰπεῖν) ποίησο<unclear>ν</unclear>
+                        <lb/>ὑμᾶς γνῶναι ἔργω τὸ ἀπὸ τοῦδε:<c>†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <pb n="35"/>
+            <div1 n="33" type="thematoep" xml:id="thema33">
+                <ab>
+                    <add hand="Cr" place="left">32.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema33_low">
+                    <ab>
+                        <lb/> Ὁμολογούμενον ἔνε ἀπὸ ὅλους, ὅτι τοῦ καλοῦ
+                        ἀν<expan>θρώπ</expan>ου,<lb/> ἔργον ἔνε, νὰ λέγει πάντοτε καλὸν διὰ ὅλους,
+                        ἢ<lb/>κἀλοὶ νὰ ἔνε ἢ ἄτυχοι, καὶ μάλιστα ὅταν δὲν τὸν<lb/>βιάζει τινὰς. καὶ
+                        ἐξαναντίον τοῦ ἀτύχου<lb/>εἶνε, ὁμοίως διὰ καλοὺς, ὡσὰν καὶ διὰ κακοὺς,
+                        <lb/>νὰ λέγει πάντοτε κακὸν, ὅσον δύναται καὶ <lb/> πολλαῖς φοραῖς, καὶ ἔξω
+                        ἀπὸ τὸν καιρὸν, <lb/> καὶ ἀπὸ τὸ πρέπον. καὶ τὶ θέλοντας νὰ εἰπῶ, <lb/>
+                        ἀρχίζω τὴν ἐπιστολὴν ἀπὸ τέτοια λόγια;<lb/>μὲ ὀν<add hand="Cr"
+                            place="supralinear">λ</add>ϊγολογίαν σου λέγω, ὅτι ἤξευρε καὶ δὲν<lb/>μὲ
+                        λανθάνεις, ὡσὰν θαρῆς, ἄντε ἂν<lb/> μὲ ἐπαινῆς, ἄντε ἂν μὲ ψέγης. καὶ<lb/>ἂν
+                        μὲ ἐπᾶινῆς, ἐπαινῆς τὸν ἑαυτὸν σου, <lb/> καὶ ἂν μὲ ψέγης, τὸ ὅμοιον. διατὶ
+                        ἐγὼ<lb/>δὲν εἶμαι ἄξϊ<expan>ος</expan> οὔτε ἐπαίνου (ωσὰν ἄλλους, <lb/> μήτε
+                        ψόγον ὡς ἐλπίζω:<c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema33_high">
+                    <ab>
+                        <lb/> οἶμαι πάντ<expan>ας</expan> ὁμολογ<expan>εῖν</expan>, ὡς χρηστοῦ τοὺς
+                        τρόπους ἔστιν ἀνδρ<expan>ὸς</expan>
+                        <lb/>ἀεὶ <hi rend="underline">εὖ περὶ πά</hi>ντων λέγειν. εἴτε
+                        τούτου<lb/>ἄξϊον, ἢ μὴ. καὶ ταῦτα μηδενὸς ὄντ<expan>ος</expan>
+                        <lb/> τοῦ ἀναγκάζοντ<expan>ος</expan>. τοὔμπαλιν δὲ κακοήθους,<lb/>τοὺς
+                        ἀγαθούς ὥσπερ καὶ τοὺς φαύλους δϊασύρειν, <lb/>κατὰ τὸ δυνατὸν αὐτῶ.
+                        πολλάκϊς δὲ<lb/>καὶ παρὰ τὸν καιρ<expan>ὸν</expan>, καὶ πέρα τοῦ
+                            προσήκοντ<expan>ος</expan>.<lb/>τὶ δὲ βουλόμεν<expan>ος</expan>
+                            εἰπ<expan>εῖν</expan>, ἐντεῦθεν τοῦ γράμ-<lb/>ματος ἄρχομαι; δηλῶ σοι
+                        διὰ βραχέ<expan>ων</expan>, <lb/>ὡς οὐ λέληθάς με, (καθάπερ
+                        ἴσως<lb/>νενόμηκας) εἴτε καλῶς με λέγεις, <lb/>εἴτε κακῶς. εἰ οὖν τὰ ἐμὰ
+                        διὰ<lb/>τιμῆς ἄγεις, σαυτῶ μεγίστην<lb/>προξενεῖν δόξαν, ὡς καὶ
+                        τοὐναντίον.<lb/>ἐπεὶ ἐγὼ, οὔτε δόξης (ὥσπερ ἄλλοι)<lb/>οὔτε μήν
+                            κατηγορί<expan>ας</expan>
+                        <del hand="Cr">οὐκ</del> εἰμὶ ἄξι<expan>ος</expan>,<lb/>ὡς πέποιθας:<c>†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <div1 n="34" type="thematoep" xml:id="thema34">
+                <ab>
+                    <add hand="Cr" place="left">33.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema34_low">
+                    <ab>
+                        <lb/>ἐχθὲς τὸ ταχὺ ἐδέχτικα τὴν ἐπιστολήν σου,<lb/>τὴν ὁποῖαν ὅταν ἐδϊάβασα,
+                        ἔβαλα εἰς<lb/>τὸν νοῦ μου, ὅτι σοῦ χρεωστῶ μεγάλην χάριν.<lb/>ἔσοντας καὶ τὸ
+                            μέγεθ<expan>ος</expan> τοῦ καιροῦ, καὶ τὸ<lb/>διάστημα τοῦ τόπου, δὲν
+                        ἐδυνήθη νὰ σὲ<lb/>κάμη νὰ μὲ ἀλισμονήσης. ἀλλὰ<lb/>
+                        <pb n="36"/>πάντα νὰ ἐνθυμᾶσαι δϊὰ λόγου μου,<lb/>καὶ νὰ σὲ κόπτη, νὰ μὲ
+                        κάμνης νὰ γροικῶ<lb/>τὴν φιλίαν σου, ὅσον δύνασαι. καὶ μὲ λόγον.<lb/>καὶ μὲ
+                        ἔργον, καὶ μὲ κάθε τρόπον ποῦ δύνασαι:<c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema34_high">
+                    <ab>
+                        <lb/> χθὲς ἕωθεν τὰ σα ἐδεξάμην γράμματα,<lb/>οἷσπερ δὴ ἐντυχὼν, ὠήθην ὅτι
+                            <expan>μέγαλ</expan><expan>ην</expan> σοι<lb/>τὴν χάριν ὀφείλω. ἐπεὶ
+                        περ<lb/>οὔτε χρόνου μῆκ<expan>ος</expan>, οὔτε τόπου<lb/>δϊάστημα, ἠδυνήθη,
+                        λήθην σοι<lb/>ἐμπολῆσαί μου. ἀλλὰ<lb/>
+                        <pb n="36"/>ἀεὶ τὰ ἐμὰ δϊὰ μνήμης ἄγειν,<lb/>καὶ φροντίζ<expan>ειν</expan>
+                        τοῦ δηλοῦν ἐμοὶ τ<expan>ὴν</expan> πρὸς ἐμὲ σου
+                            φιλίαν<lb/>κ<expan>ατὰ</expan> τὸ δυνατόν σοι, καὶ λόγῳ, καὶ
+                        ἔργω.<lb/>καὶ παντὶ τρόπῳ, ὥσπερ ἂν δύνη:<c>†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <div1 n="35" type="thematoep" xml:id="thema35">
+                <ab>
+                    <add hand="Cr" place="left">34.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema35_low">
+                    <ab>
+                        <lb/> Πιστεύω ὅτι θαρεῖς καὶ σὲ ἐξέχασα,<lb/>τὸ ὁποῖον ὁ θ<expan>εὸ</expan>ς
+                        νὰ βλέπει, ἔσοντας καὶ <lb/>ἄρχησα πολλὰ νὰ σὲ χαιρετήσω, μὲ
+                        ἐπι-<lb/>στολὴν. διὰ τὸ ὁποῖον δὲν λυποῦμαι.<lb/>ἔσοντας καὶ ἠξεύρω ὅτι ἀπὸ
+                        πολλὴν δοκϊμ<expan>ὴν</expan>
+                        <lb/>μὲ ἐγνώρισες. ὅτι γληγοροτέρ<expan>ον</expan> ἤθελα<lb/>ἀλισμονήσω τὸν
+                        ἐμαυτόν μου παρὰ<lb/>τέτοιον φίλον, ὡσὰν ἐσένα.<lb/>καὶ πρὸς ἐσέναν δὲν μοῦ
+                        κάμνουν χρεία<lb/>τέτοια λόγϊα. ἐπεὶ ἠξεύρω, ὅτι τὴν<lb/>αὐτὴν γνώμην ἔχεις.
+                        ἐκεῖνο ποῦνε<lb/>ἐπίλοιπον αἰτί<expan>ας</expan> διατὶ δὲν σοῦ
+                        ἔγραψα,<lb/>ἂν τύχη ἐπιθυμεῖς νὰ μάθης. τοῦτο<lb/>θέλω σοῦ τὸ μηνύσω μὲ
+                        περισσότερα λόγϊα<lb/>εἰς ἄλλην γραφ<expan>ὴν</expan>. διὰ τῶρα ἤξευρε
+                        μόνον<lb/>ὅτι ἔχω νὰ κάμω πολλὰ. τὸ ὁποῖον<lb/> μὲ ἐμποδίζει νᾶ σοῦ γράφω
+                            συχνὰ:<c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema35_high">
+                    <ab>
+                        <lb/> οἶμαι σε ὑποπτεύ<expan>ειν</expan>, ὅτι σοῦ τὸ παράπαν
+                            ἐπελαθόμ<expan>ην</expan>
+                        <lb/>(ὅπερ ἀπειργώη Θ<expan>εὸ</expan>ς) ἐπείπερ διὰ μακροῦ σε<lb/>τοῖς
+                        γράμμασιν οὐκ ἠσπα<unclear reason="γ or funny σ">σ</unclear>άμην. ἐφ’
+                        ὧπερ<lb/>ἴσθι με μὴ ἀνϊώμενον, εἰδότα<lb/>ὅτι οὐκ ἀποβραχεί<expan>ας</expan>
+                        τῆς πείρ<expan>ας</expan> ἐμὲ ἔγνως.<lb/>θᾶττον γὰρ ἂν ἑμαυτοῦ
+                        ἐπιλαθοίμην,<lb/>ἢ τοιούτου ἀνδρ<expan>ὸς</expan> οἷος
+                        ἀυτ<expan>ὸς</expan>.<lb/>Ἀλλ’ ὀυ τοιούτων μοι πρ<expan>ὸς</expan> σὲ δεῖ
+                        λογων,<lb/>ταυτά μοι δοξάζοντα.<lb/>ὅπερ δὲ αἴτιον τοῦ μὴ
+                            πρ<expan>ὸς</expan> σὲ γράψαι,<lb/>τοῦτ’ ἴσως μάλιστα ποθεῖς
+                        ἀκοῦσαι.<lb/>ἴσθι δὲ με τοῦτο δϊὰ πλειόν<expan>ων</expan>, ἐν ἐτέρα<lb/>
+                        γραφῆ δηλῶσαι. τὸ δ<hi rend="underline">ὲ</hi>
+                        <add hand="Cr" place="supralinera">+</add>
+                        <hi rend="underline">νῦ</hi>ν εἶναι<lb/> τοῦτο μόνον μή σε λανθανήτω, τὸ
+                        μεγίστην<lb/>ἀσχολίαν δηλαδὴ ἄγειν, ὅπερ μοι<lb/>τοῦ πρ<expan>ὸς</expan> σὲ
+                            γράφ<expan>ειν</expan> πάνυ ἐμποδὸν καθέστηκε:<c>†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <pb n="37"/>
+            <div1 n="36" type="thematoep" xml:id="thema36">
+                <ab>
+                    <add hand="Cr" place="left">35.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema36_low">
+                    <ab>
+                        <lb/>ἐγὼ ἔχ<hi rend="underline">οντας τὴν</hi> ἔννοιάν σου πάντοτε,
+                        καὶ<lb/>ἐρωτῶ κάθε ἕναν δϊὰ λόγου σου, καὶ<lb/> ἂν ἀκούω καὶ τινὰν νὰ λέγη
+                        διὰ σὲ χαίρομαι.<lb/>καὶ περισσότερον ὅταν σοῦ γράφω.<lb/>διατὶ φαίνεταί μου
+                        ὅτι βλέπω σε ὀμπρός μου, <lb/> καὶ συνομιλῶ μὲ ἐσέναν.<lb/>οὐδὲ, δὲν ἠξεύρω
+                        πῶς μὲ τρατάρεις,<lb/>ὁποῦ οὐδὲ καμίαν γραφήν σου ἔλαβα,<lb/>ὡραμάϊ ἕναν
+                        χρόνον τῶρα.<lb/>ὑγίαινε, καὶ μὴν ἀμελεῖς τὸ χρέ<expan>ος</expan> τῆς
+                            φιλί<expan>ας</expan>:<c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema36_high">
+                    <ab>
+                        <lb/> ἔγωγε ἀείποτε τῇ περὶ σοῦ μνήμη συνὼν, <lb/>πάντων πϋνθάνομαι περὶ
+                        σοῦ, χαίρω τὲ καὶ<lb/>ὡς οὐδεὶς ἀνὴρ τὰ π<expan>ερὶ</expan> σου
+                            <unclear>ἢ</unclear> τινός μοι διηγουμένου,
+                        ἀκροώμεν<expan>ος</expan>.<lb/>ἢν δὲ καὶ πρὸς σὲ γράφω, τοῦτ’ ἤδη
+                            τ<expan>ὴν</expan> ἡδον<expan>ὴν</expan> μνηστεύει ἀθάνατον.<lb/>δοκῶ
+                        γὰρ μοι τότε, ὡς παρόντα σε ὁρᾶν, καὶ<lb/>ἐμοὶ δϊαλεγομένω σϋνεῖναί
+                        σοι.<lb/>σὺ δὲ, οὐκ οἶδ’ ὅντινά μοι δοκεῖς τρόπον προσ=<lb rend="right"
+                        />=φέρεσθαι<lb/> ὃς οὐδὲ μίαν ἐδεξάμην παρὰ σοῦ,<lb/>ἤδη
+                            τρέχοντ<expan>ος</expan> ἑνὸς ἔτους.<lb/>ἔρρωσο, καὶ τοσαύτη σοι μὴ
+                        ἐγγινέσθω λήθη τοῦ φιλικοῦ καθήκοντ<expan>ος</expan>:<c>†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <div1 n="37" type="thematoep" xml:id="thema37">
+                <ab>
+                    <add hand="Cr" place="left">36.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema37_low">
+                    <ab>
+                        <lb/>Πολὺς καιρὸς ἔνε ἀφόντις μὲ πολλὴν δοκϊμ<expan>ὴν</expan>
+                        <lb/>ἔμαθες πόσον μὲ κόπτει δϊὰ λόγου σου.<lb/>ἔσοντας καὶ ὅταν σε ἐνθυμηθῶ,
+                            ἐρχομένου<lb/>ἀν<expan>θρώπ</expan>ου αὐτοῦ, δὲν δύνομαι νὰ βαστῶ<lb
+                            rend="right"/>τὴν σιωπ<expan>ὴν</expan>
+                        <lb/>ἀλλὰ ἂν ἦτον δυνατὸν,<lb/>μέραν καὶ νύκταν, δὲν ἤθελα
+                        σχολάσει<lb/>γράφοντας πρὸς ἐσέναν:<c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema37_high">
+                    <ab>
+                        <lb/>πολὺς ἤδη χρόν<expan>ος</expan>, ἐξότουπερ δϊὰ πολλῆς<lb/>τῆς
+                            πείρ<expan>ας</expan>, ἀκρϊβῶς ἔγνως, ὅσην πε<expan>ρὶ</expan>
+                            τ<expan>ῶν</expan> σ<expan>ῶν</expan> φροντίδα<lb rend="right"
+                        />πεποίημαι.<lb/>καὶ γὰρ ὅταν εἰς νοῦν ἐπέλθοι <sic rend="μοι">μϊ</sic> τὰ
+                        σὰ,<lb/>ἀφικνουμένου τϊν<expan>ὸς</expan> αὐτόσε, οὐ δύναμαι<lb/>τὴν
+                            σιωπ<expan>ὴν</expan> ἐν ἑμαυτῶ ἐπισχεῖν.<lb/>μᾶλλον δὲ, εἰς τοῦθ’ οἷόν
+                        τε εἴη, νύκτωρ<lb/>καὶ μεθ’ ἡμέραν, οὐκ ἂν λήξαιμι<lb/>ἐπιστέλλων πρὸς
+                            σὲ:<c>†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <div1 n="38" type="thematoep" xml:id="thema38">
+                <ab>
+                    <add hand="Cr" place="left">37.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema38_low">
+                    <ab>
+                        <lb/> Ἐγρίκησα ἀπὸ πολλοὺς πῶς μὲ ἀγαπᾶς, <lb/> καὶ ὁλοένα μὲ ἐνθυμᾶσαι, τὸ
+                        ὁποῖον σὺ ἀτός σου<lb/>τὸ κάμνεις ψεῦδ<expan>ος</expan>, καὶ εἶσε ἀφορμὴ εἰς
+                        ἐμένα<lb/>νὰ μὴν πιστεύω, νὰ μ<expan>ὴν</expan> πιστεύω τὰ λόγια
+                            ἐκείν<expan>ων</expan>
+                        <lb/>ποῦ σὲ ἐπαινοῦν πρὸς ἐμέναν.<lb/>ἔσοντας καὶ ἐκ πολλοῦ κρατεῖς ἔχθρα,
+                        καὶ δὲν μᾶς ἔγραψες:<c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema38_high">
+                    <ab>
+                        <lb/> παρὰ πολλ<expan>ῶν</expan> ἐπυθόμην ὡς με φιλεῖς. καὶ διὰ παντὸς ἐπὶ
+                        νοῦν<lb/>ἔρχεταί σοι τὰ ἐμὰ. ὅπερ αὐτ<expan>ὸς</expan> ἔργω ψευδῶς
+                        ποιεῖς.<lb/>καὶ ὑπάρχεις αἴτι<expan>ος</expan> ἐμοὶ, τοῦ μὴ πείθεσθαι τοὺς
+                        λόγους τῶν ἐπαινούντ<expan>ων</expan> σε. <lb/>πολλοῦ
+                            παριπευκότ<expan>ος</expan> χρόνου, ἐξότουπερ<lb/>νενόμικάς με ὡς
+                        ἐχθρὸν, καὶ οὐδόλως ἔγραψας:<c>†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <pb n="38"/>
+            <div1 n="39" type="thematoep" xml:id="thema39">
+                <ab>
+                    <add hand="Cr" place="left">38.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema39_low">
+                    <ab>
+                        <lb/>δϊὰ τὸν <expan>δεῖνα</expan> τὸν φίλον μας ἔμαθα πῶς ἔνε αὐτοῦ.<lb/>τὸν
+                        ὁποῖον ἂν μιλήσης μετ’ αὐτὸν, χαιρέτησε τον<lb/>ἀπὸ μέρους μου, καὶ εἰπέ
+                        τον, πῶς ἐγὼ<lb/>καὶ ζωνταν<expan>ὸς</expan> καὶ
+                        ἀποθαμέν<expan>ος</expan>,<lb/>πάντα θέλω ἦστε φίλ<expan>ος</expan> του,
+                        ἄντε αὐτ<expan>ὸς</expan>,<lb/>ἔνε φίλ<expan>ος</expan>, ἄντε
+                            ἐχθρ<expan>ὸς</expan>:<c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema39_high">
+                    <ab>
+                        <lb/>περὶ τοῦ φίλου ἡμ<expan>ῶν</expan>
+                        <expan>δεῖνα</expan> ἐπυθόμην ὅτι αὐτοῦ ἐστι.<lb/>ὅπερ ἐὰν ἐντύχης,
+                            προσαγορεύσ<expan>ας</expan> αὐτ<expan>ὸν</expan>
+                        <lb/>λέγε, ὅτι ζῶν τε καὶ τεθνηκὼς<lb/>δϊὰ πάντα αὐτῶ φίλ<expan>ος</expan>
+                        ἔσομαι,<lb/>καὶ ἐχθρῶ καὶ φίλω ὄντι:<c>†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <div1 n="40" type="thematoep" xml:id="thema40">
+                <ab>
+                    <add hand="Cr" place="left">39.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema40_low">
+                    <ab>
+                        <lb/>μὲ ὀλιγολογίαν μου φαίνεται δϊὰ τῶρα,<lb/>πρέπει νὰ μάθης δϊὰ
+                            λόγ<unclear>ον</unclear> μου,<lb/>ἔστοντας καὶ καιρὸν δὲν ἔχω, νὰ
+                        σοῦ<lb/>γράφω πολλὰ πράγματα.<lb/>μόνον πῶς ὑγϊαίνω καὶ χαιρετῶ τοὺς
+                        φίλους.<lb/>τοὺς ὁποίους ὡς ἐλπίζω γλήγορα θέλω<lb/>ἰδεῖν, ἀντάμα μὲ σέναν
+                            :<c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema40_high">
+                    <ab>
+                        <lb/> διὰ βραχέ<expan>ων</expan> δοκεῖ μοι τανῦν<lb/>μαθεῖν σε περὶ ἐμοῦ
+                        χρῆναι,<lb/>καιροῦ μὴ ὄντ<expan>ος</expan>, περὶ πολλ<expan>ῶν</expan>
+                        <lb/>ἐπιστέλλειν σοι. ἓν δὲ μόνον<lb/>ὅθ’ ὑγιαίνω τὲ, καὶ τοὺς φίλους
+                        ἀσπάζομαι<lb/>οὕστινας καθάπερ μοι δοκεῖ, οὐκ εἰς<lb/>μακρὰν μετὰ σοῦ
+                            ὄψεσθαι:<c>†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <div1 n="41" type="thematoep" xml:id="thema41">
+                <ab>
+                    <add hand="Cr" place="left">40.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema41_low">
+                    <ab>
+                        <lb/> Δὲν κάμνει τὸ χωρίον καλοὺς, καὶ ἡ χώρα κακοὺς.<lb/>ἀλλὰ αἱ
+                        συντροφίαι, μὲ καλοὺς καὶ μὲ κακοὺς.<lb/>τὸ λοιπ<expan>ὸν</expan> ἂν θέλης
+                        νὰ γένουν τὰ παιδία σου καλὰ,<lb/>καὶ ὄχι κακὰ, πέμπε τα ὄχι εἰς κακοὺς
+                            ἀν<expan>θρώπ</expan>ους,<lb/>ἀλλὰ εἰς φιλοσόφους, εἰς τοὺς ὁποίους
+                        παγένοντα<lb/>καὶ ἡμεῖς, ἐμάθαμεν τὰ καλὰ. διατὶ ἡ ἀρετὴ μὲ<lb/>ἄσκησι καὶ
+                        κόπο ὑποκτίζεται. καὶ δὲν ἐμπένει<lb/>εἰς τὴν ψυχὴν μόνη, ὡσὰν
+                            τ<expan>ὴν</expan> κακΐαν :<c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema41_high">
+                    <ab>
+                        <lb/>οὔτ’ <hi rend="underline">ἀγαθοὺς κώμη</hi> ποιεῖ, οὔτε κακοὺς
+                        πόλις,<lb/>ἀλλ’ αἱ τῶν κακ<expan>ῶν</expan> κἀγαθῶν ὁμιλίαι.<lb/>εἰ βούλει
+                        τοίνυν τοὺς σοὺς παῖδ<expan>ας</expan>, σπουδαίους, καὶ μὴ<lb/>φαύλους
+                        γενέσθαι, οὐκ εἰς πονηρ<expan>οὺς</expan> ἀν<expan>θρώπ</expan>ων,<lb/>ἀλλ’
+                        εἰς φιλοσόφ<expan>ους</expan> πέμπε. πρὸς οὓς<lb/>καὶ ἡμεῖς ἀπερχόμενοι, τὰ
+                        καλὰ ἐδιδάχθημ<expan>εν</expan>.<lb/>ἀρετὴ γὰρ ἱδρῶτι τε καὶ μόχθω
+                        μανθάνεται, <lb/>καὶ οὐκ εἰσέρχεται μόνη εἰς τὴν ψυχ<expan>ὴν</expan> ὡς<lb
+                            rend="right"/> ἡ κακΐα:<c>†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <div1 n="42" type="thematoep" xml:id="thema42">
+                <ab>
+                    <add hand="Cr" place="left">41.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema42_low">
+                    <ab>
+                        <pb n="39"/>
+                        <lb/> Πρᾶγμα κανένα δὲν πιστεύω νὰ δυνηθῆ<lb/>τόσον, ὅτι νὰ μὲ κάμη, νά σὲ
+                        ἀλισμονίσω.<lb/>μάλϊστα νὰ σὲ ἐνθυμοῦμαι πᾶσα ἡμέρα περισσότερον.<lb/>καλὰ
+                        καὶ πολλαῖς ἀφορμαῖς σϋνέβησαν ἀνάμεσα<lb rend="right"/>εἰς τοὺς δύο.<lb/>Τὶ
+                        θέλεις νὰ κάμω ὅταν σιωπᾶς τόσον;<lb/>νὰ γένω παρ’ εὐθὺς ἐχθρός σου; καὶ πῶς
+                        ἔνε<lb/> δυνατὸν νὰ δύναται περισσότερον<lb/>ἡ σιωπὴ παρὰ τὴν φιλίαν
+                            τ<expan>ῶν</expan> σπουδαίων;<lb/>ἐγὼ τόσον διὰ λόγου μου, οὐδόλως θέλει
+                        ἦστεν<lb/>ἀληθὴς ἡ παροιμΐα ποῦ λέγει, ὅτι τὸ νὰ μὴν<lb/>χαιρετᾶ τινὰς,
+                        τοῦτο ἐχάλασε πολλαῖς<lb/>φιλίαις. ἂν καὶ ἐσέναν δὲν φαίνεται
+                        ἔτζι,<lb/>ἐλπίζω καλὰ ὅτι ἡ φιλία μου, πρ<expan>ὸς</expan> ἐσένα<lb/>νὰ
+                        δυνηθῆ τόσον, ὅτι <hi rend="underline">νὰ σὲ πείσει</hi>, νὰ
+                            μ<expan>ὴν</expan> πιστεύεις νὰ ἔνε κανένα μέσον νὰ<lb/>ἀφανίσει τὴν
+                        φιλίαν μας:<c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema42_high">
+                    <ab>
+                        <lb/>οὐδὲν τῶν ἁπάντων μοι δοκῶ τοσαύτην ἄν ποτε σχ<expan>εῖν</expan>
+                            τ<expan>ὴν</expan> δύναμϊν,<lb/>ὥστε μοι τὰ πε<expan>ρὶ</expan> σοῦ<add
+                            hand="Cr" place="supralinear">ὲ</add> φυγεῖν μου τὴν
+                        μνήμην.<lb/>τοὔμπαλιν δὲ, τοῦ ὁσημέραι με τῆ τ<expan>ῶν</expan>
+                            σ<expan>ῶν</expan> μνήμη συζῆν.<lb/>εἰ καὶ οὐκ ὀλίγαι συνέβησαν
+                        ἐκατέροις ἀφορμαὶ.<lb/>τὶ δ’ ἄρα ποιῶ τοσοῦτον σου τὸ τ<expan>ῆς</expan>
+                        λήθης ὕδωρ πεποκότ<expan>ος</expan>;<lb/>δι’ ἀπεχθεί<expan>ας</expan>
+                        γενόμαί σοι παραχρῆμα;<lb/>καὶ τὶς τὸ σιγᾶν τ<expan>ῆς</expan>
+                            τ<expan>ῶν</expan> σπουδαί<expan>ων</expan> φιλί<expan>ας</expan>
+                        δύνασθαι μεῖζον ἀποφῆναι;<lb/> ἐγὼ μὲν τοκατ’ ἐμὲ, οὐδόλως τὴν
+                        παροιμίαν<lb/>ἀληθεύειν ἠγοῦμαι, <hi rend="underline">τὴν πολλὰς</hi>
+                        <lb/>φιλί<expan>ας</expan>, τὸ ἀπροσήγορον, διαλύσαι<lb/>φάσκουσαν. εἰ καὶ
+                        τἀναντία δοξάζεις,<lb/>ἀλλὰ πέποιθα τὴν ἐμὴν φιλίαν τοσοῦτον<lb/>δυνηθῆναι,
+                        ὥσται πεῖσαι, οὐδὲν ὅλως<lb/>εἶναι αἴτιον, δι’ οὗπερ ἐξαληφ-<lb/>φθείη, ἡ ἐν
+                        μέσω ἀμφοῖν φιλία:<c>†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <div1 n="43" type="thematoep" xml:id="thema43">
+                <ab>
+                    <add hand="Cr" place="left">42.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema43_low">
+                    <ab>
+                        <lb/>πιστεύω νὰ σοῦ δίδω βάρ<expan>ος</expan>, δίδοντάς σου<lb/>νὰ γρικήσης,
+                        εἰς κάθε ἐπιστολήν ποῦ σοῦ πέμπω,<lb/>πόσον σὲ ἀγαπῶ. μάλιστα ποῦ ἡ φιλία ἡ
+                        ἀληθὴς<lb/>δὲν χρειάζεται λόγϊα νὰ μαρτυρηθῆ, ἀλλὰ ἔργα.<lb/>τὰ ὁποῖα μοναχὰ
+                        ἠξεύρουν νὰ δείκτουν τὴν<lb/>ἀλήθειαν. τὸ λοιπὸν φαίνεταί μου
+                            καιρ<expan>ὸς</expan> νὰ<lb/> σκολάσω ἀπὸ τὸ εἶδος ἐκεῖνο τῆς
+                            ἐπιστολ<expan>ῆς</expan>
+                        <lb/> τὸ ὁποῖον πλέον κάμνει εἰς κόλακας, παρὸ εἰς φίλους.<lb/>
+                        <pb n="40"/>καλὰ καὶ δὲν ἤθελεν ἔχει δίκαιον τινὰς,<lb/>
+                        <add hand="Cr" place="left">April. 30.</add>ὡς μὲ φαίνεται νὰ μὲ κατηγορήση,
+                        <lb/>ἀλλὰ μᾶλλον νὰ μὲ ἐπαινέση, διατὶ τὸ<lb/>τῆς ἀγάπης σου πολλαῖς
+                        φοραῖς<lb/>μὲ βιάζει, νὰ σοῦ γράφω λόγϊα,<lb/>ὁποῦ ὁμοιάζουν
+                        κολακΐαις.<lb/>ἂν δυνηθῶ τὸ λοιπὸν ἀπὸ τῶρα<lb/>καὶ ὀμπρὸς, θέλω τὸ
+                            σχολάσει:<c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema43_high">
+                    <ab>
+                        <lb/>οἶμαι σοι ἐνοχλ<expan>εῖν</expan> πειρώμεν<expan>ος</expan> διὰ
+                            πάντ<expan>ων</expan>, τ<expan>ῶν</expan>
+                        <lb/>παρ’ ἐμοῦ σοι γραμμάτ<expan>ων</expan>, ὁπόσον περὶ σὲ<lb/>σπουδάζω.
+                        καὶ ταῦτα τὴν ἀληθῆ φιλίαν<lb/>οὐ λόγων, ἀλλ’ ἔργων δεῖσθαι. ἅπερ
+                        μόνα<lb/>τῆς ἀληθεί<expan>ας</expan> οἷα τ’ ἐστὶν ἐφικέσθαι.<lb/>Καιρὸς μοι
+                        τοίνυν δοκεῖ τοῦ τοιούτου τ<expan>ῶν </expan>ἐπιστολ<expan>ῶν</expan>
+                        <lb/>εἴδους ἀπέχεσθαι. οἵο<unclear>υ</unclear>περ τοῖς
+                        κολακεύειν<lb/>ἐπιχειροῦσιν, ἢ τοῖς τῆς καθαρᾶς φιλί<expan>ας</expan>
+                        <lb rend="right"/>ἀντιποιουμένοις δεήσειεν.<lb/>εἰ καὶ μοι δοκῶ, οὐ
+                            δικαί<expan>ως</expan> ἄν μου ποτὲ κολακεί<expan>ας</expan>
+                        <lb/> καταγνώσεσθαί τινα.<lb/>θαυμάσειν δέ με τῆς περὶ σὲ σπουδῆς<lb/>τὰ
+                        μέγϊστα καὶ μάλα εἰκότως.<lb/>τὸ γὰρ περὶ σὲ φίλτρον, βιάζει
+                            με<lb/>κολακεί<expan>ας</expan> μηδὲν διαφέροντα γράφειν.<lb/>ἄν τοίνυν
+                        ἐφικτὸν ἦ μοι, παύσομαι<lb/>τοῦ λοιποῦ τοιαύτας συντιθεὶς ἐπιστολὰς:<c>†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <div1 n="44" type="thematoep" xml:id="thema44">
+                <ab>
+                    <add hand="Cr" place="left">43.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema44_low">
+                    <ab>
+                        <lb/> Ὅτι ὑγιαίνεις χαίρομαι πολλὰ διὰ πολλαῖς ἀφορμαῖς<lb/>καὶ μάλιστα ὅτι
+                        σπουδάζεις ὡσὰν πρέπει νὰ σπουδάζει<lb/>τινὰς ὁποῦ ἔνε γερ<expan>ὸς</expan>,
+                        καὶ δὲν ἐμποδίζεται ἀπὸ<lb/>καμΐαν ἀδυναμίαν τοῦ
+                        σώματ<expan>ος</expan>.<lb/>διατὶ εὔκολα εἰς τοῦτον τὸν τρόπον
+                        προκόπτει<lb/>τῒς εἰς τὴν σπουδὴν, δϊὰ μέσου τῆς<lb/>ὁποί<expan>ας</expan>,
+                        κερδαίνει εὐκολίαν πολλὴν, καὶ διὰ τὸν<lb/>ἑαυτόν του καὶ δϊὰ τοὺς φίλους
+                        του, οἱ ὁποῖοι<lb/>μετέχουσι μετ’ αὐτὸν τὴν δόξαν. ἂν ἔνε<lb/>ἀληθὲς, ὅτι τὰ
+                        τῶν φίλ<expan>ων</expan> κοινὰ.<lb/>Ὑγίαινε τὸ λοιπὸν πάντοτε οὕτω<lb/>καὶ
+                        ἂν ἔνε δυνατὸν καὶ καλλίτερα. καὶ<lb/>ἔχε τὸν νοῦ σου εἰς ἐκεῖνα μὲ τὰ
+                        οποῖα<lb/>θέλεις κερδέσει δόξαν εἰς τὸν ἑαυτόν σου,<lb/>καὶ εἰς τοὺς φίλους
+                        σου μεγ<expan>άλην</expan> εὐτυχίαν:<c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema44_high">
+                    <ab>
+                        <lb/> ὅθ’ ὑγιαίνεις ὑπερβαλόντ<expan>ως</expan> χαίρω, πολλ<expan>ῶν</expan>
+                        ἔνεκα.<lb/>καὶ μάλιστα ὅτι τῆ σπουδῆ προσέχεις ὥσπερ εἰκός<lb/>ἐστιν ἄνδρα
+                        ὑγϊαίνοντα, καὶ ὧ τινι μηδὲν<lb/>τῶν περὶ τὸ σῶμα δειν<expan>ῶν</expan>
+                        ἐμποδὼν καθέστηκ<expan>ε</expan>,<lb/>οὕτω γὰρ διακείμεν<expan>ος</expan>
+                        τίς, πλεῖστον πρ<expan>ὸς</expan> ἀρετὴν<lb/>ἐπιδοίη. δι’ ἣν τὰ μέγιστα παρὰ
+                        πᾶσιν<lb/>εὐδοκιμεῖ, αὐτός τε, καὶ οἵ περὶ<lb/>τοῦτον σπουδάζοντες. οἵτινες
+                        τούτου<lb/> τῆς εὐκλεί<expan>ας</expan> τὸ πλεῖστον μέρ<expan>ος</expan>
+                        μεταλαμβάνουσι.<lb/>εἴπερ ἀληθὲς τὰ τῶν φίλ<expan>ων</expan> εἶναι
+                        κοινὰ.<lb/>διατελοίης οὖν οὕτω ὑγιαίνων ἐπιπολὺ,<lb/>καὶ εἰπέρ ἐστι δυνατὸν
+                        ἄμεινον τοῦ παρόντ<expan>ος</expan>.<lb/>καὶ πρόσεχε τὸν νοῦν, τοῖς σοὶ μὲν
+                        δόξαν<lb/>μεγίστην προξενῆσαι δυναμένοις,<lb/>τοῖς δὲ σοῖς φίλοις,
+                            ἔκλειαν:<c>†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <pb n="41"/>
+            <div1 n="45" type="thematoep" xml:id="thema45">
+                <ab>
+                    <add hand="Cr" place="left">44.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema45_low">
+                    <ab>
+                        <lb/> Ἄν<expan>θρωπο</expan>ν φρόνιμον πολλά ὡσὰν σὲ ἠξεύρω,<lb/>δὲν ἠξεύρω
+                        πῶς δὲν ἤθελε σὲ κατηγορήσει<lb/>πᾶσα ἕνας, ὡς ἀμελῆ, πῶς δὲν
+                        γράφεις.<lb/>καὶ δὲν ἠξεύρω πῶς ἤθελες χρεωστεῖ λολίαν
+                            μ<expan>ε</expan>γ<expan>ά</expan>λ<expan>ην</expan>.<lb/>γληγορότερα
+                        τολοιπὸν ἤθελα δώσω τὸ<lb/>πταῖσμα τοῦ ἐμαυτοῦ μου, (εικαὶ δὲν
+                        πταίω)<lb/>παρὰ νὰ ἀποκοτίσω νὰ διαβάλλω τὴν<lb/>ἀγάπην τὴν ἐδικήν σου, ὁποῦ
+                        ὁ πολὺς<lb/>καιρὸς τὴν ἔδειξε μὲ ἔργον, τὸ πῶς<lb/>δὲν ἔχει ψεγάγει νὰ τὴν
+                        εἰπεῖ τινὰς,<lb/>ἢ ἐσέναν ὁποῦ σοῦ φαίνεται, καὶ ἔνε καλλίτερον<lb/>νὰ
+                        ἀδικῆσαι παρὰ νὰ ἀδικεῖς. διατῶρα<lb/>τολοιπὸν φαίνεταί μου καιρὸς
+                        νὰ<lb/>σιωπῶ, δϊατὶ δὲν ἠξεύρω<lb/>τὶ νὰ εἰπῶ δϊὰ λόγου σου:<c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema45_high">
+                    <ab>
+                        <lb/> ἐκαταγνοίην σου ἀμέλειαν, ἀνδρὸ<expan>ς</expan> τ<expan>ῶν</expan>
+                        πάνυ ἐπὶ συνέσει<lb/>διαβεβοημένου, (οἵ<expan>ον</expan> σε κατέμαθον
+                        ἀκριβῶς)<lb/>ὡς μὴ συνεχῶς γράμματα πρ<expan>ὸς</expan> ἡμ<expan>ᾶς</expan>
+                            ἐπιτιθέντ<expan>ος</expan>
+                        <lb/>οὐκ οἶδ’ ὅπως οὐκ ἂν ὠφληκώς μεγίστην ἄνοιαν<lb rend="right"/>εἰκότως
+                        εἴης.<lb/>τὴν αἰτίαν ἀναθείην, (καίπερ μηδ<expan>ὲν</expan> ἁμαρτόντι)<lb/>ἢ
+                        τὴν πρὸς ἐμέ σου φιλίαν, δϊασύραι<lb/>τολμῆσαι, ἥνπερ πολλ<expan>οῦ</expan>
+                            χρόνου<lb/>μῆκ<expan>ος</expan>, ἔργῳ δεδήλωκεν ἀνε-<lb/>πίληπτον, ἢ σὲ
+                        ὧ δοκεῖ<lb/>τὸ ἀδικεῖν, χεῖρον εἶναι τοῦ ἀδικεῖσθαι.<lb/>τοίνυν τό γε νῦν
+                        ἔχον, καιρὸς εἶναί μοι<lb/>δοκεῖ τοῦ σιγᾶν, οὐκ<lb/>εἰδότι, τὶ ἄρα περὶ σοῦ
+                            λέξαιμι:<c>†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <pb n="42"/>
+            <div1 n="46" type="thematoep" xml:id="thema46">
+                <ab>
+                    <add hand="Cr" place="left">45.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema46_low">
+                    <ab>
+                        <lb/> Ἐγὼ ἐννοιάζομαι καὶ διὰ λόγου σου, καὶ διὰ τοῦτον,<lb/>δϊὰ λόγου σου
+                        διὰ νὰ μὴν ἀδικῆς, διὰ τοῦτον<lb/>νὰ μ<expan>ὴν</expan>
+                            ἀδικεῖ<expan>ται</expan>. καὶ ἂν σοῦ φαίνεται καὶ ἐσέναν<lb/>ὡσὰν καὶ
+                        τοῦ πλάτων<expan>ος</expan>. ὅτι νὰ ἀδικεῖς τϊνὰς,<lb/>εἶνε μεγαλίτερον
+                        κακὸν, παρὰ νὰ ἀδικεῖ<expan>ται</expan>.<lb/>φαίνομαι ὅτι κάμνω περισσοτέραν
+                        χάριν ἐσέναν,<lb/>παρὰ τούτου, παρακαλώντ<expan>ας</expan> δϊὰ λόγου
+                            του,<lb/>τ<expan>ὸν</expan> ὁποῖον ζητοῦν εἰς κρίσιν, δϊὰ πράγματα<lb
+                            rend="right"/>ποῦ δὲν ἔσφαλεν. </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema46_high">
+                    <ab>
+                        <lb/> ἐγὼ καὶ σοῦ κήδομαι, καὶ τοῦδε<lb/>σοῦ μὲν, ὡς μὴ ἀδικοίης. τοῦδε δὲ
+                        ὡς μὴ<unclear>ν</unclear>
+                        <lb/>ἀδικοῖτο. εἰ δὲ καὶ σοὶ δοκεῖ μ<expan>ε</expan>τ<expan>ὰ</expan> τοῦ
+                            πλάτον<expan>ος</expan>
+                        <lb/>
+                        <hi rend="underline">τὸ ἀδϊκεῖν</hi>
+                        <add cert="low" hand="Zyg" place="overstrike">τϊνὰ</add>, μεῖζον εἶναι
+                        τοῦ<lb/>ἀδικεῖσθαι κακὸν. δοκῶ σου μᾶλλον<lb/>ποιεῖσθαι λόγον ἢ τούτου.
+                            δεόμεν<expan>ος</expan>
+                        <lb/>ὑπὲρ αὐτοῦ πραττομένου δίκας<lb/>ὑπὲρ ὧν οὐκ ἐξήμαρτε:<c>†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <div1 n="47" type="thematoep" xml:id="thema47">
+                <ab>
+                    <add hand="Cr" place="left"> 46. </add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema47_low">
+                    <ab>
+                        <lb/> Τέτοια εἶνε ἡ τροφὴ τῶν σύρ<expan>ων</expan>, ὅτι<lb/>κάμνει τοὺς
+                        ἀνθρώπους καὶ ἀλισμονοῦσι,<lb/>καὶ συγγενεῖς καὶ φίλους, ὡς λέγουσι, καὶ
+                        εἶνε.<lb/>καὶ ἔβλεπε πῶς <choice>
+                            <abbr> ε̅.</abbr>
+                            <expan>πέμπτος</expan>
+                        </choice> μῆνες τώρα δὲν μᾶς<lb/>ἐχαιρέτησες μὲ γραφήν σου.<lb/>καὶ μάλιστα
+                        ὁποῦ σοῦ ἔδωκ<expan>εν</expan> ἡ φύσις<lb/>νὰ γράφης καὶ ἐπιστολαῖς, ὄχι
+                        μόνον<lb/>εἰς χρείαν, ἀλλὰ καὶ διὰ νὰ φαίνεσε.<lb/>ἀλλὰ ἂν ἐσὺ εἶσαι
+                            γερ<unclear>ὸς</unclear>, καὶ τὰ χρυσὰ παιδΐα, καὶ ἡ καλὴ μάνα
+                        αὐτῶν,<lb/>σώνει μας καὶ τοῦτο:<c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema47_high">
+                    <ab>
+                        <lb/> τοιαύτη ἐστὶν ἡ τῶν σύρων τρυφὴ, ὅτι<lb/>συγγεν<expan>ῶν</expan> τε
+                        καὶ φίλ<expan>ων</expan> ἀμνήμονας τοὺς ἀ<expan>νθρώπ</expan>ους
+                        ποιεῖν,<lb/>οὕτω γὰρ λέγεται καὶ πιστεύεται.<lb/>ἰδοὺ <choice>
+                            <abbr> ε̅ος.</abbr>
+                            <expan>πέμπτος</expan>
+                        </choice> οὐτοσὶ, ἐξότου<lb/>ἡμᾶς οὐ προσεφώνησας, καὶ<lb/>ταῦτα οὔσης τῆς
+                        φύσεώς σου εἰς τὸ<lb/>ἐπιστέλλειν, οὐ μόνον πρ<expan>ὸς</expan>
+                        ἀνάγκην,<lb/>ἀλλὰ καὶ προς φιλοτιμίαν καὶ ἐπίδειξιν.<lb/>ἀλλὰ μὴν, εἴπερ
+                        ὑγϊῶς ἔχεις,<lb/>αὐτ<expan>ὸς</expan> καὶ τὰ <hi rend="underline">χρυσά
+                            σου</hi> παιδία,<lb/>καὶ ἡ καλλίπαις μ<expan>ήτ</expan>ηρ
+                            αὐτ<expan>ῶν</expan>, ἀρκεῖ ἡμῖν:<c>†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <pb n="43"/>
+            <div1 n="48" type="thematoep" xml:id="thema48">
+                <ab>
+                    <add hand="Cr" place="left">47.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema48_low">
+                    <ab>
+                        <lb/> Πολλοὺς γράφοντάς σου, σοῦ ἐφιλίωσα.<lb/>ποῦ νὰ μὲ ἀγαπᾶ
+                            <expan>καὶ</expan> περισσότερον ὄχι, ὡσὰν<lb/>ἐτοῦτον ὁποῦ σοῦ φέρνει
+                        τὴν γραφ<expan>ὴν</expan>.<lb/>τοῦ ὁποίου τὴν φυσικ<expan>ὴν</expan> γνῶσιν
+                        καὶ παίδευσιν,<lb/>καὶ μάθησιν, ἀφίνω σε νὰ τὰ κρίνεις.<lb/>διότι ἠξεύρω πῶς
+                        ἐγλήγορα θέλεις τὰ γνωρίσει.<lb/>καὶ θέλεις τὸν ἔχεις εἰς τιμήν. καὶ μετὰ
+                        τὴν δοκιμ<expan>ὴν</expan>
+                        <lb/>ἄλλον ϲἂν τοῦτον, γυρεύοντας ὅμοιον,<lb/>δὲν θέλεις εὕρη. οὔτε εἰσὲ
+                        καλὸν, οὔτε<lb rend="right"/>εἰσὲ ἀστεῖον:<c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema48_high">
+                    <ab>
+                        <lb/> πολλοὺς μ<expan>ὲν</expan> ἐπιστέλλ<expan>ων</expan> συνέστησά
+                        σοι<lb/>φιλοῦσι δὲ μᾶλλον, οὐκ ἄλλοις ἐνέτυχον,<lb/>ἢ τῶ τὴν ἐπιστολήν σοι
+                        κομϊζόντι.<lb/>οὗ τήν τε τῆς φύσεως γνῶσϊν, καὶ τὸ τοῦ ἤθους<lb/>πρᾶον, καὶ
+                            τ<expan>ὴν</expan> περὶ τοὺς λόγους σπουδὴν, ἀφίημι<lb/>καὶ γὰρ οἶδα ὅτι
+                        ξυνήσεις ταχέ<expan>ως</expan> πάντα.<lb/>καὶ διὰ τιμῆς αὐτὸν ἄξεις. μετὰ δὴ
+                            τ<expan>ὴν</expan> πεῖραν,<lb/>ἕτερον ὡς τοῦτον, ζητῶν ὅμοιον οὐχ
+                        εὐρήσεις.<lb/>οὔτε περὶ τὰ σπουδαῖα, οὔτε περὶ<lb rend="right"/> τὰ
+                            γελοῖα:<c>†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <div1 n="49" type="thematoep" xml:id="thema49">
+                <ab>
+                    <add place="left" type="low">48.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema49_low">
+                    <ab>
+                        <lb/>Δὲν ἐμπόρεσα ἀφοῦ ἔγραψες νὰ μιλήσω μὲ<lb/>τὸν πετρ<expan>ὸν</expan>,
+                        διὰ τὴν δουλείαν σου.διατὶ ἀπὸ τρεῖς<lb/>μῆνες καὶ ἐδῶ, λείπει εἰς τὸ
+                        ναύπλιον.<lb/>μετὰ δὲ τοὺς ἀν<expan>θρώπ</expan>ους τοῦ σπητίου του ὅλους
+                        ἐμίλησα.<lb/>καὶ εἴπασί μου, ὅτεἶνε πρᾶγμα εὔκολον νὰ γένη.<lb/>ὅταν ἔλθη δὲ
+                        ἐκεῖνος, ἐλπίζω νὰ κάμ<unclear>ει</unclear>
+                        <lb/>μεταχαρᾶς πᾶσα πρᾶγμα δϊὰ λόγου σου.<lb/>διατὶ εἶναι καλὸς
+                            ἄν<expan>θρωπ</expan>ος. καὶ ὅσον δϊὰ τοῦτο,<lb/>μὴν ἔχεις καμίαν
+                        ἔννοιαν. ἂν ἄλλο τίποτες<lb/>εἶνε ὁποῦ νὰ χρειάζεσε ἀπὸ ἐμᾶς, ὁποῦ<lb/>καὶ
+                        ἐμεῖς νὰ ἐμποροῦμεν, γράφε μας<lb/>θαρετὰ. δϊατὶ θέλεις μᾶς εὕρη
+                        ἑτοίμους<lb/>εἰς πᾶσα πρᾶμα, διὰ νὰ σοῦ κάμομ<expan>εν</expan>
+                            χάριν:<c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema49_high">
+                    <ab>
+                        <lb/> ἐξοῦ μοι ἐπέσταλκας, οὐκ ἠδυνήθην ἐντυχ<expan>εῖν</expan> τῶ
+                            <expan>δεῖνα</expan>.<lb/>περὶ τῶν σ<expan>ῶν</expan>, ἐπεὶ
+                            τρίτ<expan>ος</expan> ἤδη μῆν οὑτοσί,<lb/>ἀφοῦ ἐς ναύπλιον
+                        ἀποδημεῖ.<lb/>πᾶσι δὲ τοῖς οἴκοι αὐτοῦ ἐνέτυχον.<lb/>οἱ δ’ εἶπον μοι ῥάδϊον
+                        τουτὶ γενέσθαι.<lb/>κἀκείνου δ’ ἐπανελθόντ<expan>ος</expan>, πάντα σοῦ
+                            γ’<lb/>ἕνεκ<expan>εν</expan> ἀσμένως οἴομαι ἐκτελέσαι.<lb/>ἐπεὶ ἀγαθὸς
+                        ἀνήρ ἐστι. περὶ οὖν τούτου<lb/>μὴ σοι μελέτω. ἂν δ’ ἕτερόν τι δέη
+                            τ<expan>ῶν</expan>
+                        <lb/>παρ’ ἡμῖν, ὥν ἐσμὲν δυνατοὶ,<lb/>θαρρῶν μήνυε. ἐν παντὶ γὰρ
+                        ἑτοίμους<lb/>ἡμᾶς εὑρήσεις, ὥστε σοι χαρίζεσθαι:<c>†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <div1 n="50" type="thematoep" xml:id="thema50">
+                <ab>
+                    <add hand="Cr" place="left">49.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema50_low">
+                    <ab>
+                        <lb/> ὅποι<expan>ος</expan> ἀρρωστιμένος παρακούει τῶν ἰατρ<expan>ῶν</expan>
+                        καὶ δὲν δέχε<expan>ται</expan>
+                        <lb/>ἰατρείαν καμίαν, τοῦτον ἀπελπίζουν τον οἱ ἰατροὶ.<lb/>τὸν αὐτὸν τρόπον,
+                        ὅστις δὲν δέχεται ἑρμηνείαν ἀπὸ<lb/>κανέναν (ἐπεὶ ἡ χοντροσύνη ἔνε ἀρρωστία
+                        ψυχῆς)<lb/>τοῦτος ἰατρείαν δὲν ἔχει οὐδόλως, μόνον τὸν θάνατον.<lb/>βάλε
+                            λοιπ<expan>ὸν</expan> εἰς τὸν νοῦν σου, τὶ ἐμπορῶ νὰ ἐλπίζω διὰ
+                        σένα,<lb/>ὁ ὁποῖος ὄχι μοναχὰ φεύγεις καὶ συχένεσε εἴτι καλὸν καὶ ἄν
+                        σὲ<lb/>ἐπεὶ τινὰς, ἀλλὰ γελᾶς καὶ τοὺς ἀγαπώντ<expan>ας</expan> καὶ
+                        ἐρμηνεύοντας.<lb/>ἂν σὲ κόπτη λοιπὸν διὰ λόγου σου, ἢ ἂν θέλης νὰ μοῦ
+                        κάμεις<lb/>καλοσύνη, ἄλλαξε τὴν γνώμην σου:<c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema50_high">
+                    <ab>
+                        <lb/>ὃς <hi rend="underline">νοσῶ μὲν κεῖν</hi><expan>ται</expan>, μήτε δὲ
+                        ἰατροῖς πείθεται,<lb/>μήτε φάρμακα δέχε<expan>ται</expan>, οὐδὲ ποτε
+                        ἐρρῶσθαι ἐλπίδ<expan>ας</expan> ἔχει.<lb/>ὡσαύτως δὲ καὶ ὁ παραινέσεσι μὴ
+                            ἀρεσκόμεν<expan>ος</expan> οὐδεν<expan>ὸς</expan>,<lb/>(ἐπείπερ ἀμάθεια
+                            νόσ<expan>ος</expan> μεγίστη ψυχῆς)<lb/>ἰατρὸν οὐδένα ἄλλον ἔχει, εἰ μὴ
+                        θάνατον.<lb/>ἐνόει οὖν τίνας περὶ σοῦ ἐλπίδας ἔχω.<lb/>ὃς οὐ μόνον ὅπερ ἄν
+                        τις λέξη συμφέρον ἀποστρέφη,<lb/>ἀλλὰ καὶ τῶν παραινούντ<expan>ων</expan>
+                        καὶ φιλούντ<expan>ων</expan> σε καταγελᾶς.<lb/>εἰ μὲν οὖν περὶ σαυτοῦ τοῦ
+                            τ<unclear>ί</unclear> σοι μέλει, ἢ ἐμὴν<lb/>χάριν πρᾶξαι ἐπιθυμεῖς, ἣν
+                        δόξαν<lb/>ἔχεις πρὸς θεῶν μετάβαλε:<c>†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <pb n="44"/>
+            <div1 n="51" type="thematoep" xml:id="thema51">
+                <ab>
+                    <add hand="Cr" place="left"> 50. </add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema51_low">
+                    <ab>
+                        <lb/> Ἀκούω ὅτι βαρύεσαι τὸν κόπον, καὶ διατοῦτο<lb/>ἀποφάσισες νὰ ἀφήσης
+                        τὴν σπουδήν, καὶ νὰ<lb/>ἀμελήσης τοὺς λόγους, καὶ τὰς μούσ<expan>ας</expan>.
+                        καὶ τὸν γλυκ<unclear>ὴ</unclear>ν<lb/>καρπὸν ποῦ ἐμάζοξες μὲ τὸν ἱδρώτα
+                        σου,<lb/>καὶ ἐκακοφάνη μου τόσον, ὅτι μ<expan>εγάλη</expan>
+                            λύπ<unclear>η</unclear> μοῦ<lb/>ἔγγιξεν εἰς τὴν καρδίαν. καὶ ἄλλο δὲν
+                        μοῦ<lb/>ἀπομένει, μόνον νὰ παρακαλέσω<lb/>τὰς μούσ<expan>ας</expan> καὶ τὸν
+                        ἀπόλλωνα, νὰ σ<unclear>οῦ</unclear>
+                        <lb/>βάλουν τέτοιον νοῦν, ὅτι νὰ μὴν ἀφήσης<lb/>
+                        <unclear>τὴν</unclear> τόσης ἐλπίδα ὁποῦ εἴχαμ<expan>εν</expan> εἰς
+                        ἐσένα<lb/>νὰ χαθῆ. ἐγὼ ἀπὸ λόγου μου ἐνθυ-<lb/>
+                        <unclear>μί</unclear>ζω σου τοῦτο μόνον, τὸ ὁποῖον ὁ θηβαῖ<expan>ος</expan>
+                        <lb/>εἶπεν πολλοὺς χρόνους πρότερον, ὅτι καὶ<lb/>
+                        <unclear>τὸν</unclear> ἄδην <unclear>ἀλισμονᾶ ἕνας</unclear> ὁποῦ κάμνει
+                            καλὰ:<c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema51_high">
+                    <ab>
+                        <lb/> ἀκήκοα τῷ ἄχθεσθαί σε τὸν πόνον, τούτου ἕνεκα<lb/>ἔδοξέ σοι ἀμελεῖν
+                        σπουδῆς, καὶ πρ<expan>ὸς</expan> τοὺς λόγους<lb/>δυσκόλως ἔχειν. καὶ
+                            μουσ<expan>ῶν</expan> μὴ μέλειν, καὶ καρπ<expan>ῶν</expan>
+                        <lb/>ἡδέ<expan>ων</expan> τῶ σῷ συνηλεγμέν<expan>ων</expan>
+                        ἱδρῶτι.<lb/>τοσοῦτο δὲ μοι τουτὶ λυπηρὸν, ὥστε μου τ<expan>ῆς</expan>
+                            καρδί<expan>ας</expan>
+                        <lb/>καθικέσθαι. οὐδὲν οὖν ἕτερον μοι<lb/>ὑπόλοιπον, πλὴν εὔξασθαι τὰς
+                        <lb/>μούσας καὶ τὸν ἀπόλλωνα ἐμπνεῦσαί σοι κ<expan>ατὰ</expan> νοῦν<lb/>ὥστε
+                        μηδὲ ποτε ἐάσειν ἃς ἐπὶ σοὶ εἶχον<lb/>ἐλπίδ<expan>ας</expan> ἀφανισθῆναι.
+                        ἐγὼ δὲ<lb/>ἀπ’ ἐμαυτοῦ τὸ πάλαι <hi rend="underline">πινδάρω</hi> λεχθὲν, ἐν
+                        μνήμη σοι φέρω.<lb/>
+                        <unclear>τὸ</unclear> ἀΐδα τοι λάθεται ἄρμενα<lb/>πράξ<expan>ας</expan>
+                            ἀνὴρ<c>†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <div1 n="52" type="thematoep" xml:id="thema52">
+                <ab>
+                    <add hand="Cr" place="left">51.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema52_low">
+                    <ab>
+                        <lb/> Δὲν ἔνε μεγ<expan>αλύτερη</expan> ἀδικΐα ὡς ἂν ἔσοντας νὰ ἔνε
+                        τινας<lb/>ἄτυχος, νὰ θέλει νὰ φαίνεται καλὸς. διατὶ γελοῦν<expan>ται</expan>
+                        <lb/>πολλοὶ ἀπὸ τὴν φαινομένην καλοσύνην, καὶ<lb/>τὴν κρυπτομένην κακΐαν.
+                        καὶ οἱ ναῦται ἄλλο δὲν<lb/>φοβοῦνται μόνον ταῖς πέτραις ταῖς
+                        χοσμέναις.<lb/>πιστεύω νὰ ἐρωτᾶς διατὶ σοῦ τὸ γράφω, καὶ ἂν<lb/> βάλης
+                            <expan>κατὰ</expan> νοῦν μὲ ποῖον, σμίγεις παρ’ εὐθὺς<lb/>θέλεις
+                        γνωρίσει τὸν νοῦν τῆς γραφῆς μου: καὶ<lb/>ἀποδῶ καὶ ὀμπρ<expan>ὸς</expan>
+                        ἐνθυμοῦ τὸ σύμβολον τοῦ πυθαγόρ<unclear>ου</unclear>
+                        <lb/>μ<expan>ὴν</expan> ἐγγίζεις καθενὸς τ<expan>ὴν</expan> δεξιὰν. ἂν δὲν
+                        δοκιμάσης καλὰ<lb rend="right"/>τὸν ἄν<expan>θρωπ</expan>ον, φίλον
+                            μ<expan>ὴν</expan> τὸν κάμης:<c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema52_high">
+                    <ab>
+                        <lb/>ἐσχ<hi rend="underline">άτη ἀδικΐα</hi> τὸ δοκεῖν βούλεσθαι μὴ ὄντα
+                            χρηστ<expan>ὸν</expan>
+                        <lb/>τῆ δοκούση μ<expan>ὲν</expan> γὰρ καλοκαγαθία, πλεῖστοι
+                        ἐξα-<lb/>πατῶνται. τὴν δὲ κεκαλυμένην κακΐαν<lb/>χαλεπῶς ὑποπτεύουσι. ἀμέλει
+                        καὶ οἱ ναῦται, οὐδὲν ἄλλο,<lb/>πλὴν τὰς ὑφάλους πέτρ<expan>ας</expan>
+                        δεδίασιν. οἶμαι<lb/>δὲ σε πρ<expan>ὸς</expan> τουτὶ γέγραφα
+                        πυνθάνεσθαι.<lb/>εἰ δὲ τὸν συνδιατρίβοντά σοι σκοπήσεις,
+                            ραδί<expan>ως</expan>
+                        <lb/>γνώση, τὸ <unclear>δι’</unclear> ἐπιστολῆς σημαινόμενον.<lb/>εἰς
+                            τοὐπι<unclear>ὸ</unclear>ν δὲ, καλῶς τὸ τοῦ πυθαγόρου
+                            <unclear>σύμβολον</unclear>
+                        <lb/>διὰ μνήμης ἔστω σοι, μὴ ἔμβαλε παντὶ δεξιὰν.<lb/>πρὶν δ’ ἂν ἐξετάσης
+                        μηδένα φίλον <unclear>ποιοῦ</unclear>.</ab>
+                </div2>
+            </div1>
+            <pb n="45"/>
+            <div1 n="53" type="thematoep" xml:id="thema53">
+                <ab>
+                    <add hand="Cr" place="left">52.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema53_low">
+                    <ab>
+                        <lb/> Ἐρώτησαν ἕναν φρόνιμον ἄν<expan>θρωπ</expan>ον εἰς ἕναν
+                            καιρ<expan>ὸν</expan>, πῶς<lb/>ἤθελαν κάμει οἱ ἄν<expan>θρωπ</expan>οι
+                        νὰ ζοῦσιν ἥσυχα καὶ χαιράμε<expan>ν</expan>οι. <lb/>καὶ αὐτ<expan>ὸς</expan>
+                        χωρὶς νὰ ἀποκριθῆ, ἔπιασ<expan>εν</expan> ἕνα ἀγγεῖον<lb/>γεμάτο νερὸν, καὶ
+                        ἀνακάτοσε λίγα ἀλεύρια μέσα, <lb/>εἶτα τὸ ἔπιε. καὶ ἀπέκει ἀνεχώρησε.
+                        θέλοντας<lb/>νὰ δείξη τῶν ἀν<expan>θρώπ</expan>ων, ὅτι ἂν εὐχαρϊστούντισαν
+                        ἀπὸ<lb/>τὰ ἁπλᾶ πράγματα καὶ ἀναγκαῖα, μήτε κόπους<lb/>ἤθελαν ἔχει πολλοὺς,
+                        μήτε μαλόματα. τὶ θέλει<lb/>ἦστεν εἰς ἐμᾶς τοὺς κακορίζικους λοιπὸν. οἱ
+                        ὁποῖοι<lb/>καὶ ἕλληνας δουλεύομεν, καὶ βαρβάρους, δϊὰ<lb/>νὰ
+                            μαζόξομ<expan>εν</expan> πράγματα ξένα, καὶ ὄχι δικά
+                        μ<expan>ας</expan>.<lb/>τολοιπὸν ἂν ἔνε δυνατὸν ἀδελφέ μου, ἔλα <lb/>εἰς
+                        ἐμέναν, ὅπως μὲ κοινὴν βουλ<expan>ὴν</expan>, νὰ εὕρωμ<expan>εν</expan>
+                        <lb/>τὴν ἐλευθερίαν, ὁποῦ ἐπιθυμοῦμεν:<c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema53_high">
+                    <ab>
+                        <lb/> πρ<expan>ὸς</expan> τὸν ἐρώμενον ποτὲ, τίσιν ἂν
+                            χρώμενοι<lb/>ἡσ<expan>ί</expan>χως τὲ καὶ ἀλυπως τὸν βίον διάγοιεν
+                            ἄν<expan>θρωπ</expan>οι,<lb/>αὐτὸς οὐδὲν μὲν ἠμείβετο. λαβ<hi
+                            rend="underline">ὼν δὲ τι πινάκϊον</hi>
+                        <lb/>μεστὸν ὕδατος, ἀλφιτά τε ἐν αὐτῶ τιν’ ἀνα-<lb/>κυκήσ<expan>ας</expan>,
+                        κἆταπιὼν, ὤχετο. δηλῶσαι βουλόμεν<expan>ος</expan>,<lb/>εἰ τοῖς ἁπλοῖς τε
+                        καὶ ἀναγκαίοις ἔχαιρον, οὐτέ τινα<lb/>πόνον εἶχον, οὔτέ τινα πόλεμον καὶ
+                            φιλονικί<expan>ας</expan>.<lb/>τὶ δ’ οὖν ἡμῖν εἴη τοῖς καὶ ἕλλησι καὶ
+                        βαρβάροις<lb/>ὑπήκουσιν, ὥς τε τῶν ἀλλοτρί<expan>ων</expan>
+                        περιποιεῖσθαι<lb/>καὶ οὐ τῶν ἰδί<expan>ων</expan>. εἴπερ σοι
+                        τοίνυν<lb/>δϋνατὸν ὧ τὰν, δεῦρ’ ἴθι.<lb/>μήπου κοινῆ γνωμη ἧς
+                            ἐρῶμ<expan>εν</expan> ἐλευθερί<expan>
+                            <unclear>ας</unclear>
+                        </expan>
+                        <lb/>ἐπιτύχωμεν:<c>†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <div1 n="54" type="thematoep" xml:id="thema54">
+                <ab>
+                    <add hand="Cr" place="left">53.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema54_low">
+                    <ab>
+                        <lb/>Ἂν ἠξεύρης ὅτι καὶ ἀγαπῶ καὶ τιμῶ σε, καὶ<lb/>ὅτι ἡ φιλία μου δὲν ἦνε
+                            πλα<add hand="Cr" place="supralinear">σ</add>μένη, ἀμὴ ἔνε
+                        ἀληθινὴ,<lb/>καὶ σὺ καὶ μισεῖς καὶ περιφρονᾶς με,<lb/>καὶ καμαρώνεις νὰ μὲ
+                        περιγελᾶς,<lb/>λογάριασε ἂν κάμνης ἔργον καλοῦ ἀν<expan>θρώπ</expan>ου. εἰ
+                        δὲ καὶ<lb/>ἀπιστεῖς εἰς τὴν φιλΐαν μου, δείξαι φανερὰ ὅτι<lb/>μὲ θέλεις
+                        ἐχθρὸν, δϊατὶ ἔνε σημεῖον καλοῦ<lb/>ἀν<expan>θρώπ</expan>ου νὰ μὴν κρύβει
+                        τὴν γνώμην του:<c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema54_high">
+                    <ab>
+                        <unclear>...</unclear>
+                        <lb/> εἰ μέν σε φιλοῦντα οἶσθα, καὶ τιμῶντα, καὶ <lb/>τὴν
+                            ἐμ<expan>ὴν</expan> ἐταιρίαν οὐ πεπλασμένην ἀλλ’ ἀληθῆ<lb/>σὺ δὲ
+                            παρορ<expan>ῶν</expan> τε καὶ μϊσ<expan>ῶν</expan> ἡμᾶς, καταγελᾶς
+                        τε<lb/>καὶ θρυπτόμεν<expan>ος</expan> ὀλιγορεῖς, λόγισ’<lb/>ἄρα εἰ ἀγαθῶ
+                        ταῦτα πρέπει. Εἰ δὲ<lb/>τῆ ἐμῆ φιλία ἀπιστεῖς, ἐναργῶς δήλωσον<lb/>εἰ πρός
+                        με ἐχθρωδῶς <unclear>ἀ<expan>ξι</expan>οῖς</unclear> ἔχειν.<lb/>ἴδιον γὰρ
+                        τοῖς σπουδαίοις, τὴν διάνοιαν<lb/>φανεράν ἔχοντας περιπατεῖν:<c>†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <pb n="46"/>
+            <div1 n="55" type="thematoep" xml:id="thema55">
+                <ab>
+                    <add hand="Cr" place="left">54.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema55_low">
+                    <ab>
+                        <lb/>Δὲν ἐμπορῶ νὰ κάμω νὰ μὴν κλαίω<lb/>βλέποντας τὴν τόσην ἀμέλειαν τοῦ
+                            γένους<c>-</c>
+                        <lb/>τοῦ ἑλληνικοῦ πρὸς τὸ καλὸν. ἀμὴ ἂν<lb/>ὁ γεώργι<expan>ος</expan>
+                        ἀμέλησε τὴν σπουδὴν, ὁποῦ<lb/>ἦτον πάντα σπουδαῖ<expan>ος</expan> καὶ
+                            καλ<expan>ὸς</expan> ἄν<unclear>θρωπ</unclear>ος,<lb/>πολλὰ ὀλιγότερον
+                        θέλουν ἐπιμελ<unclear>η</unclear>θεῖ<lb/>τὴν σπουδὴν οἱ ἄλλοι ὁποῦ εἶνε
+                        ὀκνίαριδες.<lb/>μὴ δὲ τὶ νά εἰπῶ ἠξεύρω, μὴ δὲ τὶ ἰατρείαν<lb/>νὰ εὕρω εἰς
+                        τόσον καιρ<add hand="Cr" place="supralinear">κ</add>ὸν. ὁ
+                        θ<expan>εὸ</expan>ς μόνον<lb/>ὁποῦ ἔχει τὴν δύναμϊν νὰ κάμει
+                            νὰ<lb/>γνωρίσωμ<expan>εν</expan> τὸ καλλίτερον, καὶ νὰ
+                            μὴν<lb/>ἀμελήσωμεν:<c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema55_high">
+                    <ab>
+                        <lb/> ἀδακρυτὶ διάγειν οὐ δύναμαι,<lb/>τὴν τοσαύτην ὁρῶν τοῦ γένους τοῦ
+                        ἑλληνικοῦ,<lb/>(ἣν πρ<expan>ὸς</expan> τὸ ἀγαθὸν ἔχον διατελεῖς)
+                        ἀμέλειαν.<lb/>ἀλλ’ εἰ μὲν ὁ καλὸς τε γἀγαθὸς γεώρ<expan>γιος</expan>, ὁ τὸν
+                        νοῦν<lb/>ἀεὶ προσέχων τῆ σπουδῆ, ἠμέλησε, <lb/>πολλῶν μᾶλλον οἱ φύσει
+                        ράθϋμοι.<lb/>οὔτε δὲ τὶ λέξω οἶδα. ἀλλὰ μὴν<lb/>οὔτε φάρμακον εὑρεῖν δύναμαι
+                        ἐν τόσω κακῶ.<lb/>μόνον δὲ τὸ θεῖον δοίη τὸ πανσθενὲς<lb/>τὸ βέλτιστον θ’
+                        ἡμᾶς γνῶναι, καὶ μήτ’<lb/>ἀμελεῖν ὡστ’ ἰσχυρῶς τούτου ἀντέχεσθαι. </ab>
+                </div2>
+            </div1>
+            <div1 n="56" type="thematoep" xml:id="thema56">
+                <ab>
+                    <add hand="Cr" place="left">55.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema56_low">
+                    <ab>
+                        <lb/> ἕνα γνώρισμα ἔνε τ<expan>ῆς</expan> ζωῆς νὰ μὴν<lb/>σιωπᾶ τινὰς, ἐσὺ
+                            σιωπῶντ<expan>ας</expan> πάντοτε<lb/>ἦσε τέτιος, ὡς ἂν νὰ μὴν ἔζης. τὸ
+                            λοιπ<expan>ὸν</expan>
+                        <lb/>ἂν θέλης νὰ γνωρίσωμεν ὅτι ζῆς,<lb/>μὴν ὀκνεύεις νὰ μᾶς γράφης
+                        συχνὰ.<lb/>διατὶ ἂν κάμης ἀλέως ὅσον εἰς ἐμέναν,<lb/>δὲν θέλει ἦστε διαφορὰ,
+                        ἢ ζῆς ἢ ὄχι.<lb/>ὑγίαινε. καὶ ἀγάπα ὁμοίως ἐκείνους ὅπου<lb/>σὲ ἀγαποῦσι,
+                        καὶ ἐνθύμου ὅτι τῶν καλ<expan>ῶν</expan>
+                        <lb/>ἀν<expan>θρώπ</expan>ων τὴν φιλίαν, οὔτε τόπ<expan>ος</expan>, οὔτε
+                            χρόν<expan>ος</expan>
+                        <lb rend="right"/>τὴν χαλᾶ:<c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema56_high">
+                    <ab>
+                        <lb/> τὸ <add hand="Cr" place="supralinear">μὴ</add> σιγᾶν, τοῦ ζῆν
+                        τεκμήρϊον. σὺ δὲ<lb/>ἡσυχίαν ἄγων διηνεκῆ, οὐδέν τι μοι δοκεῖς<lb/>τῶν
+                        τεθνεώτων δϊαφέρειν. εἰ δ’ ἄρα<lb/>βούλοιο σαυτὸν, ζῶντα φαίνεσθαι<lb/>μὴ
+                        ὀλιγώρει γράφειν πρ<expan>ὸς</expan> ἡμᾶς θαμν<unclear>ὰ</unclear>.<lb/>ἢν
+                        γὰρ ἄλλως ποιήσης ὡς ἐμοὶ δοκεῖ,<lb/>τὸ ζῆν σε τοῦ τεθνᾶναι οὐδὲν
+                        δϊοίσει.<lb/>ὑγιαίνοις μόνον. τοὺς δὲ φιλοῦντ<expan>ας</expan>
+                            καὐτ<unclear>ὸς</unclear>
+                        <lb/>ἀντιφίλει. μέμνησο δ’ ὅπως τὰς τῶν<lb/>σπουδαί<expan>ων</expan>
+                            φιλί<expan>ας</expan> οὐκ ἄν ποτε χρόν<expan>ος</expan>,<lb/>οὔτε τόπου
+                        διάστημα ἐξαλήψειεν. </ab>
+                </div2>
+            </div1>
+            <pb n="47"/>
+            <div1 n="57" type="thematoep" xml:id="thema57">
+                <ab>
+                    <add hand="Cr" place="left">56.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema57_low">
+                    <ab>
+                        <lb/> πῶς περνοῦν ἐδῶ τὰ πράγματα<lb/>εἰς τόσην ἀποκοτίαν δὲν ἦλθα, ὅτι
+                        νὰ<lb/>σοῦ τὰ φανερώσω μὲ γραφὴν.<lb/>καλὰ καὶ εἰς ὅποιον
+                            μέρ<expan>ος</expan> τῆς οἰκουμέν<expan>ης</expan> ἦσε,<lb/>(ὡς
+                        προέγραψα) μέσα σένα καράβη ἦσε.<lb/>χαίρομαι διὰ σὲ ὁποῦ λείπεις, ἕνα πῶς
+                            δ<expan>ὲν</expan>
+                        <lb/>εὐλέπεις ὅσα βλέπομ<expan>εν</expan> ἡμεῖς, ἄλλο ὅτι<lb/>ἡ καλοσύνη,
+                        εἰς ὑψηλὸν τόπον καὶ φανερ<expan>ὸν</expan>
+                        <lb/>ἔνε, καὶ μετέχουν την πολλοὶ τοπικοὶ.<lb/>ἡ ὁποία εἰς ἐμᾶς οὐχὶ μὲ
+                        λόγον ἀφανέροτον,<lb/>ἀλλὰ προφανῶς ἐφάνη ἀλήθεια.<lb/>τοῦτο μόνον δὲ
+                        γνωρίζω. τάχα χαρεῖς<lb/>θέλεις, ἢ λυπηθῆς, μὲ τὴν γνώμην τ<expan>ῶν</expan>
+                        ἐδῶ.<lb/>ἔτζι περνοῦσι τὰ πάντα κακὰ. καὶ παρολίγον<lb/>τῶρα ἔσβεσεν ἡ δόξα
+                        μας.<lb/>ἀλλὰ ἐὰν τοῦτα δὲν ἦνε ἄδεια σὲ γραφὴ,<lb/>μάθης θέλεις αὐτὰ ἀπὸ
+                        ἄλλους. πλὴν ἂν ἔχης<lb/>θάρ<expan>ος</expan> διὰ τὸ καλλίτερον τῆς χώρας,
+                        ἑτοίμαζε.<lb/>καὶ βάλε εἰς τὸν νοῦν σου, ὅσα πρέπει<lb/>ἐκεῖνον που εἰς τὴν
+                        παλαιὰν ἐλευθερίαν ἀνεθράφει,<lb/>καὶ εἶνε ἄξιος ξεγδικητὴς
+                            τ<expan>ῆς</expan> πατρίδ<expan>ος</expan>. ὁποῦ<lb/>μὲ τὰ ἐναντία τοῦτα
+                        καιρικὰ, ἦλθε εἰς<lb/>θανάσιμα συνήθια:<c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema57_high">
+                    <ab>
+                        <lb/> τίνα τρόπον τὰ ἐνταυθοῖ ἔχει, οὐκ εἰς<lb/>τοσοῦτον τόλμης ἱκνοῦμαι,
+                        ὥστε σοι<lb/>δι’ ἐπιστολῆς δηλῶσαι. καίπερ<lb/>ὅπου καὶ γῆς ὤν τυγχάνεις (ὡς
+                        ἔφθην γεγραφὼς)<lb/>ἐν τῷ <hi rend="underline">αὐτῷ</hi> πλοίῳ
+                        εἶ.<lb/>ἥδομαί σοι μέντοι ἀπόντι, ἢ ὅτι ἅπερ ἡμᾶς<lb/>οὐχ ὁρᾶς, ἢ ὅτι ἡ σὴ
+                        ἀρετὴ ἐπὶ μετεώρου<lb/>καὶ σαφοῦς, πολλ<expan>ῶν</expan>
+                            συμμαχούντ<expan>ων</expan> πολιτῶν ἐστι.<lb/>ἥτις πρ<expan>ὸς</expan>
+                        ἡμᾶς οὐ λόγω ἀσαφῆ καὶ ποικΐλω,<lb/>ἀλλὰ φανερωτάτη ἀληθεία
+                        ἀφίκετο.<lb/>τοῦτο δὲ μοι μόνον ἄδηλον. ἆρ’ εὐφρανθήση,<lb/>ἢ λυπηθήση τῇ
+                        δόξη τῶν ἐνταῦθα.<lb/>οὕτως ἔχει πάντα κακῶς, καὶ ὀλίγου δεῖν<lb/>ἤδη
+                            ἔσβεσ<expan>θαι</expan> ἡ εὔκλεια ἡμῶν.<lb/>ἀλλ’ εἰ ταῦτα οὐκ ἐπέτραπται
+                        ἐπιστολῆ,<lb/>γνώση παρ’ ἄλλων. ὅμως εἴ τινας ἔχεις<lb/>ἐλπίδας τοῦ
+                            κρείττον<expan>ος</expan> τ<expan>ῆς</expan> πολιτείας,<lb/>παρασκεύαζε.
+                        φρόντιζε ἅπερ προσήκει<lb/>τῶ πρὸς τὴν πάλαι ἐλευθερΐαν
+                        ἀνατεθραμμένω<lb/>καὶ ἀξίω ἐκδικω, τ<expan>ῆς</expan>
+                            πολιτεί<expan>ας</expan>. ἠμελημένην τε<lb/>καὶ πιεζομένην τούτοις τοῖς
+                        ἐναντίοις καιροῖς<lb/>καὶ ἤθεσιν ὀλεθρίοις:<c>†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <pb n="48"/>
+            <div1 n="58" type="thematoep" xml:id="thema58">
+                <ab>
+                    <add hand="Cr" place="left">57.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema58_low">
+                    <ab>
+                        <lb/> Ἐχθὲς τὴν αὐγὴν ἤθελα νὰ σοῦ γράψω.<lb/>ἀμὲ ἡ κρίαδα καὶ τὸ χίονι ὁποῦ
+                        ἐσκέπασε<lb/>τὰ βουνὰ καὶ τοὺς κάμπους, ἐμπόδισε καὶ ἐμέναν,<lb/>ὁμοίως καὶ
+                        τὸν γραμματοφόρον νὰ μισεύσει.<lb/>τῶρα ὁποῦ μεταβί<expan>ας</expan>
+                            ἔπαυσ<expan>εν</expan> ὁ χειμὼν,<lb/>καὶ ὁ ἥλιος ἐζέστανε τὸν
+                        ἀέρα,<lb/>γράψει σου ἤθελα καταλεπτῶς,<lb/>δι’ ὅλα τὰ πράγματα ὁποῦ κάμνει
+                        χρεία. <lb/>ἀμὲ τὰ χέρια μου ἐξεπάγϊασαν,<lb/>καὶ δὲν ἐμπορῶ νὰ βαστῶ τὸ
+                        κονδίλη.<lb/>καὶ σώνει σου διατῶρα νὰ ἠξεύρεις ὅτι<lb/>ὑγϊαίνω καὶ χαιρετῶ
+                            σε:<c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema58_high">
+                    <ab>
+                        <lb/> χθὲς ἠβουλόμην ἅμα ἕω πρ<expan>ὸς</expan> σὲ γράψαι.<lb/>ὁ δὲ χειμών,
+                        καὶ ἡ τοσαύτη χιὼν ἡ τὰ ὅρη καὶ<lb/>τὰ πεδία καλύψασα, διεκώλυσε
+                        κἀμὲ.<lb/>καὶ τὸν γραμματοφόρον ἐντεῦθ<expan>εν</expan>
+                            ἀποδημῆσ<expan>αι</expan>.<lb/>νῦν δὲ, μόλις τοῦ τε παγετοῦ
+                            λήξαντ<expan>ος</expan>,<lb/>καὶ τοῦ ἡλίου θερμαίναντ<expan>ος</expan>
+                        τὸν ἀέρα<lb/>γράψαιμ’ ἀκριβῶς σοι περὶ τ<expan>ῶν</expan>
+                            δεόντ<expan>ων</expan>
+                        <lb/>πάντων καὶ χρειωδῶν.<lb/>ἀλλ’ οἱ ἑμαυτοῦ δάκτυλοι, ὑπὸ
+                            χυμε<unclear>θ</unclear>λῶν<lb rend="right"/>πιεζόμενοι<lb/>οὐ δύνανται
+                        ἔχειν τ<expan>ὸν</expan> κάλαμον.<lb/>τοῦθ’ ἅλις ἔχει τὸ γε νῦν
+                        ἔχον,<lb/>γϊνώσκοντος μόνον, ὅθ’ ὑγιαίνω καὶ<lb rend="right"/>προσαγορεύω
+                        σε. </ab>
+                </div2>
+            </div1>
+            <div1 n="59" type="thematoep" xml:id="thema59">
+                <ab>
+                    <add hand="Cr" place="left">58.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema59_low">
+                    <ab>
+                        <lb/> τὸν ἰω<expan>άννην</expan> εἰ μέν τόν ἐγνωρίζεις, ἠξεύρω<lb/>καλὰ, ὅτι
+                        καὶ ἀγαπᾶς καὶ τιμᾶς τὸν καὶ ἐπαινεῖς.<lb/>διατὶ ἔνε ἄν<expan>θρωπ</expan>ος
+                            καλ<expan>ὸς</expan> καὶ φίλ<expan>ος</expan>
+                        <lb/>ὁποῦ ἀξίζει πολλὰ. εἰ δὲ καὶ δὲν<lb/>τὸν γνωρίζεις, ἔχε τον δι’
+                        ἀγάπην<lb/>ἐδικήν μου εἰς τοὺς ἐπαινουμένους<lb/>φίλους σου. τῶρα σου τὸν
+                        παραδίδω<lb/>ἐγὼ, διατὶ δ<expan>ὲν</expan> τὸν γνωρίζεις, ὕστερα
+                        θέλεις<lb/>τὸν ἀγαπήσει καὶ ἄλλους διὰ λόγου του,ἀφοῦ<lb rend="right"
+                        />γνωρίσης τὴν καλοσύνην του. </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema59_high">
+                    <ab>
+                        <lb/> εἰ μὲν γϊνώσκεις τὸν ἰω<expan>άννην</expan>, εὖ οἶδ’ ὅτι,<lb/>φϊλεῖς
+                        αὐτὸν καὶ τιμᾶς καὶ ἐπαινεῖς.<lb/>ἀγαθὸς γὰρ οὑτοσὶ καὶ φίλ<expan>ος</expan>
+                        πολλοῦ ἄξι<expan>ος</expan>
+                        <lb/>εἰ δ’ οὐ γινώσκεις, ἐμὴν χάριν, <lb/>ἀριθμῶ τάξον, τῶν
+                        θαυμα-<lb/>ζομένων φίλων. νῦν μὲν οὖν<lb/>συνίστημι αὐτόν, ἐπεὶ οὐ
+                        γινώσκεις.<lb/>ἐπειδὰν δὲ τὴν ἐκείνου καλοκαγαθί<expan>αν</expan>
+                        <lb/>γνῶς, καὶ ἑτέρους, δι’ αὐτὸν φιλήσ<expan>εις</expan>. </ab>
+                </div2>
+            </div1>
+            <pb n="49"/>
+            <div1 n="60" type="thematoep" xml:id="thema60">
+                <ab>
+                    <add hand="Cr" place="left">59.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema60_low">
+                    <ab>
+                        <lb/> ποῖον ἀπὸ τὰ δύο, ἐγὼ εἶμε παραπονίαρης,<lb/>ἢ ἐσὺ καταφρονεῖς ἐμᾶς
+                        τοὺς φίλους σου,<lb/>ὁ ὁποῖ<expan>ος</expan> ἀπὸ δύο χρόνους καὶ ἐδῶ ποτὲ
+                        δὲν<lb/>μᾶς ἔγραψες. καὶ ἐμὲν δὲν ἔλαβες<lb/>οὐδεμΐαν ἀπὸ ταῖς γραφαῖς
+                        μου,<lb/>ἐμπορεῖς νὰ προφασίζεσαι. εἰ δὲ καὶ<lb/>ἔλαβες καὶ σιωπᾶς, ἔνε
+                        σημεῖον<lb/>ὅτι καταφρονεῖς μας. καὶ εἰς τοῦτον τὸν<lb/>τρόπον φανερὰ
+                        ἀδικεῖς τὴν<lb/>φιλίαν μας. τῶρα θέλεις δείξειν<lb/>ἂν εἶνε ἀληθινὸν τοῦτο
+                        ὁποῦ φεροῦμαι,<lb/>ἂν γράψης, ἢ ἂν δὲν γράψης:<c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema60_high">
+                    <ab>
+                        <lb/> πότερον, ἐγὼ φιλαίτιος, ἠ σὺ,<lb/>ὀλιγωρῶν τῶν σ<expan>ῶν</expan>
+                        φίλων. δεύτερ<expan>ος</expan> γὰρ<lb/>ἐνϊαυτ<expan>ὸς</expan> οὑτοσί, ἀφ’
+                        οὗ πρ<expan>ὸς</expan> ἡμᾶς οὐκ<lb/>ἔγραψας. καὶ εἰ μὲν τῶν
+                            ἐμ<expan>ῶν</expan> ἐπιστολ<expan>ῶν</expan>
+                        <lb/>οὐδεμΐαν ἐδέξω, ἔχεις ἂν προ-<lb/>φασίζεσθαι. εἰ δὲ
+                            κομισάμεν<expan>ος</expan> σιγᾶς,<lb/>τεκμηρϊον τουτὶ τοῦ
+                            καταφρον<expan>εῖν</expan> ἡμῶν.<lb/>οὕτω δ’ ἂν τὴν πρὸς ἡμᾶς
+                            φιλίαν<lb/>ἀδικ<expan>ῶν</expan>, δῆλ<expan>ος</expan>. νῦν δὲ τὸ ἐν
+                            <c>-</c>
+                        <lb/>ὑποψία μοι ὂν, εἰ ἀληθές,<lb/>τῷ γράφειν, ἢ μὴ, ἀποδείξεις:<c>†</c>
+                    </ab>
+                </div2>
+            </div1>
+            <div1 n="61" type="thematoep" xml:id="thema61">
+                <ab>
+                    <add hand="Cr" place="left">60.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema61_low">
+                    <ab>
+                        <lb/> τίποτε ἀν<expan>θρώπ</expan>ων πρᾶγμα, ἔτζι βαρὺ δ<expan>ὲν</expan>
+                        εἶνε, τὸ ὁποῖ<unclear>ον</unclear>
+                        <lb/>ἄν<expan>θρωπ</expan>ος δὲν ὑπομένει. καὶ στανίο του νὰ ποῦμεν.<lb/>ἐσὺ
+                            λοιπ<expan>ὸν</expan>, μήτε σὲ τιμὴ, μήτε σὲ πλοῦτον, ἔχεις<lb/>γνῶσιν,
+                        καὶ δϊατοῦτο περνᾶς κακὰ.<lb/>ἄν δὲ πέσης <add place="supralinear">σὲ</add>
+                        δυστυχία, κακὰ πάγεις πολλὰ.<lb/>διότι ἂν σευτυχία κακὰ πᾶς, εἰστὰ
+                        ἐναντία<lb/>πόσον θὲς πάθει. καὶ ἔτζι κάμνοντας<lb/>γλύγορα σὲ πτωχία καὶ σὲ
+                        ἄμετρα κακὰ<lb/>θέλεις πέσει, καὶ τὰ καλὰ θέλουν σε λείψει.<lb/>πρέπει
+                        λοιπὸν τὴν ὀκνίαν νὰ φεύγεις<lb/>ποῦνε μάνα μεγ<expan>άλη</expan> τῶν
+                            κακ<expan>ῶν</expan> καὶ τὸν κόπον<lb/>νὰ ἀγαπᾶς ποῦ δίδει τὰ καλὰ
+                            ὅλα:<c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema61_high">
+                    <ab>
+                        <lb/> οὐδὲν τῶν ἐν ἀν<expan>θρώπ</expan>οις οὕτω δύσφορον, ὅπερ
+                            ἄν<expan>θρωπ</expan>ος<lb/>οὐχ ὑποφέρει, καὶ ἐξ ἀνάγκης εἰπεῖν.<lb/>σὲ
+                        δὲ, οὔτ’ ἐν τιμῆ, οὔτ’ ἐν πλούτω τὸν νοῦν<lb/>προσέχων, καλῶς δύνασαι
+                        πράττειν<lb/>εἰ δ’ ἐν δυστυχίη πέσης, πολλοῦ γε <del hand="Cr">γε</del> καὶ
+                        δεῖ.<lb/>ἂν γὰρ ἐν εὐτυχίη κακῶς διάγεις, ἐν τοῖς<lb/>ἐναντίοις, πόσον, οὕτω
+                        δὲ σοῦ ποιοῦντ<expan>ος</expan>,<lb/>ταχέως πενία καὶ μυρίοις πέσεις
+                        κακοῖς,<lb/>καὶ τἀγαθά σε παραλείψει. δεῖ <hi rend="underline">τοίνυν
+                        τ</hi>ὴν<lb/>ῥαστώνην ἐκλίνειν, ὡς μ<expan>ητ</expan>ρόπολιν τῶν
+                        κακῶν,<lb/>καὶ πόνου ἔχεσθαι δοτῆρος τῶν ἀγαθ<expan>ῶν</expan>.</ab>
+                </div2>
+            </div1>
+            <pb n="50"/>
+            <div1 n="62" type="thematoep" xml:id="thema62">
+                <ab>
+                    <add hand="Cr" place="left">61.</add>
+                </ab>
+                <div2 type="low" xml:lang="el" xml:id="thema62_low">
+                    <ab>
+                        <lb/> Ἐτοῦτος ὁποῦ σοῦ φέρνει τ<expan>ὴν</expan>
+                        γραφ<expan>ὴν</expan>,<lb/>ἕνας εἶνε ἀπὸ τοὺς μαθητάδες μου<lb/>καὶ τῆς
+                            ἑλληνικ<expan>ῆς</expan> φων<expan>ῆς</expan>, ἂν ἦνε καὶ
+                            ἄλλ<expan>ος</expan>
+                        <lb/>ἐν ὀλίγω καιρῶ χορτάσ<expan>ας</expan>. ἀπὸ τ<expan>ὴν</expan>
+                        <lb/>φύσην του τὴν καλ<expan>ὴν</expan>, καὶ τὸν κόπον του,<lb/>ποῦ ἐπρόσεχε
+                        πολλὰ. νὰ εἶνε<lb/>καὶ εὐγενικοῦ καὶ προκομένου
+                            π<expan>ατ</expan>ρ<expan>ὸ</expan>ς. ἀπὸ <lb/>τὸν ὁποίον ἔμαθε καὶ τὰ
+                        φράγκϊκα.<lb/>τοῦτον καλομαρτυρώντ<expan>ας</expan> σου, λόγια<lb/>πολλὰ δὲν
+                        δέομαι. ἐσὺ γὰρ, ἀφοῦ<lb/>δοκιμασθῆ<unclear>,</unclear> πῶς ἦνε
+                            τακτικ<expan>ὸς</expan>
+                        <lb/>καὶ προκομένος, καὶ εὐλαβὴς,<lb/>καλὰ ἠξεύρω ὅτι θέλει σὲ
+                        τραβίξει,<lb/>καὶ νὰ τὸν ἀγαπᾶς, καὶ νὰ τὸν βοηθεῖς.<lb/>καὶ ἂν καὶ εἰς
+                        ἄλλους χρειασθῆ τὴν ἀγάπην σου<lb/>θέλει τὴν ἔχει. καὶ θέλεις μὲ εὐφράνει
+                        πολλὰ,<lb/>ἐὰν τὸν νίον τοῦτο ἀγαπημένα δεχτεῖς,<lb/>καὶ εἰς ἄλλον ὅτι τοῦ
+                        κάμνει χρεία,<lb/>ἢ νὰ μάθη τὰ αὐτοῦ, ἢ τὴν στράταν<lb/>τῆς σπουδῆς καὶ
+                            μαθημάτων:<c>†</c>
+                    </ab>
+                </div2>
+                <div2 type="high" xml:lang="grc" xml:id="thema62_high">
+                    <ab>
+                        <lb/> ὁ τὴν ἐπιστολήν σοι κομίζ<expan>ων</expan> οὑτοσὶ,<lb/>ὣν παρ’ ἐμοὶ
+                        φοιτησάντων εἷς ἐστι,<lb/>καὶ τῆς ἑλλάδ<expan>ος</expan> φωνῆς, ὡς εἴ τις
+                            ἄλλ<expan>ος</expan>,<lb/>ἐν τοσούτῳ χρόνῳ ἐμφορηθεὶς, φύσεώς
+                        τε<lb/>δεξιοτήτι καὶ μελέτη τῇ περὶ λόγου σπουδῆ,<lb/>πάνυ προσεσχηκὼς. ἀλλὰ
+                        δὴ καὶ π<expan>ατ</expan>ρ<expan>ὸ</expan>ς<lb/>ἐστὶν εὐγενοῦς καὶ <add
+                            cert="low" hand="Cr" place="supralinear">σο</add>φοῦ, ὑφ’ οὗ καὶ<lb/>τὴν
+                            ῥωμαί<expan>ων</expan> ἐξεπαιδεύθη φωνήν.<lb/>τοῦτον τῆ σῆ λογϊότητι
+                        συνϊστῶν, οὐ μακρ<expan>ῶν</expan>
+                        <lb/>ἂν δεηθείην λόγ<expan>ων</expan>. αὐτὸς γὰρ, ἐπειδὰν<lb/>ἑαυτοῦ πεῖραν
+                        δῶ, ὡς τὰ ἤθη κόσμϊ<expan>ος</expan>,<lb/>καὶ ὡς τὴν παιδείαν
+                            μέτρι<expan>ος</expan>, καὶ τ’ ἄλλα αἰδήμ<expan>ων</expan>,<lb/>εὖ οἶδ’
+                        ὅτι προσεπισπασεταί σε, ὥστε<lb/>καὶ φιλεῖν, καὶ προστατεύειν αὐτοῦ.
+                        κἂν<lb/>δεηθείη πρὸς ἄλλους τῆς βοηθεί<expan>ας</expan> τῆς
+                            σ<expan>ῆς</expan>,<lb/>οὐκ ἀτυχήσει. χαρϊεῖ δὲ κἀμοὶ τὰ μέγιστα,<lb/>εἰ
+                        τὸν νέον φιλοφρόνως ὑποδεξάμεν<expan>ος</expan>,<lb/>καὶ ἄλλω αὐτὸν εἴ τω
+                        δεῖ, τοῦ ἢ τὰ<lb/>αὐτόθι παιδευθῆναι καὶ καταμαθεῖν,<lb/>ἢ τῆς πρὸς λόγους
+                        ὁδοῦ συστῆσαι:<c>†</c>
+                    </ab>
+                    <ab>
+                        <add hand="Cr" place="bottom">Finis .30. April. 1579</add>
+                    </ab>
+                </div2>
+            </div1>
+        </body>
+    </text>
+</TEI>

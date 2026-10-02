@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Wenn Sie diese Edition verwenden, zitieren Sie sie bitte wie folgt."
+title: "Θεματοεπιστολαί: An electronic edition"
+type: dataset
+authors:
+  - family-names: "Τουφεξής"
+    given-names: "Νότης"
+license: CC-BY-4.0
+repository-code: "https://github.com/drnotis/thematoepistulae"

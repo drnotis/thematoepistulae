@@ -1,1 +1,47 @@
-# thematoepistulae
+# Θεματοεπιστολαί: An electronic edition
+
+Elektronische Edition (TEI P5) der *Θεματοεπιστολαί* des Theodosios Zygomalas,
+diplomatische Transkription nach dem Codex Tybingensis Mb 30
+(Universitätsbibliothek Tübingen). Die Briefe liegen jeweils in einer
+"low"- und einer "high"-Fassung vor; Zusätze und Tilgungen von Martin Crusius
+und Zygomalas sind ausgezeichnet.
+
+Herausgeber: Notis Toufexis
+
+## Inhalt
+
+- `edition/thematoepistulae.xml`: die Edition (62 Briefe, 124 Fassungen)
+- `index.html`, `web/`: Webansicht (XSLT im Browser)
+- `css/tei.css`: Stylesheet für die direkte Ansicht der XML-Datei
+
+## Webansicht
+
+`index.html` lädt die TEI-Datei im Browser, wandelt sie per XSLT (`web/edition.xsl`)
+in HTML um und bietet Navigation, Ansicht low/high/beides, Zeilen der Handschrift,
+Zeilennummern, Ein- und Ausblenden der Auflösungen, Farbe der Hände und eine
+akzentunabhängige Suche. Es wird kein Server-Code und kein Build-Schritt benötigt.
+
+Lokal ansehen (die Datei muss über HTTP ausgeliefert werden, `file://` genügt nicht):
+
+    python3 -m http.server 8000
+
+Dann `http://localhost:8000/` öffnen. Auf GitHub Pages (Branch `main`, Ordner `/`)
+läuft die Seite unverändert.
+
+Die XML-Datei lässt sich auch direkt im Browser öffnen; dann wird `css/tei.css`
+verwendet.
+
+Legende: Zahl am Zeilenende = Zeilennummer der Handschrift, `(..)` aufgelöste
+Abkürzung, orange Zusatz von Crusius, blau Zusatz von Zygomalas, durchgestrichen
+getilgt, gepunktet unterstrichen unsichere Lesung.
+
+Handschriftenbilder: Verweise auf `img/*.png` werden zu Links, sobald die Dateien
+unter `edition/img/` liegen.
+
+## Lizenz
+
+Creative Commons Attribution 4.0 International (CC BY 4.0), siehe `LICENSE`.
+
+## Zitieren
+
+Nach der Archivierung bei Zenodo hier den DOI ergänzen.

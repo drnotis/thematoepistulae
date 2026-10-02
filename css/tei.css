@@ -1,0 +1,246 @@
+/*
+ * Anzeige der Θεματοεπιστολαί-Edition (TEI P5) direkt im Browser.
+ * Ein Stylesheet ersetzt die fruehere Aufteilung in body/header/tables/html/fallback.
+ *
+ * Konventionen:
+ *   Zeilenumbruch      |n  (hochgestellt)
+ *   Aufloesung         (..) in Grau, ausgeblendet mit .no-expan nicht noetig, Klammern genuegen
+ *   Zusatz Crusius     orange, Zusatz Zygomalas blau, ohne Hand: neutral
+ *   Tilgung            durchgestrichen
+ *   Unsichere Lesung   gepunktet unterstrichen
+ */
+
+:root {
+  --text: #1c1b1a;
+  --muted: #6b6760;
+  --paper: #fdfcf9;
+  --panel: #f3f0e9;
+  --rule: #d9d4c7;
+  --low: #f4f7ee;
+  --high: #f8f3e4;
+  --cr: #b45309;
+  --zyg: #1d4ed8;
+  --del: #b91c1c;
+  --accent: #5b3a29;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #ebe7df;
+    --muted: #a39e93;
+    --paper: #1a1917;
+    --panel: #24221f;
+    --rule: #3a3731;
+    --low: #1f241b;
+    --high: #28241a;
+    --cr: #f0a04b;
+    --zyg: #7ea6ff;
+    --del: #f08a8a;
+    --accent: #d8b89c;
+  }
+}
+
+/* ---- Grundlayout ---- */
+
+TEI {
+  display: block;
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 4rem;
+  background: var(--paper);
+  color: var(--text);
+  font-family: "Gentium Plus", "Gentium Book Plus", "Cardo", "Palatino Linotype",
+    "Noto Serif", "Times New Roman", serif;
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+html, body { background: var(--paper); }
+
+text, body, ab, s, seg { display: block; }
+s, seg { display: inline; }
+
+head {
+  display: block;
+  margin: 1.5rem 0 1rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+/* ---- Header: kompakte Info-Box ---- */
+
+teiHeader {
+  display: block;
+  margin-bottom: 2rem;
+  padding: 1rem 1.25rem;
+  background: var(--panel);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+teiHeader fileDesc, teiHeader titleStmt, teiHeader publicationStmt,
+teiHeader sourceDesc, teiHeader encodingDesc, teiHeader profileDesc,
+teiHeader revisionDesc, teiHeader editorialDecl, teiHeader tagsDecl,
+teiHeader namespace, teiHeader langUsage, teiHeader handNotes,
+teiHeader p, teiHeader msDesc, teiHeader msIdentifier, teiHeader availability,
+teiHeader licence, teiHeader authority, teiHeader change, teiHeader tagUsage,
+teiHeader language, teiHeader handNote {
+  display: block;
+}
+
+teiHeader titleStmt title {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text);
+  font-family: "Gentium Plus", "Palatino Linotype", serif;
+}
+
+teiHeader titleStmt author:before { content: "Autor: "; }
+teiHeader titleStmt editor:before { content: "Herausgeber: "; }
+teiHeader titleStmt author, teiHeader titleStmt editor { display: block; }
+
+/* Technische Teile einklappen: nur Titel, Quelle und Lizenz bleiben sichtbar */
+teiHeader encodingDesc, teiHeader profileDesc, teiHeader revisionDesc { display: none; }
+teiHeader sourceDesc p, teiHeader authority email,
+teiHeader availability p[lang="en"] { display: none; }
+teiHeader msIdentifier * { display: inline; }
+teiHeader msIdentifier { margin: 0.5rem 0; }
+teiHeader msIdentifier:before { content: "Handschrift: "; }
+teiHeader repository:before, teiHeader idno:before { content: ", "; margin-left: -0.25em; }
+teiHeader authority { display: none; }
+teiHeader altIdentifier { display: none; }
+teiHeader licence { margin-top: 0.5rem; }
+
+/* ---- Briefe: Struktur ---- */
+
+body { padding: 0; margin: 0; }
+
+/* Eine Θεματοεπιστολή: Nummer/Randzusaetze oben, darunter low | high nebeneinander */
+div1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem 1.25rem;
+  margin: 0 0 2.5rem;
+  padding: 0 0 1.5rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+div1 > ab { grid-column: 1 / -1; margin: 0; }
+
+div2 {
+  display: block;
+  padding: 0.75rem 1rem 1rem;
+  border-radius: 6px;
+  border: 1px solid var(--rule);
+}
+div2[type="low"]  { background: var(--low); }
+div2[type="high"] { background: var(--high); }
+
+div2[type="low"]:before,
+div2[type="high"]:before {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-family: system-ui, sans-serif;
+  font-size: 0.7rem;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+div2[type="low"]:before  { content: "low"; }
+div2[type="high"]:before { content: "high"; }
+
+div2 ab { display: block; margin: 0; }
+
+@media (max-width: 52rem) {
+  div1 { grid-template-columns: 1fr; }
+}
+
+/* ---- Transkription ---- */
+
+/* Zeilenumbruch: Zeilennummer hochgestellt; ohne n bleibt nur der Umbruchsmarker */
+lb { display: inline; }
+lb:before {
+  content: " |" attr(n);
+  font-family: system-ui, sans-serif;
+  font-size: 0.65em;
+  vertical-align: super;
+  color: var(--muted);
+}
+lb:after { content: " "; }
+
+/* lb mit rend="right": Zeile ist an den rechten Rand gerueckt */
+lb[rend="right"]:before { content: " |\2192"; }
+
+/* Seitenumbruch */
+pb {
+  display: inline-block;
+  margin: 0.25rem 0.4rem;
+  padding: 0 0.5em;
+  font-family: system-ui, sans-serif;
+  font-size: 0.75rem;
+  background: var(--accent);
+  color: var(--paper);
+  border-radius: 3px;
+}
+pb:before { content: "pag. " attr(n); }
+body > pb { display: block; width: max-content; margin: 1rem 0; }
+
+/* Abkuerzungsaufloesung */
+expan { color: var(--muted); font-style: italic; }
+expan:before { content: "("; }
+expan:after  { content: ")"; }
+expan[cert="low"] { text-decoration: underline dotted; }
+
+/* abbr/expan innerhalb choice: nur die Aufloesung zeigen, Abkuerzung als Tooltip-Ersatz */
+choice abbr { display: none; }
+
+/* Unsichere Lesung */
+unclear {
+  text-decoration: underline dotted;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+/* Tilgung und Zusatz */
+del { text-decoration: line-through; color: var(--del); }
+del[hand="Cr"] { color: var(--cr); }
+del[hand="Zyg"] { color: var(--zyg); }
+
+add {
+  display: inline;
+  color: var(--cr);
+}
+add[hand="Zyg"] { color: var(--zyg); }
+add[place]:after {
+  content: " \00B7" attr(place);
+  font-family: system-ui, sans-serif;
+  font-size: 0.6em;
+  color: var(--muted);
+  vertical-align: super;
+}
+
+/* Hervorhebung */
+hi[rend="underline"] { text-decoration: underline; }
+hi[rend="bold"]      { font-weight: bold; }
+hi[rend="italic"]    { font-style: italic; }
+
+/* Luecke, Trennzeichen, Noten */
+space { display: inline-block; width: 1.5em; }
+c { color: var(--muted); }
+note {
+  display: inline;
+  font-family: system-ui, sans-serif;
+  font-size: 0.75em;
+  color: var(--muted);
+}
+note:before { content: " ["; }
+note:after  { content: "]"; }
+
+ref { color: inherit; }
