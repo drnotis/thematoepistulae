@@ -47,7 +47,11 @@ keine erzeugte Datei, die gepflegt werden müsste.
 Regeln: Abkürzungen sind aufgelöst (`expan`), Tilgungen (`del`), Randnotizen
 (`note`), unaufgelöste Abkürzungsformen (`abbr`) und das Zeichen † bleiben
 unberücksichtigt, am Zeilenende mit Bindestrich getrennte Wörter werden
-zusammengefügt. Es wird nicht lemmatisiert. Ein Beleg wie `6·H3` bedeutet
+zusammengefügt. Lateinische Wörter (Zusätze von Crusius) fehlen im Index.
+Eindeutige Elisionen werden über `web/elisionen.json` der Vollform zugeordnet
+(δι’ unter δια); nicht eindeutige (οθ’, τ’, θ’, τιν’, λογισ’, τοκατ’, οτ’)
+stehen als eigene Einträge mit Apostroph. Die Tabelle kann ergänzt oder
+geändert werden. Sonst wird nicht lemmatisiert. Ein Beleg wie `6·H3` bedeutet
 Brief 6, Fassung high, Zeile 3; der Link springt im Text an diese Zeile und
 hebt sie hervor. Die Zeilenzählung (Anker `thema6_high-z3`) ist in
 `web/wortlogik.js` beschrieben.

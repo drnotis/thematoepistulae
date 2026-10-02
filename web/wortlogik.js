@@ -19,8 +19,25 @@ var ThemaWords = (function () {
       .replace(/ς/g, 'σ').replace(/[^\p{L}]/gu, '');
   }
 
+  var APOS = '\u2019\'\u02bc\u1fbd';
+
   function surface(s) {
-    return s.normalize('NFC').toLowerCase().replace(/^[^\p{L}\p{M}]+|[^\p{L}\p{M}]+$/gu, '');
+    return s.normalize('NFC').toLowerCase()
+      .replace(/^[^\p{L}\p{M}]+|[^\p{L}\p{M}\u2019'\u02bc\u1fbd]+$/gu, '');
+  }
+
+  // Elision: Wort endet auf Apostroph (Satzzeichen danach ignoriert)
+  function isElided(raw) {
+    return /[\u2019'\u02bc\u1fbd][^\p{L}\p{M}]*$/u.test(raw);
+  }
+
+  // Schluessel im Index. Lateinische Woerter (Zusaetze von Crusius) -> null.
+  // Elidierte Formen: laut Tabelle zur Vollform, sonst eigener Eintrag "xyz\u2019".
+  function indexKey(raw, elisions) {
+    var k = normalize(raw);
+    if (!k || /^[a-z]+$/.test(k)) return null;
+    if (isElided(raw)) return (elisions && elisions[k]) || (k + '\u2019');
+    return k;
   }
 
   function tokensOf(div2) {
@@ -73,8 +90,8 @@ var ThemaWords = (function () {
     return out;
   }
 
-  // Index ueber alle Fassungen: { entries: [{norm, count, forms:{}, locs:[{l,v,z,id}]}], tokens }
-  function buildIndex(xml) {
+  // Index ueber alle Fassungen (elisions: Tabelle aus elisionen.json, optional): { entries: [{norm, count, forms:{}, locs:[{l,v,z,id}]}], tokens }
+  function buildIndex(xml, elisions) {
     var map = {}, total = 0;
     var divs = xml.getElementsByTagNameNS(TEI, 'div1');
     for (var i = 0; i < divs.length; i++) {
@@ -86,7 +103,7 @@ var ThemaWords = (function () {
         var type = d2.getAttribute('type');
         var id = d2.getAttributeNS('http://www.w3.org/XML/1998/namespace', 'id');
         tokensOf(d2).forEach(function (t) {
-          var k = normalize(t.raw);
+          var k = indexKey(t.raw, elisions);
           if (!k) return;
           total++;
           var e = map[k] || (map[k] = { norm: k, forms: {}, locs: [] });

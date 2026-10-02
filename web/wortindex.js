@@ -93,7 +93,7 @@
           letters.push(ch);
           var h = document.createElement('h2');
           h.id = 'buchstabe-' + ch;
-          h.textContent = ch.toUpperCase() + ' ' + ch + (/[a-z]/.test(ch) ? ' (lateinisch)' : '');
+          h.textContent = ch.toUpperCase() + ' ' + ch;
           frag.appendChild(h);
         }
       }
@@ -115,11 +115,14 @@
   qEl.addEventListener('input', later);
   [modeEl, verEl, sortEl, hapaxEl].forEach(function (el) { el.addEventListener('change', render); });
 
-  fetch('edition/thematoepistulae.xml')
-    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.text(); })
-    .then(function (t) {
-      var xml = new DOMParser().parseFromString(t, 'application/xml');
-      data = ThemaWords.buildIndex(xml);
+  function get(u, json) {
+    return fetch(u).then(function (r) { if (!r.ok) throw new Error(u + ': ' + r.status); return json ? r.json() : r.text(); });
+  }
+
+  Promise.all([get('edition/thematoepistulae.xml'), get('web/elisionen.json', true)])
+    .then(function (res) {
+      var xml = new DOMParser().parseFromString(res[0], 'application/xml');
+      data = ThemaWords.buildIndex(xml, res[1]);
       document.getElementById('tokens').textContent = data.tokens;
       document.getElementById('types').textContent = data.entries.length;
       render();
